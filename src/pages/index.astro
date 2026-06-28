@@ -86,15 +86,23 @@ const archiveHref = `${base}archive`;
       }
 
       .brand-mark {
-        width: 42px;
-        height: 42px;
+        width: 46px;
+        height: 46px;
         display: grid;
         place-items: center;
-        border-radius: 14px;
-        color: white;
-        background: linear-gradient(135deg, var(--navy), var(--blue));
+        border-radius: 16px;
+        background: white;
+		border: 1px solid rgba(148, 163, 184, 0.28);
         box-shadow: 0 12px 30px rgba(37, 99, 235, 0.26);
+		overflow: hidden;
       }
+
+	  .brand-mark img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+	  }
 
       .nav-links {
         display: flex;
@@ -676,7 +684,9 @@ const archiveHref = `${base}archive`;
     <main class="page-shell">
       <nav class="top-nav" aria-label="Main navigation">
         <a class="brand" href={base}>
-          <span class="brand-mark">DC</span>
+          <span class="brand-mark">
+			<img src={`${base}images/book-logo.png`} alt="Daily Case logo" />
+		  </span>
           <span>Daily Case</span>
         </a>
 

@@ -84,16 +84,24 @@ const difficulties = Array.from(new Set(cases.map((caseItem) => caseItem.difficu
         letter-spacing: -0.03em;
       }
 
-      .brand-mark {
-        width: 42px;
-        height: 42px;
+     .brand-mark {
+        width: 46px;
+        height: 46px;
         display: grid;
         place-items: center;
-        border-radius: 14px;
-        color: white;
-        background: linear-gradient(135deg, var(--navy), var(--blue));
+        border-radius: 16px;
+        background: white;
+		border: 1px solid rgba(148, 163, 184, 0.28);
         box-shadow: 0 12px 30px rgba(37, 99, 235, 0.26);
+		overflow: hidden;
       }
+
+	  .brand-mark img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+	  }
 
       .nav-link {
         font-size: 0.95rem;
@@ -332,8 +340,9 @@ const difficulties = Array.from(new Set(cases.map((caseItem) => caseItem.difficu
     <main class="page-shell">
       <nav class="top-nav" aria-label="Main navigation">
         <a class="brand" href={homeHref}>
-          <span class="brand-mark">DC</span>
-          <span>Daily Case</span>
+          <span class="brand-mark">
+			<img src={`${base}images/book-logo.png`} alt="Daily Case logo" />
+		  </span>  <span>Daily Case</span>
         </a>
 
         <a class="nav-link" href={homeHref}>Back to today’s case</a>
