@@ -19,10 +19,10 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Select daily case
-        run: node scripts/selectDailyCase.js
+        run: node scripts/selectDailyCase.cjs
 
       - name: Commit updated daily case
         run: |
@@ -31,4 +31,3 @@ jobs:
           git add data/used_cases.json public/data/today.json public/data/archive.json
           git diff --cached --quiet || git commit -m "Update daily consulting case"
           git push
-          
