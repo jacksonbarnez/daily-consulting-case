@@ -20,669 +20,974 @@ const logoHref = `${base}images/book-logov2.png`;
       content="Practice one consulting case interview prompt each day with a hidden interviewer rubric."
     />
 
-    <style>
-      :root {
-        --navy: #0f172a;
-        --slate: #334155;
-        --muted: #64748b;
-        --line: rgba(148, 163, 184, 0.32);
-        --card: rgba(255, 255, 255, 0.86);
-        --card-solid: #ffffff;
-        --cream: #f8fafc;
-        --blue: #2563eb;
-        --blue-dark: #1d4ed8;
-        --teal: #0f766e;
-        --gold: #b7791f;
-        --green-soft: #ecfdf5;
-        --blue-soft: #eff6ff;
-        --gold-soft: #fffbeb;
-        --shadow: 0 24px 80px rgba(15, 23, 42, 0.14);
-        --radius-lg: 28px;
-        --radius-md: 18px;
-      }
+<style>
+  :root {
+    --navy: #0f172a;
+    --slate: #334155;
+    --muted: #64748b;
+    --line: rgba(148, 163, 184, 0.32);
+    --card: rgba(255, 255, 255, 0.86);
+    --card-solid: #ffffff;
+    --cream: #f8fafc;
+    --blue: #2563eb;
+    --blue-dark: #1d4ed8;
+    --teal: #0f766e;
+    --gold: #b7791f;
+    --green-soft: #ecfdf5;
+    --blue-soft: #eff6ff;
+    --gold-soft: #fffbeb;
+    --shadow: 0 24px 80px rgba(15, 23, 42, 0.14);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+  }
 
-      * {
-        box-sizing: border-box;
-      }
+  * {
+    box-sizing: border-box;
+  }
 
-      html {
-        scroll-behavior: smooth;
-      }
+  html {
+    scroll-behavior: smooth;
+  }
 
-      body {
-        margin: 0;
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        color: var(--navy);
-        background:
-          radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 34rem),
-          radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 32rem),
-          linear-gradient(135deg, #f8fafc 0%, #eef2ff 48%, #f8fafc 100%);
-        min-height: 100vh;
-      }
+  body {
+    margin: 0;
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+    color: var(--navy);
+    background:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 34rem),
+      radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 32rem),
+      linear-gradient(135deg, #f8fafc 0%, #eef2ff 48%, #f8fafc 100%);
+    min-height: 100vh;
+  }
 
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-      .page-shell {
-        width: min(1120px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 28px 0 56px;
-      }
+  .page-shell {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 28px 0 56px;
+  }
 
-      .top-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 18px;
-        margin-bottom: 52px;
-        animation: fadeDown 700ms ease both;
-      }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 52px;
+    animation: fadeDown 700ms ease both;
+  }
 
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-weight: 800;
-        letter-spacing: -0.03em;
-      }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
 
-      .brand-mark {
-        width: 46px;
-        height: 46px;
-        display: grid;
-        place-items: center;
-        border-radius: 16px;
-        background: white;
-		border: 1px solid rgba(148, 163, 184, 0.28);
-        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.26);
-		overflow: hidden;
-      }
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
 
-	  .brand-mark img {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
+  .brand-mark img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    color: var(--slate);
+    font-weight: 650;
+    padding: 10px 14px;
+    border-radius: 999px;
+    transition:
+      transform 180ms ease,
+      background 180ms ease,
+      color 180ms ease;
+  }
+
+  .nav-link:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--navy);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.02fr 0.98fr;
+    gap: 36px;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+
+  .hero-copy {
+    animation: fadeUp 760ms ease both;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue-dark);
+    background: rgba(239, 246, 255, 0.82);
+    border: 1px solid rgba(37, 99, 235, 0.14);
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 0.88rem;
+    font-weight: 760;
+    margin-bottom: 18px;
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--blue);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
+    animation: pulse 1.8s infinite;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 6vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+    margin: 0 0 18px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.02rem, 2vw, 1.25rem);
+    line-height: 1.75;
+    color: var(--slate);
+    margin: 0;
+    max-width: 680px;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 13px 18px;
+    font-size: 0.98rem;
+    font-weight: 800;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      background 180ms ease;
+  }
+
+  .button-primary {
+    color: white;
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    box-shadow: 0 16px 34px rgba(37, 99, 235, 0.26);
+  }
+
+  .button-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 44px rgba(37, 99, 235, 0.32);
+  }
+
+  .button-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .button-secondary {
+    color: var(--navy);
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid var(--line);
+  }
+
+  .button-secondary:hover {
+    transform: translateY(-2px);
+    background: white;
+  }
+
+  .hero-panel {
+    position: relative;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    box-shadow: var(--shadow);
+    padding: 18px;
+    backdrop-filter: blur(20px);
+    animation: floatIn 900ms ease both;
+  }
+
+  .hero-panel-inner {
+    border-radius: 22px;
+    background:
+      linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.9)),
+      radial-gradient(circle at top right, rgba(45, 212, 191, 0.32), transparent 18rem);
+    color: white;
+    padding: 26px;
+    overflow: hidden;
+    position: relative;
+    min-height: 330px;
+  }
+
+  .hero-panel-inner::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    right: -60px;
+    bottom: -68px;
+    background: rgba(255, 255, 255, 0.09);
+  }
+
+  .panel-kicker {
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-size: 0.76rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .panel-title {
+    font-size: clamp(1.6rem, 3vw, 2.25rem);
+    line-height: 1.06;
+    letter-spacing: -0.05em;
+    margin: 0 0 16px;
+  }
+
+  .panel-copy {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mini-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 26px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .metric {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .metric strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+  }
+
+  .metric span {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.78rem;
+  }
+
+  .case-card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    animation: fadeUp 800ms ease 120ms both;
+  }
+
+  .case-header {
+    padding: 28px;
+    border-bottom: 1px solid var(--line);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.74)),
+      radial-gradient(circle at top right, rgba(37, 99, 235, 0.13), transparent 18rem);
+  }
+
+  .date-line {
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+  }
+
+  .case-title {
+    font-size: clamp(1.85rem, 4vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.06em;
+    margin: 0 0 18px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: 0.86rem;
+    font-weight: 800;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .tag-blue {
+    background: var(--blue-soft);
+    color: var(--blue-dark);
+  }
+
+  .tag-green {
+    background: var(--green-soft);
+    color: var(--teal);
+  }
+
+  .tag-gold {
+    background: var(--gold-soft);
+    color: var(--gold);
+  }
+
+  .case-body {
+    padding: 28px;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    font-weight: 900;
+    margin: 0 0 10px;
+  }
+
+  .section-label::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--blue);
+  }
+
+  .section-text {
+    color: var(--slate);
+    font-size: 1.04rem;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .prompt-box {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    border-radius: 22px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .prompt-box::after {
+    content: "";
+    position: absolute;
+    inset: auto -60px -80px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.09);
+  }
+
+  .prompt-box .section-label {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .prompt-box .section-label::before {
+    background: #38bdf8;
+  }
+
+  .prompt-box p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.12rem;
+    line-height: 1.75;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .practice-area {
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: rgba(248, 250, 252, 0.82);
+    padding: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 220px;
+    resize: vertical;
+    border: 1px solid rgba(100, 116, 139, 0.28);
+    border-radius: 18px;
+    padding: 18px;
+    font: inherit;
+    color: var(--navy);
+    background: white;
+    outline: none;
+    line-height: 1.65;
+    transition:
+      border 160ms ease,
+      box-shadow 160ms ease,
+      transform 160ms ease;
+  }
+
+  textarea:focus {
+    border-color: rgba(37, 99, 235, 0.72);
+    box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+  }
+
+  .helper-text {
+    color: var(--muted);
+    margin: 10px 0 0;
+    font-size: 0.94rem;
+  }
+
+  .practice-score {
+    margin-top: 28px;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 22rem),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.92));
+    padding: 24px;
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+  }
+
+  .practice-score-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 22px;
+    align-items: center;
+  }
+
+  .practice-score-header h2 {
+    margin: 0 0 8px;
+    font-size: 1.45rem;
+    letter-spacing: -0.04em;
+  }
+
+  .practice-score-header p {
+    margin: 0;
+    color: var(--slate);
+    line-height: 1.65;
+    max-width: 720px;
+  }
+
+  .practice-score-button {
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 18px;
+    font: inherit;
+    font-weight: 850;
+    color: white;
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    box-shadow: 0 16px 34px rgba(37, 99, 235, 0.24);
+    cursor: pointer;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      background 180ms ease;
+    white-space: nowrap;
+  }
+
+  .practice-score-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 42px rgba(37, 99, 235, 0.3);
+  }
+
+  .practice-score-button:disabled {
+    color: #64748b;
+    background: #e2e8f0;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  .practice-score-readiness {
+    margin-top: 18px;
+    border-radius: 20px;
+    padding: 16px 18px;
+    background: rgba(255, 251, 235, 0.94);
+    border: 1px solid rgba(245, 158, 11, 0.28);
+  }
+
+  .practice-score-readiness.is-ready {
+    background: rgba(236, 253, 245, 0.94);
+    border-color: rgba(16, 185, 129, 0.28);
+  }
+
+  .practice-score-readiness-text {
+    display: grid;
+    gap: 7px;
+  }
+
+  .practice-score-readiness-text strong {
+    font-size: 1.02rem;
+    letter-spacing: -0.02em;
+  }
+
+  .practice-score-readiness-text p {
+    margin: 0;
+    color: var(--slate);
+    line-height: 1.6;
+  }
+
+  .practice-score-status {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(251, 191, 36, 0.24);
+    color: #92400e;
+  }
+
+  .practice-score-readiness.is-ready .practice-score-status {
+    background: rgba(16, 185, 129, 0.18);
+    color: #047857;
+  }
+
+  .practice-score-result {
+    margin-top: 20px;
+    border-radius: 24px;
+    padding: 22px;
+    background: white;
+    border: 1px solid rgba(37, 99, 235, 0.14);
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.08);
+    animation: fadeUp 300ms ease both;
+  }
+
+  .practice-score-main {
+    display: grid;
+    grid-template-columns: 126px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+.practice-score-circle {
+  width: 126px;
+  height: 126px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 999px;
+  background: white;
+  box-shadow:
+    0 14px 34px rgba(37, 99, 235, 0.1),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.16);
+}
+
+.practice-score-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.practice-score-ring-bg,
+.practice-score-ring-fill {
+  fill: none;
+  stroke-width: 10;
+}
+
+.practice-score-ring-bg {
+  stroke: #e2e8f0;
+}
+
+.practice-score-ring-fill {
+  stroke: var(--blue);
+  stroke-linecap: round;
+  stroke-dasharray: 326.73;
+  stroke-dashoffset: 326.73;
+  transition: stroke-dashoffset 420ms ease;
+}
+
+.practice-score-circle-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 2px;
+  place-items: center;
+}
+
+.practice-score-circle span {
   display: block;
-	  }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .nav-link {
-        font-size: 0.95rem;
-        color: var(--slate);
-        font-weight: 650;
-        padding: 10px 14px;
-        border-radius: 999px;
-        transition:
-          transform 180ms ease,
-          background 180ms ease,
-          color 180ms ease;
-      }
-
-      .nav-link:hover {
-        transform: translateY(-1px);
-        background: rgba(255, 255, 255, 0.72);
-        color: var(--navy);
-      }
-
-      .hero {
-        display: grid;
-        grid-template-columns: 1.02fr 0.98fr;
-        gap: 36px;
-        align-items: center;
-        margin-bottom: 34px;
-      }
-
-      .hero-copy {
-        animation: fadeUp 760ms ease both;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--blue-dark);
-        background: rgba(239, 246, 255, 0.82);
-        border: 1px solid rgba(37, 99, 235, 0.14);
-        border-radius: 999px;
-        padding: 8px 12px;
-        font-size: 0.88rem;
-        font-weight: 760;
-        margin-bottom: 18px;
-      }
-
-      .pulse-dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 999px;
-        background: var(--blue);
-        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
-        animation: pulse 1.8s infinite;
-      }
-
-      h1 {
-        font-size: clamp(2.35rem, 6vw, 4.8rem);
-        line-height: 0.95;
-        letter-spacing: -0.07em;
-        margin: 0 0 18px;
-      }
-
-      .hero-subtitle {
-        font-size: clamp(1.02rem, 2vw, 1.25rem);
-        line-height: 1.75;
-        color: var(--slate);
-        margin: 0;
-        max-width: 680px;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 28px;
-      }
-
-      .button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border: 0;
-        cursor: pointer;
-        border-radius: 999px;
-        padding: 13px 18px;
-        font-size: 0.98rem;
-        font-weight: 800;
-        transition:
-          transform 180ms ease,
-          box-shadow 180ms ease,
-          background 180ms ease;
-      }
-
-      .button-primary {
-        color: white;
-        background: linear-gradient(135deg, var(--blue), var(--blue-dark));
-        box-shadow: 0 16px 34px rgba(37, 99, 235, 0.26);
-      }
-
-      .button-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 22px 44px rgba(37, 99, 235, 0.32);
-      }
-
-      .button-secondary {
-        color: var(--navy);
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid var(--line);
-      }
-
-      .button-secondary:hover {
-        transform: translateY(-2px);
-        background: white;
-      }
-
-      .hero-panel {
-        position: relative;
-        border-radius: var(--radius-lg);
-        background: rgba(255, 255, 255, 0.62);
-        border: 1px solid rgba(255, 255, 255, 0.78);
-        box-shadow: var(--shadow);
-        padding: 18px;
-        backdrop-filter: blur(20px);
-        animation: floatIn 900ms ease both;
-      }
-
-      .hero-panel-inner {
-        border-radius: 22px;
-        background:
-          linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.9)),
-          radial-gradient(circle at top right, rgba(45, 212, 191, 0.32), transparent 18rem);
-        color: white;
-        padding: 26px;
-        overflow: hidden;
-        position: relative;
-        min-height: 330px;
-      }
-
-      .hero-panel-inner::after {
-        content: "";
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        border-radius: 999px;
-        right: -60px;
-        bottom: -68px;
-        background: rgba(255, 255, 255, 0.09);
-      }
-
-      .panel-kicker {
-        color: rgba(255, 255, 255, 0.72);
-        text-transform: uppercase;
-        letter-spacing: 0.13em;
-        font-size: 0.76rem;
-        font-weight: 800;
-        margin-bottom: 14px;
-      }
-
-      .panel-title {
-        font-size: clamp(1.6rem, 3vw, 2.25rem);
-        line-height: 1.06;
-        letter-spacing: -0.05em;
-        margin: 0 0 16px;
-      }
-
-      .panel-copy {
-        color: rgba(255, 255, 255, 0.78);
-        line-height: 1.7;
-        margin: 0;
-        position: relative;
-        z-index: 1;
-      }
-
-      .mini-metrics {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-top: 26px;
-        position: relative;
-        z-index: 1;
-      }
-
-      .metric {
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        border-radius: 16px;
-        padding: 14px;
-        background: rgba(255, 255, 255, 0.08);
-      }
-
-      .metric strong {
-        display: block;
-        font-size: 1.05rem;
-        margin-bottom: 3px;
-      }
-
-      .metric span {
-        color: rgba(255, 255, 255, 0.68);
-        font-size: 0.78rem;
-      }
-
-      .case-card {
-        background: var(--card);
-        border: 1px solid rgba(255, 255, 255, 0.78);
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-        backdrop-filter: blur(20px);
-        animation: fadeUp 800ms ease 120ms both;
-      }
-
-      .case-header {
-        padding: 28px;
-        border-bottom: 1px solid var(--line);
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.74)),
-          radial-gradient(circle at top right, rgba(37, 99, 235, 0.13), transparent 18rem);
-      }
-
-      .date-line {
-        color: var(--muted);
-        font-size: 0.95rem;
-        font-weight: 700;
-        margin: 0 0 12px;
-      }
-
-      .case-title {
-        font-size: clamp(1.85rem, 4vw, 3rem);
-        line-height: 1;
-        letter-spacing: -0.06em;
-        margin: 0 0 18px;
-      }
-
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        border-radius: 999px;
-        padding: 7px 12px;
-        font-size: 0.86rem;
-        font-weight: 800;
-        border: 1px solid rgba(15, 23, 42, 0.08);
-      }
-
-      .tag-blue {
-        background: var(--blue-soft);
-        color: var(--blue-dark);
-      }
-
-      .tag-green {
-        background: var(--green-soft);
-        color: var(--teal);
-      }
-
-      .tag-gold {
-        background: var(--gold-soft);
-        color: var(--gold);
-      }
-
-      .case-body {
-        padding: 28px;
-      }
-
-      .section {
-        margin-bottom: 28px;
-      }
-
-      .section:last-child {
-        margin-bottom: 0;
-      }
-
-      .section-label {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 0.82rem;
-        text-transform: uppercase;
-        letter-spacing: 0.14em;
-        color: var(--muted);
-        font-weight: 900;
-        margin: 0 0 10px;
-      }
-
-      .section-label::before {
-        content: "";
-        width: 9px;
-        height: 9px;
-        border-radius: 999px;
-        background: var(--blue);
-      }
-
-      .section-text {
-        color: var(--slate);
-        font-size: 1.04rem;
-        line-height: 1.8;
-        margin: 0;
-      }
-
-      .prompt-box {
-        background: linear-gradient(135deg, #0f172a, #1e3a8a);
-        color: white;
-        border-radius: 22px;
-        padding: 24px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .prompt-box::after {
-        content: "";
-        position: absolute;
-        inset: auto -60px -80px auto;
-        width: 180px;
-        height: 180px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.09);
-      }
-
-      .prompt-box .section-label {
-        color: rgba(255, 255, 255, 0.7);
-      }
-
-      .prompt-box .section-label::before {
-        background: #38bdf8;
-      }
-
-      .prompt-box p {
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 1.12rem;
-        line-height: 1.75;
-        margin: 0;
-        position: relative;
-        z-index: 1;
-      }
-
-      .practice-area {
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        background: rgba(248, 250, 252, 0.82);
-        padding: 20px;
-      }
-
-      textarea {
-        width: 100%;
-        min-height: 220px;
-        resize: vertical;
-        border: 1px solid rgba(100, 116, 139, 0.28);
-        border-radius: 18px;
-        padding: 18px;
-        font: inherit;
-        color: var(--navy);
-        background: white;
-        outline: none;
-        line-height: 1.65;
-        transition:
-          border 160ms ease,
-          box-shadow 160ms ease,
-          transform 160ms ease;
-      }
-
-      textarea:focus {
-        border-color: rgba(37, 99, 235, 0.72);
-        box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
-      }
-
-      .helper-text {
-        color: var(--muted);
-        margin: 10px 0 0;
-        font-size: 0.94rem;
-      }
-
-      .rubric-gate {
-        border: 1px dashed rgba(37, 99, 235, 0.32);
-        background: rgba(239, 246, 255, 0.65);
-        border-radius: 22px;
-        padding: 22px;
-        text-align: center;
-      }
-
-      .rubric-gate h2 {
-        margin: 0 0 8px;
-        letter-spacing: -0.035em;
-      }
-
-      .rubric-gate p {
-        color: var(--slate);
-        margin: 0 0 18px;
-        line-height: 1.65;
-      }
-
-      .rubric {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transform: translateY(12px);
-        transition:
-          max-height 600ms ease,
-          opacity 320ms ease,
-          transform 320ms ease;
-      }
-
-      .rubric.is-visible {
-        max-height: 1400px;
-        opacity: 1;
-        transform: translateY(0);
-        margin-top: 22px;
-      }
-
-      .rubric-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-      }
-
-      .rubric-card {
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        background: var(--card-solid);
-        padding: 22px;
-      }
-
-      .rubric-card h3 {
-        margin: 0 0 14px;
-        letter-spacing: -0.035em;
-        font-size: 1.25rem;
-      }
-
-      .rubric-card ul {
-        margin: 0;
-        padding-left: 20px;
-        color: var(--slate);
-        line-height: 1.72;
-      }
-
-      .rubric-card li {
-        margin-bottom: 8px;
-      }
-
-      .notes-card {
-        margin-top: 18px;
-        border: 1px solid rgba(15, 118, 110, 0.18);
-        background: rgba(236, 253, 245, 0.78);
-        border-radius: 22px;
-        padding: 22px;
-      }
-
-      .notes-card h3 {
-        margin: 0 0 10px;
-        color: var(--teal);
-        letter-spacing: -0.035em;
-      }
-
-      .notes-card p {
-        margin: 0;
-        color: var(--slate);
-        line-height: 1.75;
-      }
-
-      .footer {
-        text-align: center;
-        color: var(--muted);
-        margin-top: 34px;
-        font-size: 0.92rem;
-      }
-
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(18px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeDown {
-        from {
-          opacity: 0;
-          transform: translateY(-12px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes floatIn {
-        from {
-          opacity: 0;
-          transform: translateY(18px) scale(0.98);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0) scale(1);
-        }
-      }
-
-      @keyframes pulse {
-        0% {
-          box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
-        }
-        70% {
-          box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
-        }
-        100% {
-          box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
-        }
-      }
-
-      @media (max-width: 860px) {
-        .top-nav {
-          margin-bottom: 36px;
-        }
-
-        .hero {
-          grid-template-columns: 1fr;
-        }
-
-        .hero-panel-inner {
-          min-height: auto;
-        }
-
-        .rubric-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 620px) {
-        .page-shell {
-          width: min(100% - 24px, 1120px);
-          padding-top: 18px;
-        }
-
-        .top-nav {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 14px;
-        }
-
-        .nav-links {
-          width: 100%;
-        }
-
-        .nav-link {
-          background: rgba(255, 255, 255, 0.7);
-        }
-
-        .case-header,
-        .case-body {
-          padding: 22px;
-        }
-
-        .mini-metrics {
-          grid-template-columns: 1fr;
-        }
-
-        .hero-actions {
-          flex-direction: column;
-        }
-
-        .button {
-          width: 100%;
-        }
-      }
-    </style>
+  font-size: 1.85rem;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.practice-score-circle small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+  .practice-score-summary h3 {
+    margin: 10px 0 8px;
+    font-size: 1.45rem;
+    letter-spacing: -0.04em;
+  }
+
+  .practice-score-summary p {
+    margin: 0;
+    color: var(--slate);
+    line-height: 1.65;
+  }
+
+  .practice-score-bar-track {
+    height: 12px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+
+  .practice-score-bar-fill {
+    width: 0%;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #60a5fa, #2563eb);
+    transition: width 320ms ease;
+  }
+
+  .practice-score-breakdown {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .practice-score-breakdown-card {
+    border-radius: 18px;
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+  }
+
+  .practice-score-breakdown-card span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .practice-score-breakdown-card strong {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--navy);
+    letter-spacing: -0.03em;
+  }
+
+  .practice-score-disclaimer {
+    margin: 16px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .practice-score-result.score-low .practice-score-status {
+    background: rgba(239, 68, 68, 0.12);
+    color: #b91c1c;
+  }
+
+  .practice-score-result.score-medium .practice-score-status {
+    background: rgba(245, 158, 11, 0.16);
+    color: #92400e;
+  }
+
+  .practice-score-result.score-good .practice-score-status {
+    background: rgba(16, 185, 129, 0.16);
+    color: #047857;
+  }
+
+  .practice-score-result.score-strong .practice-score-status {
+    background: rgba(37, 99, 235, 0.13);
+    color: var(--blue-dark);
+  }
+
+  .rubric-gate {
+    border: 1px dashed rgba(37, 99, 235, 0.32);
+    background: rgba(239, 246, 255, 0.65);
+    border-radius: 22px;
+    padding: 22px;
+    text-align: center;
+  }
+
+  .rubric-gate h2 {
+    margin: 0 0 8px;
+    letter-spacing: -0.035em;
+  }
+
+  .rubric-gate p {
+    color: var(--slate);
+    margin: 0 0 18px;
+    line-height: 1.65;
+  }
+
+  .rubric {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      max-height 600ms ease,
+      opacity 320ms ease,
+      transform 320ms ease;
+  }
+
+  .rubric.is-visible {
+    max-height: 1400px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 22px;
+  }
+
+  .rubric-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .rubric-card {
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: var(--card-solid);
+    padding: 22px;
+  }
+
+  .rubric-card h3 {
+    margin: 0 0 14px;
+    letter-spacing: -0.035em;
+    font-size: 1.25rem;
+  }
+
+  .rubric-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--slate);
+    line-height: 1.72;
+  }
+
+  .rubric-card li {
+    margin-bottom: 8px;
+  }
+
+  .notes-card {
+    margin-top: 18px;
+    border: 1px solid rgba(15, 118, 110, 0.18);
+    background: rgba(236, 253, 245, 0.78);
+    border-radius: 22px;
+    padding: 22px;
+  }
+
+  .notes-card h3 {
+    margin: 0 0 10px;
+    color: var(--teal);
+    letter-spacing: -0.035em;
+  }
+
+  .notes-card p {
+    margin: 0;
+    color: var(--slate);
+    line-height: 1.75;
+  }
+
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    margin-top: 34px;
+    font-size: 0.92rem;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(18px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .top-nav {
+      margin-bottom: 36px;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-panel-inner {
+      min-height: auto;
+    }
+
+    .rubric-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .practice-score-header {
+      grid-template-columns: 1fr;
+    }
+
+    .practice-score-button {
+      width: 100%;
+    }
+
+    .practice-score-main {
+      grid-template-columns: 1fr;
+    }
+
+	.practice-score-circle {
+  	  width: 126px;
+  	  height: 126px;
+  	  margin: 0 auto;
+	}
+
+    .practice-score-breakdown {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .page-shell {
+      width: min(100% - 24px, 1120px);
+      padding-top: 18px;
+    }
+
+    .top-nav {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .nav-links {
+      width: 100%;
+    }
+
+    .nav-link {
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .case-header,
+    .case-body {
+      padding: 22px;
+    }
+
+    .mini-metrics {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+</style>
   </head>
 
   <body>
@@ -780,6 +1085,81 @@ const logoHref = `${base}images/book-logov2.png`;
             </p>
           </section>
 
+<section class="section practice-score" aria-label="Rubric coverage estimate">
+  <div class="practice-score-header">
+    <div>
+      <p class="section-label">Rubric coverage estimate</p>
+      <h2>Check your answer before viewing the rubric</h2>
+      <p>
+        This gives a rough, free estimate of how much your response overlaps with the interviewer rubric. It uses simple keyword matching, not AI.
+      </p>
+    </div>
+
+    <button
+      class="practice-score-button"
+      id="scoreResponseButton"
+      type="button"
+      disabled
+    >
+      Write 25 words to score
+    </button>
+  </div>
+
+  <div class="practice-score-readiness" id="scoreGuidance">
+    <div class="practice-score-readiness-text">
+      <span class="practice-score-status" id="readinessStatus">Not ready yet</span>
+      <strong id="guidanceTitle">Add more detail before scoring</strong>
+      <p id="wordCountLine">
+        You have 0 words. Write at least 25 words so the estimate has enough to compare against the rubric.
+      </p>
+    </div>
+  </div>
+
+  <div class="practice-score-result" id="scoreResult" hidden>
+    <div class="practice-score-main">
+<div class="practice-score-circle" aria-label="Estimated coverage score">
+  <svg class="practice-score-ring" viewBox="0 0 120 120" aria-hidden="true">
+    <circle class="practice-score-ring-bg" cx="60" cy="60" r="52"></circle>
+    <circle class="practice-score-ring-fill" id="scoreRingFill" cx="60" cy="60" r="52"></circle>
+  </svg>
+
+  <div class="practice-score-circle-copy">
+    <span id="overallScore">0%</span>
+    <small>coverage</small>
+  </div>
+</div>
+
+      <div class="practice-score-summary">
+        <span class="practice-score-status" id="scoreStatus">Needs work</span>
+        <h3 id="scoreSummaryTitle">Estimated rubric coverage</h3>
+        <p id="scoreFeedbackMessage">
+          Add more detail to see your estimated rubric coverage.
+        </p>
+      </div>
+    </div>
+
+    <div class="practice-score-bar-track">
+      <div class="practice-score-bar-fill" id="scoreProgressBar"></div>
+    </div>
+
+    <div class="practice-score-breakdown">
+      <div class="practice-score-breakdown-card">
+        <span>Good answer coverage</span>
+        <strong id="goodScoreLine">0 of 0</strong>
+      </div>
+
+      <div class="practice-score-breakdown-card">
+        <span>Great answer coverage</span>
+        <strong id="greatScoreLine">0 of 0</strong>
+      </div>
+    </div>
+
+	<p class="practice-score-disclaimer">
+  	This score is not AI-generated. Reveal the rubric to see how close your answer really is.
+	</p>
+  </div>
+</section>
+
           <section class="section rubric-gate">
             <h2>Ready to compare your answer?</h2>
             <p>
@@ -798,19 +1178,19 @@ const logoHref = `${base}images/book-logov2.png`;
 
             <div class="rubric" id="rubricSection">
               <div class="rubric-grid">
-                <div class="rubric-card">
-                  <h3>Good answer includes</h3>
-                  <ul>
-                    {todayCase.good_answer_includes.map((item) => <li>{item}</li>)}
-                  </ul>
-                </div>
+<div class="rubric-card good-rubric">
+  <h3>Good answer includes</h3>
+  <ul>
+    {todayCase.good_answer_includes.map((item) => <li>{item}</li>)}
+  </ul>
+</div>
 
-                <div class="rubric-card">
-                  <h3>Great answer includes</h3>
-                  <ul>
-                    {todayCase.great_answer_includes.map((item) => <li>{item}</li>)}
-                  </ul>
-                </div>
+<div class="rubric-card great-rubric">
+  <h3>Great answer includes</h3>
+  <ul>
+    {todayCase.great_answer_includes.map((item) => <li>{item}</li>)}
+  </ul>
+</div>
               </div>
 
               <div class="notes-card">
@@ -827,18 +1207,246 @@ const logoHref = `${base}images/book-logov2.png`;
       </footer>
     </main>
 
-    <script is:inline>
-      const revealButton = document.getElementById("revealRubricButton");
-      const rubricSection = document.getElementById("rubricSection");
+<script is:inline>
+  const revealButton = document.getElementById("revealRubricButton");
+  const rubricSection = document.getElementById("rubricSection");
 
-      if (revealButton && rubricSection) {
-        revealButton.addEventListener("click", () => {
-          rubricSection.classList.add("is-visible");
-          revealButton.setAttribute("aria-expanded", "true");
-          revealButton.textContent = "Rubric revealed";
-          revealButton.disabled = true;
-        });
+  if (revealButton && rubricSection) {
+    revealButton.addEventListener("click", () => {
+      rubricSection.classList.add("is-visible");
+      revealButton.setAttribute("aria-expanded", "true");
+      revealButton.textContent = "Rubric revealed";
+      revealButton.disabled = true;
+    });
+  }
+
+  const MIN_WORDS = 25;
+
+  const scoreButton = document.getElementById("scoreResponseButton");
+  const responseBox = document.getElementById("responseBox");
+  const scoreResult = document.getElementById("scoreResult");
+  const overallScore = document.getElementById("overallScore");
+  const goodScoreLine = document.getElementById("goodScoreLine");
+  const greatScoreLine = document.getElementById("greatScoreLine");
+  const scoreProgressBar = document.getElementById("scoreProgressBar");
+  const scoreFeedbackMessage = document.getElementById("scoreFeedbackMessage");
+  const scoreSummaryTitle = document.getElementById("scoreSummaryTitle");
+  const scoreGuidance = document.getElementById("scoreGuidance");
+  const guidanceTitle = document.getElementById("guidanceTitle");
+  const wordCountLine = document.getElementById("wordCountLine");
+  const readinessStatus = document.getElementById("readinessStatus");
+  const scoreStatus = document.getElementById("scoreStatus");
+  const scoreRingFill = document.getElementById("scoreRingFill");
+
+  const stopWords = new Set([
+    "the",
+    "and",
+    "for",
+    "that",
+    "this",
+    "with",
+    "from",
+    "into",
+    "their",
+    "would",
+    "should",
+    "could",
+    "about",
+    "across",
+    "between",
+    "through",
+    "using",
+    "use",
+    "uses",
+    "case",
+    "answer",
+    "answers",
+    "includes",
+    "include",
+    "including",
+    "considers",
+    "consider",
+    "review",
+    "reviews",
+    "analyze",
+    "analyzes",
+    "analysis",
+    "evaluate",
+    "evaluates",
+    "identify",
+    "identifies",
+    "recommend",
+    "recommends"
+  ]);
+
+  function normalizeText(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function getWordCount(text) {
+    const normalized = normalizeText(text);
+    if (!normalized) return 0;
+    return normalized.split(" ").filter(Boolean).length;
+  }
+
+  function extractKeywords(text) {
+    const words = normalizeText(text).split(" ");
+
+    return Array.from(
+      new Set(words.filter((word) => word.length > 3 && !stopWords.has(word)))
+    );
+  }
+
+  function scoreRubricItem(answerText, rubricText) {
+    const keywords = extractKeywords(rubricText);
+
+    if (keywords.length === 0) {
+      return false;
+    }
+
+    const matchedKeywords = keywords.filter((keyword) =>
+      answerText.includes(keyword)
+    );
+
+    const matchRate = matchedKeywords.length / keywords.length;
+
+    return matchedKeywords.length >= 2 || matchRate >= 0.45;
+  }
+
+  function scoreRubricGroup(answerText, selector) {
+    const rubricItems = Array.from(document.querySelectorAll(selector));
+
+    const scoredItems = rubricItems.map((item) =>
+      scoreRubricItem(answerText, item.textContent || "")
+    );
+
+    const matchedCount = scoredItems.filter(Boolean).length;
+
+    return {
+      matchedCount,
+      totalCount: rubricItems.length
+    };
+  }
+
+  function getScoreTier(finalScore) {
+    if (finalScore < 25) {
+      return {
+        className: "score-low",
+        label: "Needs work",
+        message:
+          "Your response likely needs more structure and more of the core case drivers. Try adding clear buckets, major risks, basic math, and a recommendation."
+      };
+    }
+
+    if (finalScore < 50) {
+      return {
+        className: "score-medium",
+        label: "Getting there",
+        message:
+          "You have the start of a solid answer, but you are probably missing several core rubric points. Try expanding your structure and being more specific."
+      };
+    }
+
+    if (finalScore < 75) {
+      return {
+        className: "score-good",
+        label: "Solid coverage",
+        message:
+          "Good start. You appear to be covering several core points. To improve, add more depth, math, tradeoffs, and a sharper recommendation."
+      };
+    }
+
+    return {
+      className: "score-strong",
+      label: "Strong coverage",
+      message:
+        "Strong coverage estimate. You appear to be hitting many core and advanced rubric points. Reveal the rubric to check what you can still refine."
+    };
+  }
+
+  function updateScoreReadiness() {
+    if (!responseBox || !scoreButton || !wordCountLine || !guidanceTitle || !scoreGuidance || !readinessStatus) {
+      return;
+    }
+
+    const wordCount = getWordCount(responseBox.value);
+    const enoughWords = wordCount >= MIN_WORDS;
+
+    if (enoughWords) {
+      scoreButton.disabled = false;
+      scoreButton.textContent = "Score my response";
+      readinessStatus.textContent = "Ready";
+      guidanceTitle.textContent = "Your response is ready to score";
+      wordCountLine.textContent = `You have ${wordCount} words. That is enough to estimate rubric coverage.`;
+      scoreGuidance.classList.add("is-ready");
+    } else {
+      scoreButton.disabled = true;
+      scoreButton.textContent = `Write ${MIN_WORDS - wordCount} more word${MIN_WORDS - wordCount === 1 ? "" : "s"}`;
+      readinessStatus.textContent = "Not ready yet";
+      guidanceTitle.textContent = "Add more detail before scoring";
+      wordCountLine.textContent = `You have ${wordCount} word${wordCount === 1 ? "" : "s"}. Write at least ${MIN_WORDS} words so the estimate has enough to compare against the rubric.`;
+      scoreGuidance.classList.remove("is-ready");
+      scoreResult.hidden = true;
+    }
+  }
+
+  if (responseBox) {
+    responseBox.addEventListener("input", updateScoreReadiness);
+    updateScoreReadiness();
+  }
+
+  if (scoreButton && responseBox && scoreResult) {
+    scoreButton.addEventListener("click", () => {
+      const answerText = normalizeText(responseBox.value);
+      const wordCount = getWordCount(responseBox.value);
+
+      if (wordCount < MIN_WORDS) {
+        updateScoreReadiness();
+        return;
       }
-    </script>
+
+      const goodScore = scoreRubricGroup(answerText, ".good-rubric li");
+      const greatScore = scoreRubricGroup(answerText, ".great-rubric li");
+
+      const goodPercent =
+        goodScore.totalCount === 0
+          ? 0
+          : goodScore.matchedCount / goodScore.totalCount;
+
+      const greatPercent =
+        greatScore.totalCount === 0
+          ? 0
+          : greatScore.matchedCount / greatScore.totalCount;
+
+      const finalScore = Math.round((goodPercent * 0.6 + greatPercent * 0.4) * 100);
+      const tier = getScoreTier(finalScore);
+
+      scoreResult.hidden = false;
+      scoreResult.classList.remove("score-low", "score-medium", "score-good", "score-strong");
+      scoreResult.classList.add(tier.className);
+
+      overallScore.textContent = `${finalScore}%`;
+      goodScoreLine.textContent = `${goodScore.matchedCount} of ${goodScore.totalCount}`;
+      greatScoreLine.textContent = `${greatScore.matchedCount} of ${greatScore.totalCount}`;
+      scoreProgressBar.style.width = `${finalScore}%`;
+      scoreSummaryTitle.textContent = "Estimated rubric coverage";
+      scoreFeedbackMessage.textContent = tier.message;
+      scoreStatus.textContent = tier.label;
+
+     if (scoreRingFill) {
+  	  const radius = 52;
+  	  const circumference = 2 * Math.PI * radius;
+  	  const offset = circumference - (finalScore / 100) * circumference;
+
+  	  scoreRingFill.style.strokeDasharray = `${circumference}`;
+  	  scoreRingFill.style.strokeDashoffset = `${offset}`;
+	  }
+    });
+  }
+</script>
   </body>
 </html>
