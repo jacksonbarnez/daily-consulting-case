@@ -1,0 +1,71 @@
+---
+import archive from "../../public/data/archive.json";
+const cases = [...archive].reverse();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Case Archive</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+        background: #f7f7f7;
+        color: #222;
+      }
+
+      .case-row {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+      }
+
+      .tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #eee;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 13px;
+      }
+
+      a {
+        color: #111;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p><a href="/daily-consulting-case/">Back to today’s case</a></p>
+    <h1>Case Archive</h1>
+
+    {
+      cases.length === 0 ? (
+        <p>No archived cases yet.</p>
+      ) : (
+        cases.map((caseItem) => (
+          <div class="case-row">
+            <p>{caseItem.publish_date}</p>
+            <h2>{caseItem.title}</h2>
+            <div class="tags">
+              <span class="tag">{caseItem.case_type}</span>
+              <span class="tag">{caseItem.industry}</span>
+              <span class="tag">{caseItem.difficulty}</span>
+            </div>
+            <p>{caseItem.candidate_prompt}</p>
+          </div>
+        ))
+      )
+    }
+  </body>
+</html>

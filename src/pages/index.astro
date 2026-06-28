@@ -1,0 +1,89 @@
+---
+import todayCase from "../../public/data/today.json";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daily Consulting Case</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+        background: #f7f7f7;
+        color: #222;
+      }
+
+      .card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .tag {
+        background: #eee;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        margin-top: 28px;
+      }
+
+      a {
+        color: #111;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p><a href="/daily-consulting-case/archive">View archive</a></p>
+
+    <div class="card">
+      <p>{todayCase.publish_date}</p>
+      <h1>{todayCase.title}</h1>
+
+      <div class="tags">
+        <span class="tag">{todayCase.case_type}</span>
+        <span class="tag">{todayCase.industry}</span>
+        <span class="tag">{todayCase.difficulty}</span>
+      </div>
+
+      <h2>Background</h2>
+      <p>{todayCase.background}</p>
+
+      <h2>Prompt</h2>
+      <p>{todayCase.candidate_prompt}</p>
+
+      <h2>Good answer includes</h2>
+      <ul>
+        {todayCase.good_answer_includes.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <h2>Great answer includes</h2>
+      <ul>
+        {todayCase.great_answer_includes.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <h2>Interviewer notes</h2>
+      <p>{todayCase.interviewer_notes}</p>
+    </div>
+  </body>
+</html>

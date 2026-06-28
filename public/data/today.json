@@ -1,0 +1,24 @@
+{
+  "id": "market-entry-fitness-001",
+  "title": "Boutique Fitness Expansion",
+  "case_type": "Market Entry",
+  "industry": "Fitness",
+  "difficulty": "Medium",
+  "background": "A boutique fitness chain with 30 locations is considering entering Chicago after several years of growth in smaller Midwest markets.",
+  "candidate_prompt": "Should the client enter the Chicago market, and what factors should they evaluate before making the decision?",
+  "good_answer_includes": [
+    "Evaluates market size and growth",
+    "Assesses competition",
+    "Considers customer segments",
+    "Reviews location-level economics"
+  ],
+  "great_answer_includes": [
+    "Calculates break-even membership levels",
+    "Compares premium versus budget positioning",
+    "Suggests a pilot launch before full expansion",
+    "Identifies real estate and customer acquisition risks"
+  ],
+  "interviewer_notes": "Strong candidates should consider market attractiveness, financial viability, competitive dynamics, and implementation risk.",
+  "approved": true,
+  "publish_date": "2026-06-28"
+}

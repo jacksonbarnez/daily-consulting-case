@@ -1,0 +1,48 @@
+[
+  {
+    "id": "profitability-airline-001",
+    "title": "Regional Airline Margin Decline",
+    "case_type": "Profitability",
+    "industry": "Airlines",
+    "difficulty": "Medium",
+    "background": "A regional airline has seen profit margins decline over the past two years despite stable passenger volume. The CEO wants to understand what is driving the decline and what actions the company should take.",
+    "candidate_prompt": "What factors would you investigate to determine why profitability is falling, and what recommendations would you make?",
+    "good_answer_includes": [
+      "Breaks profit into revenue and cost drivers",
+      "Looks at ticket pricing, passenger volume, and route mix",
+      "Considers fixed and variable costs",
+      "Identifies external factors such as fuel prices and competition"
+    ],
+    "great_answer_includes": [
+      "Segments profitability by route",
+      "Analyzes load factor and pricing tradeoffs",
+      "Considers fuel cost sensitivity",
+      "Recommends specific actions such as route rationalization or pricing changes"
+    ],
+    "interviewer_notes": "Strong candidates should structure the case around revenue, costs, route-level economics, and competitive dynamics.",
+    "approved": true
+  },
+  {
+    "id": "market-entry-fitness-001",
+    "title": "Boutique Fitness Expansion",
+    "case_type": "Market Entry",
+    "industry": "Fitness",
+    "difficulty": "Medium",
+    "background": "A boutique fitness chain with 30 locations is considering entering Chicago after several years of growth in smaller Midwest markets.",
+    "candidate_prompt": "Should the client enter the Chicago market, and what factors should they evaluate before making the decision?",
+    "good_answer_includes": [
+      "Evaluates market size and growth",
+      "Assesses competition",
+      "Considers customer segments",
+      "Reviews location-level economics"
+    ],
+    "great_answer_includes": [
+      "Calculates break-even membership levels",
+      "Compares premium versus budget positioning",
+      "Suggests a pilot launch before full expansion",
+      "Identifies real estate and customer acquisition risks"
+    ],
+    "interviewer_notes": "Strong candidates should consider market attractiveness, financial viability, competitive dynamics, and implementation risk.",
+    "approved": true
+  }
+]
