@@ -1,8 +1,12 @@
 ---
 import todayCase from "../../public/data/today.json";
 
-const base = import.meta.env.BASE_URL;
-const archiveHref = `${base}archive`;
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+const archiveHref = `${base}archive/`;
+const logoHref = `${base}images/book-logov2.png`;
 ---
 
 <html lang="en">
@@ -682,19 +686,19 @@ const archiveHref = `${base}archive`;
 
   <body>
     <main class="page-shell">
-      <nav class="top-nav" aria-label="Main navigation">
-        <a class="brand" href={base}>
-          <span class="brand-mark">
-			<img src={`${base}images/book-logov2.png`} alt="Daily Case logo" />
-		  </span>
-          <span>Daily Case</span>
-        </a>
+<nav class="top-nav" aria-label="Main navigation">
+  <a class="brand" href={base}>
+    <span class="brand-mark">
+      <img src={logoHref} alt="Daily Case logo" />
+    </span>
+    <span>Daily Case</span>
+  </a>
 
-        <div class="nav-links">
-          <a class="nav-link" href={archiveHref}>Archive</a>
-          <a class="nav-link" href="#today-case">Today’s Case</a>
-        </div>
-      </nav>
+  <div class="nav-links">
+    <a class="nav-link" href={archiveHref}>Archive</a>
+    <a class="nav-link" href="#today-case">Today’s Case</a>
+  </div>
+</nav>
 
       <section class="hero">
         <div class="hero-copy">
