@@ -44,5 +44,603 @@
     ],
     "interviewer_notes": "Strong candidates should consider market attractiveness, financial viability, competitive dynamics, and implementation risk.",
     "approved": true
-  }
+  },
+{
+"id": "profitability-grocery-001",
+"title": "Urban Grocery Store Margin Decline",
+"case_type": "Profitability",
+"industry": "Grocery Retail",
+"difficulty": "Medium",
+"background": "A regional grocery chain operates 85 stores across several large metro areas. Over the past 18 months, revenue has grown slightly, but operating profit has fallen by 12%. Leadership wants to understand why margins are shrinking and what actions they should take.",
+"candidate_prompt": "How would you determine what is causing the profit decline, and what recommendations would you make to improve profitability?",
+"good_answer_includes": [
+"Breaks profitability into revenue and cost drivers",
+"Examines changes in basket size, traffic, and pricing",
+"Analyzes labor, rent, shrink, and supplier cost trends",
+"Considers differences across store locations or formats"
+],
+"great_answer_includes": [
+"Segments performance by urban, suburban, and premium locations",
+"Identifies product mix shifts toward lower-margin categories",
+"Quantifies impact of shrink and labor cost increases",
+"Recommends targeted pricing, assortment, and operational changes"
+],
+"interviewer_notes": "Strong candidates should avoid assuming revenue growth means healthy performance and should investigate margin, mix, and cost structure carefully.",
+"approved": true
+},
+{
+"id": "profitability-hotel-001",
+"title": "Business Hotel Profitability Pressure",
+"case_type": "Profitability",
+"industry": "Hospitality",
+"difficulty": "Medium",
+"background": "A hotel group owns 40 business-focused hotels near airports and downtown office districts. Occupancy has returned to pre-pandemic levels, but profits remain below historical averages. The CEO wants to know why profitability has not recovered.",
+"candidate_prompt": "What factors would you analyze to explain the profit gap, and what actions should the hotel group consider?",
+"good_answer_includes": [
+"Analyzes revenue per available room and occupancy",
+"Compares business, leisure, and group travel segments",
+"Reviews labor, utilities, maintenance, and food service costs",
+"Considers changes in customer behavior and pricing power"
+],
+"great_answer_includes": [
+"Identifies mix shift from higher-margin corporate travel to lower-rate leisure travel",
+"Quantifies cost increases per occupied room",
+"Evaluates whether amenities should be reduced or repriced",
+"Recommends segment-specific pricing and staffing adjustments"
+],
+"interviewer_notes": "Strong candidates should separate occupancy recovery from profit recovery and consider rate, mix, and operating cost changes.",
+"approved": true
+},
+{
+"id": "profitability-fitness-001",
+"title": "Premium Gym Chain Profit Drop",
+"case_type": "Profitability",
+"industry": "Fitness",
+"difficulty": "Easy",
+"background": "A premium gym chain operates 60 locations in major U.S. cities. Membership has grown by 8% this year, but total profit has declined. Management is confused because the company appears to be attracting more customers than ever.",
+"candidate_prompt": "How would you investigate why profit is falling despite membership growth?",
+"good_answer_includes": [
+"Compares membership growth with average revenue per member",
+"Analyzes fixed and variable costs by location",
+"Reviews discounting, churn, and promotional offers",
+"Considers capacity constraints and utilization"
+],
+"great_answer_includes": [
+"Identifies whether new members are joining at lower promotional rates",
+"Calculates contribution margin by member type",
+"Evaluates overcrowding effects on retention and premium positioning",
+"Recommends pricing, member segmentation, and location-level cost actions"
+],
+"interviewer_notes": "Strong candidates should recognize that customer growth can be unprofitable if discounts, churn, or variable costs increase faster than revenue.",
+"approved": true
+},
+{
+"id": "profitability-airline-002",
+"title": "Low-Cost Airline Route Losses",
+"case_type": "Profitability",
+"industry": "Airlines",
+"difficulty": "Hard",
+"background": "A low-cost airline has added 20 new domestic routes over the past year. While total passengers have increased, the company’s profit margin has dropped from 9% to 4%. Executives want to determine whether the new routes are hurting overall profitability.",
+"candidate_prompt": "How would you evaluate the profitability of the new routes and decide what the airline should do next?",
+"good_answer_includes": [
+"Compares revenue and cost by route",
+"Analyzes load factor, ticket price, and ancillary revenue",
+"Reviews fuel, crew, airport, and maintenance costs",
+"Considers competitive dynamics on new routes"
+],
+"great_answer_includes": [
+"Calculates route-level contribution margin",
+"Distinguishes startup losses from structurally unprofitable routes",
+"Evaluates aircraft utilization and schedule efficiency",
+"Recommends route closures, frequency changes, or pricing adjustments"
+],
+"interviewer_notes": "Strong candidates should move from company-level averages to route-level economics and distinguish profitable growth from volume growth.",
+"approved": true
+},
+{
+"id": "profitability-coffee-001",
+"title": "Coffee Chain Breakfast Margin Decline",
+"case_type": "Profitability",
+"industry": "Food & Beverage",
+"difficulty": "Medium",
+"background": "A national coffee chain recently expanded its breakfast menu to include hot sandwiches and baked goods. Morning traffic has increased, but store-level margins have declined. The leadership team wants to understand whether the new food strategy is working.",
+"candidate_prompt": "How would you analyze the profitability impact of the expanded breakfast menu?",
+"good_answer_includes": [
+"Compares incremental revenue from food with incremental costs",
+"Analyzes food margins versus beverage margins",
+"Reviews labor, preparation time, and waste",
+"Considers whether food purchases increase beverage attachment"
+],
+"great_answer_includes": [
+"Calculates contribution margin by menu category",
+"Measures cannibalization of higher-margin beverage-only orders",
+"Identifies operational bottlenecks during peak hours",
+"Recommends menu simplification, bundling, or selective store rollout"
+],
+"interviewer_notes": "Strong candidates should evaluate both direct food profitability and the indirect impact on throughput, attachment, and customer behavior.",
+"approved": true
+},
+{
+"id": "profitability-ecommerce-001",
+"title": "Online Furniture Retailer Profit Squeeze",
+"case_type": "Profitability",
+"industry": "E-Commerce",
+"difficulty": "Medium",
+"background": "An online furniture retailer has grown revenue by 20% year over year, but net profit has declined. The company sells sofas, tables, beds, and home office furniture directly to consumers. Leadership wants to understand what is eroding profitability.",
+"candidate_prompt": "What would you investigate to identify the causes of declining profit, and what improvements would you recommend?",
+"good_answer_includes": [
+"Analyzes revenue growth by product category",
+"Reviews gross margin, shipping, and return costs",
+"Considers customer acquisition costs",
+"Examines discounting and promotional activity"
+],
+"great_answer_includes": [
+"Identifies oversized item shipping and return costs as potential margin drains",
+"Calculates profitability by customer acquisition channel",
+"Evaluates whether growth is concentrated in lower-margin categories",
+"Recommends pricing, logistics, and return policy changes"
+],
+"interviewer_notes": "Strong candidates should recognize that e-commerce growth can hide fulfillment, returns, and acquisition cost problems.",
+"approved": true
+},
+{
+"id": "profitability-hospital-001",
+"title": "Community Hospital Operating Losses",
+"case_type": "Profitability",
+"industry": "Healthcare",
+"difficulty": "Hard",
+"background": "A community hospital has experienced three consecutive years of operating losses. Patient volume is stable, but leadership says reimbursement rates are under pressure and staffing costs are rising. The board wants a path back to profitability.",
+"candidate_prompt": "How would you diagnose the hospital’s profitability problem and identify potential solutions?",
+"good_answer_includes": [
+"Analyzes revenue by payer type and service line",
+"Reviews labor, supplies, and overhead costs",
+"Considers utilization and capacity by department",
+"Examines reimbursement and patient mix trends"
+],
+"great_answer_includes": [
+"Segments profitability by service line and payer mix",
+"Identifies high-cost staffing models or agency labor dependence",
+"Evaluates opportunities to shift care to outpatient settings",
+"Recommends a balanced plan that protects care quality while improving margins"
+],
+"interviewer_notes": "Strong candidates should handle healthcare profit levers carefully and consider reimbursement, service mix, staffing, and quality constraints.",
+"approved": true
+},
+{
+"id": "profitability-saas-001",
+"title": "SaaS Company Growth Without Profit",
+"case_type": "Profitability",
+"industry": "Software",
+"difficulty": "Medium",
+"background": "A B2B SaaS company provides workflow software to mid-sized businesses. Annual recurring revenue has grown 30%, but the company remains unprofitable. Investors are pressuring management to improve margins without stopping growth entirely.",
+"candidate_prompt": "How would you evaluate why the company is unprofitable and what steps it should take?",
+"good_answer_includes": [
+"Analyzes revenue growth, pricing, and customer segments",
+"Reviews customer acquisition cost and sales efficiency",
+"Examines churn and retention",
+"Assesses product development and support costs"
+],
+"great_answer_includes": [
+"Calculates lifetime value versus customer acquisition cost",
+"Segments profitability by customer size or sales channel",
+"Identifies whether growth is coming from low-value customers",
+"Recommends pricing, sales efficiency, and retention initiatives"
+],
+"interviewer_notes": "Strong candidates should focus on unit economics, not just total revenue growth.",
+"approved": true
+},
+{
+"id": "profitability-theme-park-001",
+"title": "Theme Park Attendance Recovery, Profit Decline",
+"case_type": "Profitability",
+"industry": "Entertainment",
+"difficulty": "Medium",
+"background": "A regional theme park has seen attendance return to historical levels after several weak seasons. However, profits are still 15% below prior peaks. Management wants to understand why the recovery in visitors has not translated into profit.",
+"candidate_prompt": "What would you analyze to explain the profit decline and improve performance?",
+"good_answer_includes": [
+"Analyzes ticket revenue and attendance trends",
+"Reviews food, merchandise, and parking revenue",
+"Examines labor, maintenance, and utility costs",
+"Considers customer mix and pricing changes"
+],
+"great_answer_includes": [
+"Calculates per-guest spending across major categories",
+"Identifies whether attendance growth is driven by discounted tickets",
+"Evaluates labor scheduling and ride maintenance costs",
+"Recommends pricing, bundling, and in-park spending initiatives"
+],
+"interviewer_notes": "Strong candidates should look beyond attendance and focus on per-guest economics and operating cost inflation.",
+"approved": true
+},
+{
+"id": "profitability-restaurant-001",
+"title": "Casual Dining Chain Profitability Decline",
+"case_type": "Profitability",
+"industry": "Restaurants",
+"difficulty": "Easy",
+"background": "A casual dining chain with 120 locations has experienced a 10% decline in profit over the past year. Same-store sales are flat, but management believes costs have increased across the business.",
+"candidate_prompt": "How would you determine what is driving the decline in profit and what actions the chain should take?",
+"good_answer_includes": [
+"Breaks profit into revenue and cost components",
+"Reviews food, labor, rent, and utility costs",
+"Analyzes traffic, average check size, and menu mix",
+"Considers regional or store-level performance differences"
+],
+"great_answer_includes": [
+"Identifies menu items with poor margin contribution",
+"Quantifies labor productivity by location",
+"Evaluates pricing opportunities without hurting traffic",
+"Recommends menu engineering and operational improvements"
+],
+"interviewer_notes": "Strong candidates should use a simple profitability framework but apply it at the store and menu-item level.",
+"approved": true
+},
+{
+"id": "profitability-logistics-001",
+"title": "Last-Mile Delivery Profit Problem",
+"case_type": "Profitability",
+"industry": "Logistics",
+"difficulty": "Hard",
+"background": "A last-mile delivery company serves retailers in 12 metro areas. Delivery volume has increased substantially, but the company is losing money in several markets. Leadership wants to identify why some cities are profitable while others are not.",
+"candidate_prompt": "How would you analyze market-level profitability and recommend improvements?",
+"good_answer_includes": [
+"Compares revenue and cost by market",
+"Analyzes delivery density, route efficiency, and driver costs",
+"Reviews pricing by customer or contract",
+"Considers order volume variability and service requirements"
+],
+"great_answer_includes": [
+"Calculates cost per delivery by market and route type",
+"Identifies density thresholds required for profitability",
+"Segments customers by margin contribution",
+"Recommends market exits, pricing changes, or route optimization"
+],
+"interviewer_notes": "Strong candidates should recognize the importance of density economics in delivery businesses.",
+"approved": true
+},
+{
+"id": "profitability-streaming-001",
+"title": "Streaming Service Subscriber Growth Losses",
+"case_type": "Profitability",
+"industry": "Media",
+"difficulty": "Medium",
+"background": "A niche streaming service focused on documentaries has doubled its subscriber base in two years, but losses have widened. The company wants to understand whether the growth strategy is sustainable.",
+"candidate_prompt": "How would you evaluate why the streaming service is losing more money despite subscriber growth?",
+"good_answer_includes": [
+"Analyzes subscription revenue and pricing",
+"Reviews content production and licensing costs",
+"Examines customer acquisition cost and churn",
+"Considers subscriber engagement and retention"
+],
+"great_answer_includes": [
+"Calculates payback period on customer acquisition spend",
+"Segments subscribers by tenure and profitability",
+"Evaluates fixed content costs versus subscriber scale",
+"Recommends pricing tiers, content focus, or marketing efficiency improvements"
+],
+"interviewer_notes": "Strong candidates should distinguish between scalable fixed costs and variable acquisition or retention costs.",
+"approved": true
+},
+{
+"id": "profitability-apparel-001",
+"title": "Athletic Apparel Brand Margin Compression",
+"case_type": "Profitability",
+"industry": "Apparel",
+"difficulty": "Medium",
+"background": "An athletic apparel brand sells through its own website, retail stores, and wholesale partners. Revenue has grown, but gross margins have declined for four consecutive quarters. The CFO wants to identify the root cause.",
+"candidate_prompt": "What would you analyze to determine why margins are falling, and what should the company do?",
+"good_answer_includes": [
+"Analyzes revenue and margin by channel",
+"Reviews product mix and discounting",
+"Examines manufacturing, freight, and inventory costs",
+"Considers wholesale versus direct-to-consumer economics"
+],
+"great_answer_includes": [
+"Identifies channel mix shifts that reduce average margin",
+"Quantifies markdown and inventory clearance impact",
+"Evaluates product-level margin performance",
+"Recommends assortment, pricing, and channel strategy changes"
+],
+"interviewer_notes": "Strong candidates should examine both channel mix and product mix rather than assuming all revenue growth is equally valuable.",
+"approved": true
+},
+{
+"id": "profitability-auto-repair-001",
+"title": "Auto Repair Chain Profit Decline",
+"case_type": "Profitability",
+"industry": "Automotive Services",
+"difficulty": "Easy",
+"background": "A chain of auto repair shops has 75 locations across the Southeast. Customer visits have remained steady, but profit per shop has declined over the past year. Management wants to understand the cause and improve shop performance.",
+"candidate_prompt": "How would you investigate the decline in profit per shop?",
+"good_answer_includes": [
+"Analyzes average ticket size and service mix",
+"Reviews technician labor costs and productivity",
+"Examines parts costs and supplier pricing",
+"Compares performance across locations"
+],
+"great_answer_includes": [
+"Identifies low-margin services taking up technician capacity",
+"Measures revenue per labor hour",
+"Evaluates parts sourcing and inventory practices",
+"Recommends service mix, pricing, and scheduling improvements"
+],
+"interviewer_notes": "Strong candidates should focus on shop-level productivity and service mix.",
+"approved": true
+},
+{
+"id": "profitability-pharmacy-001",
+"title": "Retail Pharmacy Profitability Challenge",
+"case_type": "Profitability",
+"industry": "Retail Pharmacy",
+"difficulty": "Hard",
+"background": "A retail pharmacy chain operates 300 stores. Prescription volume has increased, but overall profits have declined. The CEO wants to understand how prescription economics, front-of-store sales, and operating costs are affecting performance.",
+"candidate_prompt": "How would you diagnose the profitability issue and identify potential improvements?",
+"good_answer_includes": [
+"Analyzes prescription revenue, reimbursement, and volume",
+"Reviews front-of-store sales and margins",
+"Examines labor, rent, and inventory costs",
+"Considers store-level variation"
+],
+"great_answer_includes": [
+"Segments profitability by prescription type and payer",
+"Identifies declining front-of-store contribution as a potential issue",
+"Evaluates staffing model and pharmacist utilization",
+"Recommends store format, service, and assortment changes"
+],
+"interviewer_notes": "Strong candidates should understand that higher prescription volume may not offset reimbursement pressure or retail margin decline.",
+"approved": true
+},
+{
+"id": "profitability-construction-001",
+"title": "Construction Contractor Project Losses",
+"case_type": "Profitability",
+"industry": "Construction",
+"difficulty": "Medium",
+"background": "A commercial construction contractor has won several large projects recently, but overall profit has declined. Some projects are finishing over budget and behind schedule. Management wants to improve project profitability.",
+"candidate_prompt": "How would you determine why project profitability is declining and what actions should be taken?",
+"good_answer_includes": [
+"Compares estimated versus actual project costs",
+"Analyzes labor, materials, subcontractor, and delay costs",
+"Reviews project bidding and pricing assumptions",
+"Considers project complexity and client changes"
+],
+"great_answer_includes": [
+"Identifies whether underbidding is causing unprofitable growth",
+"Quantifies margin impact of delays and change orders",
+"Segments projects by type, size, and profitability",
+"Recommends improved bidding discipline and project controls"
+],
+"interviewer_notes": "Strong candidates should connect profitability to project selection, pricing, execution, and risk management.",
+"approved": true
+},
+{
+"id": "profitability-dental-001",
+"title": "Dental Practice Group Margin Decline",
+"case_type": "Profitability",
+"industry": "Healthcare Services",
+"difficulty": "Medium",
+"background": "A dental practice group owns 45 clinics. Patient appointments have increased, but EBITDA margins have declined. Leadership believes the issue may involve staffing, procedure mix, or insurance reimbursement.",
+"candidate_prompt": "How would you analyze the margin decline and recommend improvements?",
+"good_answer_includes": [
+"Analyzes revenue by procedure type",
+"Reviews payer mix and reimbursement rates",
+"Examines dentist, hygienist, and support staff productivity",
+"Compares profitability across clinics"
+],
+"great_answer_includes": [
+"Calculates chair utilization and revenue per provider hour",
+"Identifies mix shift toward lower-margin insured procedures",
+"Evaluates staffing ratios by clinic",
+"Recommends scheduling, payer, and procedure mix improvements"
+],
+"interviewer_notes": "Strong candidates should consider both clinical capacity utilization and reimbursement economics.",
+"approved": true
+},
+{
+"id": "profitability-petcare-001",
+"title": "Pet Care Chain Profit Slippage",
+"case_type": "Profitability",
+"industry": "Pet Services",
+"difficulty": "Easy",
+"background": "A pet care chain offers grooming, boarding, daycare, and retail products. Revenue is up 15%, but profits have grown only 2%. The owner wants to understand why the business is not seeing more operating leverage.",
+"candidate_prompt": "How would you investigate why profit growth is lagging behind revenue growth?",
+"good_answer_includes": [
+"Analyzes revenue and margin by service line",
+"Reviews labor requirements for each service",
+"Examines pricing, utilization, and capacity",
+"Considers retail product margins"
+],
+"great_answer_includes": [
+"Identifies services with high revenue but low labor productivity",
+"Calculates contribution margin by service type",
+"Evaluates capacity constraints in grooming or boarding",
+"Recommends pricing, scheduling, and service mix changes"
+],
+"interviewer_notes": "Strong candidates should recognize that service businesses depend heavily on labor utilization and mix.",
+"approved": true
+},
+{
+"id": "profitability-bank-001",
+"title": "Regional Bank Branch Profitability",
+"case_type": "Profitability",
+"industry": "Banking",
+"difficulty": "Hard",
+"background": "A regional bank operates 180 branches. Digital banking adoption has increased, but the branch network remains expensive to maintain. Overall bank profit is stable, but branch-level profitability is declining.",
+"candidate_prompt": "How would you evaluate the profitability of the branch network and recommend a path forward?",
+"good_answer_includes": [
+"Analyzes revenue and cost by branch",
+"Reviews customer traffic, deposits, and product sales",
+"Examines staffing, rent, and operating costs",
+"Considers digital adoption and customer behavior"
+],
+"great_answer_includes": [
+"Segments branches by profitability and strategic importance",
+"Calculates cost-to-serve by customer segment",
+"Evaluates consolidation, format changes, or advisory-focused branches",
+"Balances cost savings against customer retention risk"
+],
+"interviewer_notes": "Strong candidates should avoid recommending blanket closures and instead segment branches by economics and strategic value.",
+"approved": true
+},
+{
+"id": "profitability-manufacturing-001",
+"title": "Industrial Pump Manufacturer Margin Decline",
+"case_type": "Profitability",
+"industry": "Manufacturing",
+"difficulty": "Medium",
+"background": "An industrial pump manufacturer sells to energy, mining, and municipal customers. Revenue has been stable, but profit margins have declined due to rising production costs and inconsistent demand across customer segments.",
+"candidate_prompt": "How would you diagnose the margin decline and identify improvement opportunities?",
+"good_answer_includes": [
+"Analyzes revenue and margin by customer segment",
+"Reviews raw material, labor, and overhead costs",
+"Examines product mix and pricing",
+"Considers production efficiency and capacity utilization"
+],
+"great_answer_includes": [
+"Identifies low-margin custom products or customer segments",
+"Quantifies impact of raw material cost changes",
+"Evaluates pricing pass-through ability by contract type",
+"Recommends product standardization, pricing changes, or customer prioritization"
+],
+"interviewer_notes": "Strong candidates should connect margin decline to product mix, input costs, pricing power, and manufacturing utilization.",
+"approved": true
+},
+{
+"id": "profitability-education-001",
+"title": "Private Tutoring Company Profit Decline",
+"case_type": "Profitability",
+"industry": "Education Services",
+"difficulty": "Easy",
+"background": "A private tutoring company serves middle school and high school students through online and in-person sessions. Revenue has increased, but profits are down because the company has hired more tutors and expanded marketing.",
+"candidate_prompt": "How would you determine whether the company’s growth is profitable and what changes should be made?",
+"good_answer_includes": [
+"Analyzes revenue by student type and service format",
+"Reviews tutor wages and utilization",
+"Examines marketing costs and customer acquisition",
+"Compares online versus in-person margins"
+],
+"great_answer_includes": [
+"Calculates tutor utilization and contribution margin per session",
+"Segments customers by acquisition channel and retention",
+"Evaluates pricing differences across subjects or formats",
+"Recommends scheduling, pricing, and marketing efficiency improvements"
+],
+"interviewer_notes": "Strong candidates should focus on unit economics by session, tutor utilization, and customer acquisition payback.",
+"approved": true
+},
+{
+"id": "profitability-solar-001",
+"title": "Residential Solar Installer Profitability Issue",
+"case_type": "Profitability",
+"industry": "Renewable Energy",
+"difficulty": "Medium",
+"background": "A residential solar installation company has grown quickly across three states. Installations are up 40%, but profit margins have declined due to longer project timelines, higher labor costs, and more customer cancellations.",
+"candidate_prompt": "How would you analyze the company’s profitability problem and recommend improvements?",
+"good_answer_includes": [
+"Analyzes revenue and margin per installation",
+"Reviews labor, equipment, permitting, and sales costs",
+"Examines cancellation rates and project delays",
+"Compares profitability across states or sales channels"
+],
+"great_answer_includes": [
+"Calculates contribution margin by installation type",
+"Identifies bottlenecks in permitting or crew scheduling",
+"Evaluates sales commission structure and cancellation risk",
+"Recommends operational improvements and tighter customer qualification"
+],
+"interviewer_notes": "Strong candidates should recognize that installation volume growth can hurt margins if execution capacity and sales quality are weak.",
+"approved": true
+},
+{
+"id": "profitability-movie-theater-001",
+"title": "Movie Theater Chain Profit Recovery",
+"case_type": "Profitability",
+"industry": "Entertainment",
+"difficulty": "Medium",
+"background": "A movie theater chain has seen ticket sales recover after a difficult period, but profits remain below expectations. Management wants to understand whether the issue is ticket pricing, concessions, labor, or changing customer habits.",
+"candidate_prompt": "How would you evaluate the theater chain’s profitability and identify the best improvement levers?",
+"good_answer_includes": [
+"Analyzes admissions revenue and ticket pricing",
+"Reviews concessions revenue and margins",
+"Examines labor, rent, and utility costs",
+"Considers attendance patterns and movie release schedules"
+],
+"great_answer_includes": [
+"Calculates profit contribution per guest",
+"Identifies concession attachment rate as a key driver",
+"Evaluates premium seating or subscription models",
+"Recommends pricing, bundling, and staffing improvements"
+],
+"interviewer_notes": "Strong candidates should look beyond ticket volume and evaluate per-guest economics.",
+"approved": true
+},
+{
+"id": "profitability-beauty-001",
+"title": "Beauty Salon Group Profit Decline",
+"case_type": "Profitability",
+"industry": "Beauty Services",
+"difficulty": "Easy",
+"background": "A beauty salon group operates 25 locations offering haircuts, coloring, skincare, and retail products. Revenue is stable, but profit has declined over the past year. The owner wants to understand which services or costs are causing the issue.",
+"candidate_prompt": "How would you analyze the profit decline and recommend actions?",
+"good_answer_includes": [
+"Analyzes revenue by service and product category",
+"Reviews stylist utilization and labor costs",
+"Examines pricing and appointment volume",
+"Considers rent, supplies, and retail product margins"
+],
+"great_answer_includes": [
+"Calculates margin by service type and stylist hour",
+"Identifies underutilized time slots or low-margin services",
+"Evaluates upsell opportunities in retail products",
+"Recommends pricing, scheduling, and service mix changes"
+],
+"interviewer_notes": "Strong candidates should focus on labor utilization and service-level profitability.",
+"approved": true
+},
+{
+"id": "profitability-agriculture-001",
+"title": "Specialty Produce Farm Margin Pressure",
+"case_type": "Profitability",
+"industry": "Agriculture",
+"difficulty": "Hard",
+"background": "A specialty produce farm sells organic berries and leafy greens to grocery chains, restaurants, and farmers markets. Revenue has grown, but profits have declined due to spoilage, labor costs, and inconsistent wholesale pricing.",
+"candidate_prompt": "How would you determine what is causing the profitability decline and what should the farm do?",
+"good_answer_includes": [
+"Analyzes revenue and margin by crop and sales channel",
+"Reviews labor, packaging, transportation, and spoilage costs",
+"Examines pricing differences across customers",
+"Considers seasonality and yield variability"
+],
+"great_answer_includes": [
+"Quantifies spoilage impact by crop and channel",
+"Identifies whether wholesale growth is diluting margins",
+"Evaluates harvest planning and demand forecasting",
+"Recommends channel mix, pricing, and waste reduction initiatives"
+],
+"interviewer_notes": "Strong candidates should consider perishable inventory dynamics and channel profitability.",
+"approved": true
+},
+{
+"id": "profitability-cybersecurity-001",
+"title": "Cybersecurity Consulting Firm Margin Decline",
+"case_type": "Profitability",
+"industry": "Professional Services",
+"difficulty": "Medium",
+"background": "A cybersecurity consulting firm serves mid-market companies with risk assessments, implementation projects, and managed monitoring services. Revenue has increased, but profit margins have declined as the firm has hired aggressively.",
+"candidate_prompt": "How would you evaluate the firm’s profitability and recommend improvements?",
+"good_answer_includes": [
+"Analyzes revenue and margin by service line",
+"Reviews consultant utilization and billing rates",
+"Examines hiring, training, and overhead costs",
+"Considers project pricing and scope creep"
+],
+"great_answer_includes": [
+"Calculates utilization and margin by consultant level",
+"Identifies low-margin custom projects or underpriced work",
+"Evaluates recurring managed services versus project work",
+"Recommends pricing discipline, staffing model changes, and scope controls"
+],
+"interviewer_notes": "Strong candidates should understand the importance of utilization, billing rates, and project scope in professional services profitability.",
+"approved": true
+}
 ]
