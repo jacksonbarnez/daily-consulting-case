@@ -294,32 +294,40 @@ const logoHref = `${base}images/book-logov2.png`;
     z-index: 1;
   }
 
-  .mini-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 26px;
-    position: relative;
-    z-index: 1;
-  }
+.practice-variety {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  position: relative;
+  z-index: 1;
+}
 
-  .metric {
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 16px;
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.08);
-  }
+.practice-variety-label {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.62);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
 
-  .metric strong {
-    display: block;
-    font-size: 1.05rem;
-    margin-bottom: 3px;
-  }
+.practice-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-  .metric span {
-    color: rgba(255, 255, 255, 0.68);
-    font-size: 0.78rem;
-  }
+.practice-pill-row span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.78rem;
+  font-weight: 750;
+}
 
   .case-card {
     background: var(--card);
@@ -863,6 +871,108 @@ const logoHref = `${base}images/book-logov2.png`;
     font-size: 0.92rem;
   }
 
+.streak-card {
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.09), transparent 20rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(236, 253, 245, 0.72));
+  padding: 24px;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.07);
+}
+
+.streak-card-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 22px;
+  align-items: center;
+}
+
+.streak-card-header h2 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+  letter-spacing: -0.04em;
+}
+
+.streak-card-header p {
+  margin: 0;
+  color: var(--slate);
+  line-height: 1.65;
+  max-width: 720px;
+}
+
+.streak-status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 9px 13px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: rgba(251, 191, 36, 0.22);
+  border: 1px solid rgba(245, 158, 11, 0.24);
+  white-space: nowrap;
+}
+
+.streak-status-pill.is-complete {
+  color: #047857;
+  background: rgba(16, 185, 129, 0.16);
+  border-color: rgba(16, 185, 129, 0.24);
+}
+
+.streak-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.streak-stat {
+  border-radius: 18px;
+  padding: 16px;
+  background: white;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+}
+
+.streak-stat span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.streak-stat strong {
+  display: inline-block;
+  color: var(--navy);
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.streak-stat small {
+  color: var(--muted);
+  font-weight: 750;
+  margin-left: 4px;
+}
+
+@media (max-width: 760px) {
+  .streak-card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .streak-status-pill {
+    width: fit-content;
+  }
+
+  .streak-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
   @keyframes fadeUp {
     from {
       opacity: 0;
@@ -975,9 +1085,7 @@ const logoHref = `${base}images/book-logov2.png`;
       padding: 22px;
     }
 
-    .mini-metrics {
-      grid-template-columns: 1fr;
-    }
+
 
     .hero-actions {
       flex-direction: column;
@@ -1016,8 +1124,8 @@ const logoHref = `${base}images/book-logov2.png`;
           <h1>Practice sharper case thinking in minutes.</h1>
 
           <p class="hero-subtitle">
-            Read the prompt, structure your answer, write your thinking, then reveal the interviewer rubric when you are ready to compare your approach.
-          </p>
+  Build your case reps across different case types, industries, and difficulty levels. Each prompt is designed to help you practice structuring ambiguous problems, identifying key drivers, and comparing your answer against an interviewer-style rubric.
+</p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#today-case">Start today’s case</a>
@@ -1027,29 +1135,95 @@ const logoHref = `${base}images/book-logov2.png`;
 
         <aside class="hero-panel" aria-label="Practice flow preview">
           <div class="hero-panel-inner">
-            <div class="panel-kicker">Practice flow</div>
-            <h2 class="panel-title">Attempt first. Rubric second.</h2>
-            <p class="panel-copy">
-              The interviewer rubric stays hidden until you decide you are ready. That keeps the practice closer to a real case interview.
-            </p>
+<div class="panel-kicker">Today’s practice flow</div>
 
-            <div class="mini-metrics">
-              <div class="metric">
-                <strong>1</strong>
-                <span>Read prompt</span>
-              </div>
-              <div class="metric">
-                <strong>2</strong>
-                <span>Write ideas</span>
-              </div>
-              <div class="metric">
-                <strong>3</strong>
-                <span>Reveal rubric</span>
-              </div>
-            </div>
+<h2 class="panel-title">
+  Think first. Score yourself. Then reveal the rubric.
+</h2>
+
+<p class="panel-copy">
+  Write your response before seeing the answer guidance, use the coverage estimate as a quick self-check, and then reveal the rubric to compare your thinking against the key points.
+</p>
+
+<div class="practice-variety">
+  <p class="practice-variety-label">Case formats to practice</p>
+
+  <div class="practice-pill-row">
+    <span>Profitability</span>
+    <span>Market entry</span>
+    <span>Growth strategy</span>
+    <span>Pricing</span>
+    <span>Operations</span>
+    <span>Cost reduction</span>
+    <span>Revenue growth</span>
+    <span>Supply chain</span>
+    <span>Product launch</span>
+    <span>Product strategy</span>
+    <span>Go-to-market</span>
+    <span>Market sizing</span>
+    <span>Competitive response</span>
+    <span>M&amp;A</span>
+    <span>Due diligence</span>
+    <span>Turnaround</span>
+    <span>Customer experience</span>
+    <span>Digital transformation</span>
+    <span>Technology strategy</span>
+    <span>Cloud migration</span>
+    <span>AI and automation</span>
+    <span>Data and analytics</span>
+    <span>Cybersecurity</span>
+    <span>SaaS strategy</span>
+    <span>Platform strategy</span>
+    <span>ERP implementation</span>
+    <span>IT modernization</span>
+  </div>
+</div>
           </div>
         </aside>
       </section>
+
+<section
+  class="section streak-card"
+  id="streakCard"
+  data-case-id={todayCase.id}
+  data-case-date={todayCase.publish_date}
+  data-case-type={todayCase.case_type}
+  aria-label="Practice streak"
+>
+  <div class="streak-card-header">
+    <div>
+      <p class="section-label">Practice streak</p>
+      <h2>Build your daily case habit</h2>
+      <p id="streakMessage">
+        Reveal the interviewer rubric after attempting the case to log today’s practice.
+      </p>
+    </div>
+
+    <div class="streak-status-pill" id="streakStatusPill">
+      Not completed yet
+    </div>
+  </div>
+
+  <div class="streak-stats">
+    <div class="streak-stat">
+      <span>Current streak</span>
+      <strong id="currentStreak">0</strong>
+      <small>days</small>
+    </div>
+
+    <div class="streak-stat">
+      <span>Best streak</span>
+      <strong id="bestStreak">0</strong>
+      <small>days</small>
+    </div>
+
+    <div class="streak-stat">
+      <span>Total completed</span>
+      <strong id="totalCompleted">0</strong>
+      <small>cases</small>
+    </div>
+  </div>
+</section>
 
       <article class="case-card" id="today-case">
         <header class="case-header">
@@ -1211,15 +1385,6 @@ const logoHref = `${base}images/book-logov2.png`;
   const revealButton = document.getElementById("revealRubricButton");
   const rubricSection = document.getElementById("rubricSection");
 
-  if (revealButton && rubricSection) {
-    revealButton.addEventListener("click", () => {
-      rubricSection.classList.add("is-visible");
-      revealButton.setAttribute("aria-expanded", "true");
-      revealButton.textContent = "Rubric revealed";
-      revealButton.disabled = true;
-    });
-  }
-
   const MIN_WORDS = 25;
 
   const scoreButton = document.getElementById("scoreResponseButton");
@@ -1237,6 +1402,13 @@ const logoHref = `${base}images/book-logov2.png`;
   const readinessStatus = document.getElementById("readinessStatus");
   const scoreStatus = document.getElementById("scoreStatus");
   const scoreRingFill = document.getElementById("scoreRingFill");
+
+  const streakCard = document.getElementById("streakCard");
+  const streakMessage = document.getElementById("streakMessage");
+  const streakStatusPill = document.getElementById("streakStatusPill");
+  const currentStreak = document.getElementById("currentStreak");
+  const bestStreak = document.getElementById("bestStreak");
+  const totalCompleted = document.getElementById("totalCompleted");
 
   const stopWords = new Set([
     "the",
@@ -1390,8 +1562,119 @@ const logoHref = `${base}images/book-logov2.png`;
       guidanceTitle.textContent = "Add more detail before scoring";
       wordCountLine.textContent = `You have ${wordCount} word${wordCount === 1 ? "" : "s"}. Write at least ${MIN_WORDS} words so the estimate has enough to compare against the rubric.`;
       scoreGuidance.classList.remove("is-ready");
-      scoreResult.hidden = true;
+      if (scoreResult) {
+        scoreResult.hidden = true;
+      }
     }
+  }
+
+  function getLocalDateString(date = new Date()) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+  }
+
+  function getYesterdayDateString() {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    return getLocalDateString(yesterday);
+  }
+
+  function getStreakStats() {
+    const fallbackStats = {
+      currentStreak: 0,
+      bestStreak: 0,
+      totalCompleted: 0,
+      lastCompletedDate: null,
+      completedDates: [],
+      completedCases: []
+    };
+
+    try {
+      const savedStats = localStorage.getItem("dailyCasePracticeStats");
+      return savedStats ? { ...fallbackStats, ...JSON.parse(savedStats) } : fallbackStats;
+    } catch {
+      return fallbackStats;
+    }
+  }
+
+  function saveStreakStats(stats) {
+    localStorage.setItem("dailyCasePracticeStats", JSON.stringify(stats));
+  }
+
+  function renderStreakStats() {
+    if (!streakCard || !currentStreak || !bestStreak || !totalCompleted || !streakMessage || !streakStatusPill) {
+      return;
+    }
+
+    const stats = getStreakStats();
+    const today = getLocalDateString();
+    const completedToday = stats.lastCompletedDate === today;
+
+    currentStreak.textContent = stats.currentStreak;
+    bestStreak.textContent = stats.bestStreak;
+    totalCompleted.textContent = stats.totalCompleted;
+
+    if (completedToday) {
+      streakStatusPill.textContent = "Completed today";
+      streakStatusPill.classList.add("is-complete");
+      streakMessage.textContent = "Today’s case is logged. Come back tomorrow to keep your streak going.";
+    } else {
+      streakStatusPill.textContent = "Not completed yet";
+      streakStatusPill.classList.remove("is-complete");
+      streakMessage.textContent = "Reveal the interviewer rubric after attempting the case to log today’s practice.";
+    }
+  }
+
+  function completeTodayFromRubricReveal() {
+    if (!streakCard) {
+      return;
+    }
+
+    const stats = getStreakStats();
+    const today = getLocalDateString();
+    const yesterday = getYesterdayDateString();
+
+    const caseId = streakCard.dataset.caseId || "unknown-case";
+    const caseDate = streakCard.dataset.caseDate || today;
+    const caseType = streakCard.dataset.caseType || "Unknown";
+
+    if (stats.lastCompletedDate === today) {
+      renderStreakStats();
+      return;
+    }
+
+    const completedDates = new Set(stats.completedDates || []);
+    completedDates.add(today);
+
+    const completedCases = Array.isArray(stats.completedCases)
+      ? stats.completedCases
+      : [];
+
+    completedCases.push({
+      caseId,
+      caseDate,
+      caseType,
+      completedAt: new Date().toISOString()
+    });
+
+    const newCurrentStreak =
+      stats.lastCompletedDate === yesterday ? stats.currentStreak + 1 : 1;
+
+    const newStats = {
+      ...stats,
+      currentStreak: newCurrentStreak,
+      bestStreak: Math.max(stats.bestStreak, newCurrentStreak),
+      totalCompleted: stats.totalCompleted + 1,
+      lastCompletedDate: today,
+      completedDates: Array.from(completedDates),
+      completedCases
+    };
+
+    saveStreakStats(newStats);
+    renderStreakStats();
   }
 
   if (responseBox) {
@@ -1437,16 +1720,29 @@ const logoHref = `${base}images/book-logov2.png`;
       scoreFeedbackMessage.textContent = tier.message;
       scoreStatus.textContent = tier.label;
 
-     if (scoreRingFill) {
-  	  const radius = 52;
-  	  const circumference = 2 * Math.PI * radius;
-  	  const offset = circumference - (finalScore / 100) * circumference;
+      if (scoreRingFill) {
+        const radius = 52;
+        const circumference = 2 * Math.PI * radius;
+        const offset = circumference - (finalScore / 100) * circumference;
 
-  	  scoreRingFill.style.strokeDasharray = `${circumference}`;
-  	  scoreRingFill.style.strokeDashoffset = `${offset}`;
-	  }
+        scoreRingFill.style.strokeDasharray = `${circumference}`;
+        scoreRingFill.style.strokeDashoffset = `${offset}`;
+      }
     });
   }
+
+  if (revealButton && rubricSection) {
+    revealButton.addEventListener("click", () => {
+      rubricSection.classList.add("is-visible");
+      revealButton.setAttribute("aria-expanded", "true");
+      revealButton.textContent = "Rubric revealed";
+      revealButton.disabled = true;
+
+      completeTodayFromRubricReveal();
+    });
+  }
+
+  renderStreakStats();
 </script>
   </body>
 </html>
