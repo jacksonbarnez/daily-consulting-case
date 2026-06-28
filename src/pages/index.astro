@@ -1,89 +1,829 @@
 ---
 import todayCase from "../../public/data/today.json";
+
+const base = import.meta.env.BASE_URL;
+const archiveHref = `${base}archive`;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daily Consulting Case</title>
+    <meta
+      name="description"
+      content="Practice one consulting case interview prompt each day with a hidden interviewer rubric."
+    />
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 850px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        line-height: 1.6;
-        background: #f7f7f7;
-        color: #222;
+      :root {
+        --navy: #0f172a;
+        --slate: #334155;
+        --muted: #64748b;
+        --line: rgba(148, 163, 184, 0.32);
+        --card: rgba(255, 255, 255, 0.86);
+        --card-solid: #ffffff;
+        --cream: #f8fafc;
+        --blue: #2563eb;
+        --blue-dark: #1d4ed8;
+        --teal: #0f766e;
+        --gold: #b7791f;
+        --green-soft: #ecfdf5;
+        --blue-soft: #eff6ff;
+        --gold-soft: #fffbeb;
+        --shadow: 0 24px 80px rgba(15, 23, 42, 0.14);
+        --radius-lg: 28px;
+        --radius-md: 18px;
       }
 
-      .card {
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--navy);
+        background:
+          radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 34rem),
+          radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 32rem),
+          linear-gradient(135deg, #f8fafc 0%, #eef2ff 48%, #f8fafc 100%);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page-shell {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 52px;
+        animation: fadeDown 700ms ease both;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        color: white;
+        background: linear-gradient(135deg, var(--navy), var(--blue));
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.26);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .nav-link {
+        font-size: 0.95rem;
+        color: var(--slate);
+        font-weight: 650;
+        padding: 10px 14px;
+        border-radius: 999px;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          color 180ms ease;
+      }
+
+      .nav-link:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--navy);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.02fr 0.98fr;
+        gap: 36px;
+        align-items: center;
+        margin-bottom: 34px;
+      }
+
+      .hero-copy {
+        animation: fadeUp 760ms ease both;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--blue-dark);
+        background: rgba(239, 246, 255, 0.82);
+        border: 1px solid rgba(37, 99, 235, 0.14);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.88rem;
+        font-weight: 760;
+        margin-bottom: 18px;
+      }
+
+      .pulse-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--blue);
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
+        animation: pulse 1.8s infinite;
+      }
+
+      h1 {
+        font-size: clamp(2.35rem, 6vw, 4.8rem);
+        line-height: 0.95;
+        letter-spacing: -0.07em;
+        margin: 0 0 18px;
+      }
+
+      .hero-subtitle {
+        font-size: clamp(1.02rem, 2vw, 1.25rem);
+        line-height: 1.75;
+        color: var(--slate);
+        margin: 0;
+        max-width: 680px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        cursor: pointer;
+        border-radius: 999px;
+        padding: 13px 18px;
+        font-size: 0.98rem;
+        font-weight: 800;
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background 180ms ease;
+      }
+
+      .button-primary {
+        color: white;
+        background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+        box-shadow: 0 16px 34px rgba(37, 99, 235, 0.26);
+      }
+
+      .button-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 22px 44px rgba(37, 99, 235, 0.32);
+      }
+
+      .button-secondary {
+        color: var(--navy);
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+      }
+
+      .button-secondary:hover {
+        transform: translateY(-2px);
         background: white;
-        border: 1px solid #ddd;
+      }
+
+      .hero-panel {
+        position: relative;
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.62);
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        box-shadow: var(--shadow);
+        padding: 18px;
+        backdrop-filter: blur(20px);
+        animation: floatIn 900ms ease both;
+      }
+
+      .hero-panel-inner {
+        border-radius: 22px;
+        background:
+          linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.9)),
+          radial-gradient(circle at top right, rgba(45, 212, 191, 0.32), transparent 18rem);
+        color: white;
+        padding: 26px;
+        overflow: hidden;
+        position: relative;
+        min-height: 330px;
+      }
+
+      .hero-panel-inner::after {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 999px;
+        right: -60px;
+        bottom: -68px;
+        background: rgba(255, 255, 255, 0.09);
+      }
+
+      .panel-kicker {
+        color: rgba(255, 255, 255, 0.72);
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        font-size: 0.76rem;
+        font-weight: 800;
+        margin-bottom: 14px;
+      }
+
+      .panel-title {
+        font-size: clamp(1.6rem, 3vw, 2.25rem);
+        line-height: 1.06;
+        letter-spacing: -0.05em;
+        margin: 0 0 16px;
+      }
+
+      .panel-copy {
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.7;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .mini-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 26px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .metric {
+        border: 1px solid rgba(255, 255, 255, 0.16);
         border-radius: 16px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.05rem;
+        margin-bottom: 3px;
+      }
+
+      .metric span {
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 0.78rem;
+      }
+
+      .case-card {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        backdrop-filter: blur(20px);
+        animation: fadeUp 800ms ease 120ms both;
+      }
+
+      .case-header {
         padding: 28px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid var(--line);
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.74)),
+          radial-gradient(circle at top right, rgba(37, 99, 235, 0.13), transparent 18rem);
+      }
+
+      .date-line {
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin: 0 0 12px;
+      }
+
+      .case-title {
+        font-size: clamp(1.85rem, 4vw, 3rem);
+        line-height: 1;
+        letter-spacing: -0.06em;
+        margin: 0 0 18px;
       }
 
       .tags {
         display: flex;
-        gap: 8px;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        gap: 10px;
       }
 
       .tag {
-        background: #eee;
+        display: inline-flex;
+        align-items: center;
         border-radius: 999px;
-        padding: 6px 12px;
-        font-size: 14px;
+        padding: 7px 12px;
+        font-size: 0.86rem;
+        font-weight: 800;
+        border: 1px solid rgba(15, 23, 42, 0.08);
       }
 
-      h1 {
+      .tag-blue {
+        background: var(--blue-soft);
+        color: var(--blue-dark);
+      }
+
+      .tag-green {
+        background: var(--green-soft);
+        color: var(--teal);
+      }
+
+      .tag-gold {
+        background: var(--gold-soft);
+        color: var(--gold);
+      }
+
+      .case-body {
+        padding: 28px;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        font-weight: 900;
+        margin: 0 0 10px;
+      }
+
+      .section-label::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--blue);
+      }
+
+      .section-text {
+        color: var(--slate);
+        font-size: 1.04rem;
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .prompt-box {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+        border-radius: 22px;
+        padding: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .prompt-box::after {
+        content: "";
+        position: absolute;
+        inset: auto -60px -80px auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.09);
+      }
+
+      .prompt-box .section-label {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .prompt-box .section-label::before {
+        background: #38bdf8;
+      }
+
+      .prompt-box p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.12rem;
+        line-height: 1.75;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .practice-area {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(248, 250, 252, 0.82);
+        padding: 20px;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 220px;
+        resize: vertical;
+        border: 1px solid rgba(100, 116, 139, 0.28);
+        border-radius: 18px;
+        padding: 18px;
+        font: inherit;
+        color: var(--navy);
+        background: white;
+        outline: none;
+        line-height: 1.65;
+        transition:
+          border 160ms ease,
+          box-shadow 160ms ease,
+          transform 160ms ease;
+      }
+
+      textarea:focus {
+        border-color: rgba(37, 99, 235, 0.72);
+        box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+      }
+
+      .helper-text {
+        color: var(--muted);
+        margin: 10px 0 0;
+        font-size: 0.94rem;
+      }
+
+      .rubric-gate {
+        border: 1px dashed rgba(37, 99, 235, 0.32);
+        background: rgba(239, 246, 255, 0.65);
+        border-radius: 22px;
+        padding: 22px;
+        text-align: center;
+      }
+
+      .rubric-gate h2 {
+        margin: 0 0 8px;
+        letter-spacing: -0.035em;
+      }
+
+      .rubric-gate p {
+        color: var(--slate);
+        margin: 0 0 18px;
+        line-height: 1.65;
+      }
+
+      .rubric {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(12px);
+        transition:
+          max-height 600ms ease,
+          opacity 320ms ease,
+          transform 320ms ease;
+      }
+
+      .rubric.is-visible {
+        max-height: 1400px;
+        opacity: 1;
+        transform: translateY(0);
+        margin-top: 22px;
+      }
+
+      .rubric-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .rubric-card {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--card-solid);
+        padding: 22px;
+      }
+
+      .rubric-card h3 {
+        margin: 0 0 14px;
+        letter-spacing: -0.035em;
+        font-size: 1.25rem;
+      }
+
+      .rubric-card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--slate);
+        line-height: 1.72;
+      }
+
+      .rubric-card li {
         margin-bottom: 8px;
       }
 
-      h2 {
-        margin-top: 28px;
+      .notes-card {
+        margin-top: 18px;
+        border: 1px solid rgba(15, 118, 110, 0.18);
+        background: rgba(236, 253, 245, 0.78);
+        border-radius: 22px;
+        padding: 22px;
       }
 
-      a {
-        color: #111;
+      .notes-card h3 {
+        margin: 0 0 10px;
+        color: var(--teal);
+        letter-spacing: -0.035em;
+      }
+
+      .notes-card p {
+        margin: 0;
+        color: var(--slate);
+        line-height: 1.75;
+      }
+
+      .footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 34px;
+        font-size: 0.92rem;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatIn {
+        from {
+          opacity: 0;
+          transform: translateY(18px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.42);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+        }
+      }
+
+      @media (max-width: 860px) {
+        .top-nav {
+          margin-bottom: 36px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-panel-inner {
+          min-height: auto;
+        }
+
+        .rubric-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .page-shell {
+          width: min(100% - 24px, 1120px);
+          padding-top: 18px;
+        }
+
+        .top-nav {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .nav-links {
+          width: 100%;
+        }
+
+        .nav-link {
+          background: rgba(255, 255, 255, 0.7);
+        }
+
+        .case-header,
+        .case-body {
+          padding: 22px;
+        }
+
+        .mini-metrics {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
       }
     </style>
   </head>
 
   <body>
-    <p><a href="/daily-consulting-case/archive">View archive</a></p>
+    <main class="page-shell">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="brand" href={base}>
+          <span class="brand-mark">DC</span>
+          <span>Daily Case</span>
+        </a>
 
-    <div class="card">
-      <p>{todayCase.publish_date}</p>
-      <h1>{todayCase.title}</h1>
+        <div class="nav-links">
+          <a class="nav-link" href={archiveHref}>Archive</a>
+          <a class="nav-link" href="#today-case">Today’s Case</a>
+        </div>
+      </nav>
 
-      <div class="tags">
-        <span class="tag">{todayCase.case_type}</span>
-        <span class="tag">{todayCase.industry}</span>
-        <span class="tag">{todayCase.difficulty}</span>
-      </div>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            One consulting case every day
+          </div>
 
-      <h2>Background</h2>
-      <p>{todayCase.background}</p>
+          <h1>Practice sharper case thinking in minutes.</h1>
 
-      <h2>Prompt</h2>
-      <p>{todayCase.candidate_prompt}</p>
+          <p class="hero-subtitle">
+            Read the prompt, structure your answer, write your thinking, then reveal the interviewer rubric when you are ready to compare your approach.
+          </p>
 
-      <h2>Good answer includes</h2>
-      <ul>
-        {todayCase.good_answer_includes.map((item) => <li>{item}</li>)}
-      </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#today-case">Start today’s case</a>
+            <a class="button button-secondary" href={archiveHref}>Browse archive</a>
+          </div>
+        </div>
 
-      <h2>Great answer includes</h2>
-      <ul>
-        {todayCase.great_answer_includes.map((item) => <li>{item}</li>)}
-      </ul>
+        <aside class="hero-panel" aria-label="Practice flow preview">
+          <div class="hero-panel-inner">
+            <div class="panel-kicker">Practice flow</div>
+            <h2 class="panel-title">Attempt first. Rubric second.</h2>
+            <p class="panel-copy">
+              The interviewer rubric stays hidden until you decide you are ready. That keeps the practice closer to a real case interview.
+            </p>
 
-      <h2>Interviewer notes</h2>
-      <p>{todayCase.interviewer_notes}</p>
-    </div>
+            <div class="mini-metrics">
+              <div class="metric">
+                <strong>1</strong>
+                <span>Read prompt</span>
+              </div>
+              <div class="metric">
+                <strong>2</strong>
+                <span>Write ideas</span>
+              </div>
+              <div class="metric">
+                <strong>3</strong>
+                <span>Reveal rubric</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <article class="case-card" id="today-case">
+        <header class="case-header">
+          <p class="date-line">{todayCase.publish_date}</p>
+          <h2 class="case-title">{todayCase.title}</h2>
+
+          <div class="tags" aria-label="Case tags">
+            <span class="tag tag-blue">{todayCase.case_type}</span>
+            <span class="tag tag-green">{todayCase.industry}</span>
+            <span class="tag tag-gold">{todayCase.difficulty}</span>
+          </div>
+        </header>
+
+        <div class="case-body">
+          <section class="section">
+            <p class="section-label">Background</p>
+            <p class="section-text">{todayCase.background}</p>
+          </section>
+
+          <section class="section prompt-box">
+            <p class="section-label">Candidate prompt</p>
+            <p>{todayCase.candidate_prompt}</p>
+          </section>
+
+          <section class="section practice-area" aria-label="Your response area">
+            <p class="section-label">Your response</p>
+            <textarea
+              id="responseBox"
+              placeholder="Write your structure, key questions, calculations, risks, recommendation, and next steps here..."
+            ></textarea>
+            <p class="helper-text">
+              Tip: Try to write your initial structure before revealing the rubric.
+            </p>
+          </section>
+
+          <section class="section rubric-gate">
+            <h2>Ready to compare your answer?</h2>
+            <p>
+              Reveal the interviewer rubric only after you have attempted the case. This will show what a good answer and a great answer should include.
+            </p>
+
+            <button
+              class="button button-primary"
+              id="revealRubricButton"
+              type="button"
+              aria-expanded="false"
+              aria-controls="rubricSection"
+            >
+              I’m ready to view the interviewer rubric
+            </button>
+
+            <div class="rubric" id="rubricSection">
+              <div class="rubric-grid">
+                <div class="rubric-card">
+                  <h3>Good answer includes</h3>
+                  <ul>
+                    {todayCase.good_answer_includes.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+
+                <div class="rubric-card">
+                  <h3>Great answer includes</h3>
+                  <ul>
+                    {todayCase.great_answer_includes.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="notes-card">
+                <h3>Interviewer notes</h3>
+                <p>{todayCase.interviewer_notes}</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <footer class="footer">
+        <p>Built for daily consulting case practice. New prompt every day.</p>
+      </footer>
+    </main>
+
+    <script is:inline>
+      const revealButton = document.getElementById("revealRubricButton");
+      const rubricSection = document.getElementById("rubricSection");
+
+      if (revealButton && rubricSection) {
+        revealButton.addEventListener("click", () => {
+          rubricSection.classList.add("is-visible");
+          revealButton.setAttribute("aria-expanded", "true");
+          revealButton.textContent = "Rubric revealed";
+          revealButton.disabled = true;
+        });
+      }
+    </script>
   </body>
 </html>

@@ -1,71 +1,466 @@
 ---
 import archive from "../../public/data/archive.json";
+
+const base = import.meta.env.BASE_URL;
+const homeHref = base;
+
 const cases = [...archive].reverse();
+
+const caseTypes = Array.from(new Set(cases.map((caseItem) => caseItem.case_type))).sort();
+const difficulties = Array.from(new Set(cases.map((caseItem) => caseItem.difficulty))).sort();
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Case Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Archive | Daily Consulting Case</title>
+    <meta
+      name="description"
+      content="Browse previous daily consulting case interview prompts."
+    />
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 850px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        line-height: 1.6;
-        background: #f7f7f7;
-        color: #222;
+      :root {
+        --navy: #0f172a;
+        --slate: #334155;
+        --muted: #64748b;
+        --line: rgba(148, 163, 184, 0.32);
+        --card: rgba(255, 255, 255, 0.86);
+        --blue: #2563eb;
+        --blue-dark: #1d4ed8;
+        --teal: #0f766e;
+        --gold: #b7791f;
+        --green-soft: #ecfdf5;
+        --blue-soft: #eff6ff;
+        --gold-soft: #fffbeb;
+        --shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+        --radius-lg: 28px;
+        --radius-md: 18px;
       }
 
-      .case-row {
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--navy);
+        background:
+          radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 34rem),
+          radial-gradient(circle at top right, rgba(15, 118, 110, 0.1), transparent 32rem),
+          linear-gradient(135deg, #f8fafc 0%, #eef2ff 48%, #f8fafc 100%);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page-shell {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 48px;
+        animation: fadeDown 700ms ease both;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        color: white;
+        background: linear-gradient(135deg, var(--navy), var(--blue));
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.26);
+      }
+
+      .nav-link {
+        font-size: 0.95rem;
+        color: var(--slate);
+        font-weight: 650;
+        padding: 10px 14px;
+        border-radius: 999px;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          color 180ms ease;
+      }
+
+      .nav-link:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--navy);
+      }
+
+      .archive-hero {
+        margin-bottom: 28px;
+        animation: fadeUp 760ms ease both;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        color: var(--blue-dark);
+        background: rgba(239, 246, 255, 0.82);
+        border: 1px solid rgba(37, 99, 235, 0.14);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.88rem;
+        font-weight: 760;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(2.35rem, 6vw, 4.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.07em;
+        margin: 0 0 18px;
+      }
+
+      .subtitle {
+        font-size: clamp(1.02rem, 2vw, 1.2rem);
+        line-height: 1.75;
+        color: var(--slate);
+        margin: 0;
+        max-width: 760px;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr;
+        gap: 14px;
+        margin: 30px 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.68);
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius-lg);
+        backdrop-filter: blur(20px);
+        animation: fadeUp 760ms ease 90ms both;
+      }
+
+      input,
+      select {
+        width: 100%;
+        border: 1px solid rgba(100, 116, 139, 0.28);
+        border-radius: 999px;
+        padding: 13px 15px;
+        font: inherit;
+        color: var(--navy);
         background: white;
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        padding: 18px;
-        margin-bottom: 14px;
+        outline: none;
+      }
+
+      input:focus,
+      select:focus {
+        border-color: rgba(37, 99, 235, 0.72);
+        box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+      }
+
+      .archive-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        animation: fadeUp 760ms ease 160ms both;
+      }
+
+      .case-card {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: var(--radius-lg);
+        box-shadow: 0 18px 55px rgba(15, 23, 42, 0.1);
+        padding: 24px;
+        backdrop-filter: blur(20px);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          border 180ms ease;
+      }
+
+      .case-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 28px 72px rgba(15, 23, 42, 0.14);
+        border-color: rgba(37, 99, 235, 0.2);
+      }
+
+      .date-line {
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 750;
+        margin: 0 0 10px;
+      }
+
+      .case-card h2 {
+        font-size: 1.42rem;
+        line-height: 1.12;
+        letter-spacing: -0.045em;
+        margin: 0 0 14px;
       }
 
       .tags {
         display: flex;
-        gap: 8px;
         flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
       }
 
       .tag {
-        background: #eee;
+        display: inline-flex;
+        align-items: center;
         border-radius: 999px;
-        padding: 4px 10px;
-        font-size: 13px;
+        padding: 6px 10px;
+        font-size: 0.78rem;
+        font-weight: 800;
+        border: 1px solid rgba(15, 23, 42, 0.08);
       }
 
-      a {
-        color: #111;
+      .tag-blue {
+        background: var(--blue-soft);
+        color: var(--blue-dark);
+      }
+
+      .tag-green {
+        background: var(--green-soft);
+        color: var(--teal);
+      }
+
+      .tag-gold {
+        background: var(--gold-soft);
+        color: var(--gold);
+      }
+
+      .prompt {
+        color: var(--slate);
+        line-height: 1.68;
+        margin: 0;
+      }
+
+      .empty-state {
+        grid-column: 1 / -1;
+        background: rgba(255, 255, 255, 0.76);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        color: var(--slate);
+        text-align: center;
+      }
+
+      .footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 34px;
+        font-size: 0.92rem;
+      }
+
+      .is-hidden {
+        display: none;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .controls {
+          grid-template-columns: 1fr;
+        }
+
+        .archive-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .page-shell {
+          width: min(100% - 24px, 1080px);
+          padding-top: 18px;
+        }
+
+        .top-nav {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .nav-link {
+          background: rgba(255, 255, 255, 0.7);
+        }
       }
     </style>
   </head>
 
   <body>
-    <p><a href="/daily-consulting-case/">Back to today’s case</a></p>
-    <h1>Case Archive</h1>
+    <main class="page-shell">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="brand" href={homeHref}>
+          <span class="brand-mark">DC</span>
+          <span>Daily Case</span>
+        </a>
 
-    {
-      cases.length === 0 ? (
-        <p>No archived cases yet.</p>
-      ) : (
-        cases.map((caseItem) => (
-          <div class="case-row">
-            <p>{caseItem.publish_date}</p>
-            <h2>{caseItem.title}</h2>
-            <div class="tags">
-              <span class="tag">{caseItem.case_type}</span>
-              <span class="tag">{caseItem.industry}</span>
-              <span class="tag">{caseItem.difficulty}</span>
+        <a class="nav-link" href={homeHref}>Back to today’s case</a>
+      </nav>
+
+      <section class="archive-hero">
+        <div class="eyebrow">Case archive</div>
+        <h1>Browse previous practice cases.</h1>
+        <p class="subtitle">
+          Review past prompts by case type, difficulty, or keyword. Use the archive to get extra reps beyond the daily case.
+        </p>
+      </section>
+
+      <section class="controls" aria-label="Archive filters">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search by title, industry, or prompt..."
+          aria-label="Search cases"
+        />
+
+        <select id="caseTypeFilter" aria-label="Filter by case type">
+          <option value="all">All case types</option>
+          {caseTypes.map((caseType) => <option value={caseType}>{caseType}</option>)}
+        </select>
+
+        <select id="difficultyFilter" aria-label="Filter by difficulty">
+          <option value="all">All difficulties</option>
+          {difficulties.map((difficulty) => <option value={difficulty}>{difficulty}</option>)}
+        </select>
+      </section>
+
+      <section class="archive-grid" id="archiveGrid">
+        {
+          cases.length === 0 ? (
+            <div class="empty-state">
+              <h2>No archived cases yet.</h2>
+              <p>Once the daily case script runs, previous cases will appear here.</p>
             </div>
-            <p>{caseItem.candidate_prompt}</p>
-          </div>
-        ))
-      )
-    }
+          ) : (
+            cases.map((caseItem) => (
+              <article
+                class="case-card"
+                data-title={caseItem.title.toLowerCase()}
+                data-industry={caseItem.industry.toLowerCase()}
+                data-prompt={caseItem.candidate_prompt.toLowerCase()}
+                data-case-type={caseItem.case_type}
+                data-difficulty={caseItem.difficulty}
+              >
+                <p class="date-line">{caseItem.publish_date}</p>
+                <h2>{caseItem.title}</h2>
+
+                <div class="tags">
+                  <span class="tag tag-blue">{caseItem.case_type}</span>
+                  <span class="tag tag-green">{caseItem.industry}</span>
+                  <span class="tag tag-gold">{caseItem.difficulty}</span>
+                </div>
+
+                <p class="prompt">{caseItem.candidate_prompt}</p>
+              </article>
+            ))
+          )
+        }
+
+        <div class="empty-state is-hidden" id="noResultsMessage">
+          <h2>No cases match those filters.</h2>
+          <p>Try clearing the search bar or selecting a different filter.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>New consulting case prompt every day.</p>
+      </footer>
+    </main>
+
+    <script is:inline>
+      const searchInput = document.getElementById("searchInput");
+      const caseTypeFilter = document.getElementById("caseTypeFilter");
+      const difficultyFilter = document.getElementById("difficultyFilter");
+      const cards = Array.from(document.querySelectorAll(".case-card"));
+      const noResultsMessage = document.getElementById("noResultsMessage");
+
+      function filterCards() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        const selectedCaseType = caseTypeFilter.value;
+        const selectedDifficulty = difficultyFilter.value;
+
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const title = card.dataset.title || "";
+          const industry = card.dataset.industry || "";
+          const prompt = card.dataset.prompt || "";
+          const caseType = card.dataset.caseType || "";
+          const difficulty = card.dataset.difficulty || "";
+
+          const matchesSearch =
+            searchTerm === "" ||
+            title.includes(searchTerm) ||
+            industry.includes(searchTerm) ||
+            prompt.includes(searchTerm);
+
+          const matchesCaseType =
+            selectedCaseType === "all" || caseType === selectedCaseType;
+
+          const matchesDifficulty =
+            selectedDifficulty === "all" || difficulty === selectedDifficulty;
+
+          const shouldShow = matchesSearch && matchesCaseType && matchesDifficulty;
+
+          card.classList.toggle("is-hidden", !shouldShow);
+
+          if (shouldShow) {
+            visibleCount += 1;
+          }
+        });
+
+        if (noResultsMessage) {
+          noResultsMessage.classList.toggle("is-hidden", visibleCount !== 0);
+        }
+      }
+
+      if (searchInput && caseTypeFilter && difficultyFilter) {
+        searchInput.addEventListener("input", filterCards);
+        caseTypeFilter.addEventListener("change", filterCards);
+        difficultyFilter.addEventListener("change", filterCards);
+      }
+    </script>
   </body>
 </html>
