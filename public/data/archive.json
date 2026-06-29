@@ -22,5 +22,29 @@
     "interviewer_notes": "Strong candidates should consider market attractiveness, financial viability, competitive dynamics, and implementation risk.",
     "approved": true,
     "publish_date": "2026-06-28"
+  },
+  {
+    "id": "profitability-grocery-001",
+    "title": "Urban Grocery Store Margin Decline",
+    "case_type": "Profitability",
+    "industry": "Grocery Retail",
+    "difficulty": "Medium",
+    "background": "A regional grocery chain operates 85 stores across several large metro areas. Over the past 18 months, revenue has grown slightly, but operating profit has fallen by 12%. Leadership wants to understand why margins are shrinking and what actions they should take.",
+    "candidate_prompt": "How would you determine what is causing the profit decline, and what recommendations would you make to improve profitability?",
+    "good_answer_includes": [
+      "Breaks profitability into revenue and cost drivers",
+      "Examines changes in basket size, traffic, and pricing",
+      "Analyzes labor, rent, shrink, and supplier cost trends",
+      "Considers differences across store locations or formats"
+    ],
+    "great_answer_includes": [
+      "Segments performance by urban, suburban, and premium locations",
+      "Identifies product mix shifts toward lower-margin categories",
+      "Quantifies impact of shrink and labor cost increases",
+      "Recommends targeted pricing, assortment, and operational changes"
+    ],
+    "interviewer_notes": "Strong candidates should avoid assuming revenue growth means healthy performance and should investigate margin, mix, and cost structure carefully.",
+    "approved": true,
+    "publish_date": "2026-06-29"
   }
 ]
