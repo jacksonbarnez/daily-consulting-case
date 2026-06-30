@@ -46,5 +46,29 @@
     "interviewer_notes": "Strong candidates should avoid assuming revenue growth means healthy performance and should investigate margin, mix, and cost structure carefully.",
     "approved": true,
     "publish_date": "2026-06-29"
+  },
+  {
+    "id": "profitability-construction-001",
+    "title": "Construction Contractor Project Losses",
+    "case_type": "Profitability",
+    "industry": "Construction",
+    "difficulty": "Medium",
+    "background": "A commercial construction contractor has won several large projects recently, but overall profit has declined. Some projects are finishing over budget and behind schedule. Management wants to improve project profitability.",
+    "candidate_prompt": "How would you determine why project profitability is declining and what actions should be taken?",
+    "good_answer_includes": [
+      "Compares estimated versus actual project costs",
+      "Analyzes labor, materials, subcontractor, and delay costs",
+      "Reviews project bidding and pricing assumptions",
+      "Considers project complexity and client changes"
+    ],
+    "great_answer_includes": [
+      "Identifies whether underbidding is causing unprofitable growth",
+      "Quantifies margin impact of delays and change orders",
+      "Segments projects by type, size, and profitability",
+      "Recommends improved bidding discipline and project controls"
+    ],
+    "interviewer_notes": "Strong candidates should connect profitability to project selection, pricing, execution, and risk management.",
+    "approved": true,
+    "publish_date": "2026-06-30"
   }
 ]
