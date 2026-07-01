@@ -1,24 +1,24 @@
 {
-  "id": "profitability-construction-001",
-  "title": "Construction Contractor Project Losses",
+  "id": "profitability-beauty-001",
+  "title": "Beauty Salon Group Profit Decline",
   "case_type": "Profitability",
-  "industry": "Construction",
-  "difficulty": "Medium",
-  "background": "A commercial construction contractor has won several large projects recently, but overall profit has declined. Some projects are finishing over budget and behind schedule. Management wants to improve project profitability.",
-  "candidate_prompt": "How would you determine why project profitability is declining and what actions should be taken?",
+  "industry": "Beauty Services",
+  "difficulty": "Easy",
+  "background": "A beauty salon group operates 25 locations offering haircuts, coloring, skincare, and retail products. Revenue is stable, but profit has declined over the past year. The owner wants to understand which services or costs are causing the issue.",
+  "candidate_prompt": "How would you analyze the profit decline and recommend actions?",
   "good_answer_includes": [
-    "Compares estimated versus actual project costs",
-    "Analyzes labor, materials, subcontractor, and delay costs",
-    "Reviews project bidding and pricing assumptions",
-    "Considers project complexity and client changes"
+    "Analyzes revenue by service and product category",
+    "Reviews stylist utilization and labor costs",
+    "Examines pricing and appointment volume",
+    "Considers rent, supplies, and retail product margins"
   ],
   "great_answer_includes": [
-    "Identifies whether underbidding is causing unprofitable growth",
-    "Quantifies margin impact of delays and change orders",
-    "Segments projects by type, size, and profitability",
-    "Recommends improved bidding discipline and project controls"
+    "Calculates margin by service type and stylist hour",
+    "Identifies underutilized time slots or low-margin services",
+    "Evaluates upsell opportunities in retail products",
+    "Recommends pricing, scheduling, and service mix changes"
   ],
-  "interviewer_notes": "Strong candidates should connect profitability to project selection, pricing, execution, and risk management.",
+  "interviewer_notes": "Strong candidates should focus on labor utilization and service-level profitability.",
   "approved": true,
-  "publish_date": "2026-06-30"
+  "publish_date": "2026-07-01"
 }

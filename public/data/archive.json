@@ -70,5 +70,29 @@
     "interviewer_notes": "Strong candidates should connect profitability to project selection, pricing, execution, and risk management.",
     "approved": true,
     "publish_date": "2026-06-30"
+  },
+  {
+    "id": "profitability-beauty-001",
+    "title": "Beauty Salon Group Profit Decline",
+    "case_type": "Profitability",
+    "industry": "Beauty Services",
+    "difficulty": "Easy",
+    "background": "A beauty salon group operates 25 locations offering haircuts, coloring, skincare, and retail products. Revenue is stable, but profit has declined over the past year. The owner wants to understand which services or costs are causing the issue.",
+    "candidate_prompt": "How would you analyze the profit decline and recommend actions?",
+    "good_answer_includes": [
+      "Analyzes revenue by service and product category",
+      "Reviews stylist utilization and labor costs",
+      "Examines pricing and appointment volume",
+      "Considers rent, supplies, and retail product margins"
+    ],
+    "great_answer_includes": [
+      "Calculates margin by service type and stylist hour",
+      "Identifies underutilized time slots or low-margin services",
+      "Evaluates upsell opportunities in retail products",
+      "Recommends pricing, scheduling, and service mix changes"
+    ],
+    "interviewer_notes": "Strong candidates should focus on labor utilization and service-level profitability.",
+    "approved": true,
+    "publish_date": "2026-07-01"
   }
 ]
