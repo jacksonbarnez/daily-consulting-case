@@ -94,5 +94,29 @@
     "interviewer_notes": "Strong candidates should focus on labor utilization and service-level profitability.",
     "approved": true,
     "publish_date": "2026-07-01"
+  },
+  {
+    "id": "profitability-restaurant-001",
+    "title": "Casual Dining Chain Profitability Decline",
+    "case_type": "Profitability",
+    "industry": "Restaurants",
+    "difficulty": "Easy",
+    "background": "A casual dining chain with 120 locations has experienced a 10% decline in profit over the past year. Same-store sales are flat, but management believes costs have increased across the business.",
+    "candidate_prompt": "How would you determine what is driving the decline in profit and what actions the chain should take?",
+    "good_answer_includes": [
+      "Breaks profit into revenue and cost components",
+      "Reviews food, labor, rent, and utility costs",
+      "Analyzes traffic, average check size, and menu mix",
+      "Considers regional or store-level performance differences"
+    ],
+    "great_answer_includes": [
+      "Identifies menu items with poor margin contribution",
+      "Quantifies labor productivity by location",
+      "Evaluates pricing opportunities without hurting traffic",
+      "Recommends menu engineering and operational improvements"
+    ],
+    "interviewer_notes": "Strong candidates should use a simple profitability framework but apply it at the store and menu-item level.",
+    "approved": true,
+    "publish_date": "2026-07-02"
   }
 ]
