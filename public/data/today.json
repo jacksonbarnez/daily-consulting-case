@@ -1,24 +1,24 @@
 {
-  "id": "profitability-restaurant-001",
-  "title": "Casual Dining Chain Profitability Decline",
+  "id": "profitability-apparel-001",
+  "title": "Athletic Apparel Brand Margin Compression",
   "case_type": "Profitability",
-  "industry": "Restaurants",
-  "difficulty": "Easy",
-  "background": "A casual dining chain with 120 locations has experienced a 10% decline in profit over the past year. Same-store sales are flat, but management believes costs have increased across the business.",
-  "candidate_prompt": "How would you determine what is driving the decline in profit and what actions the chain should take?",
+  "industry": "Apparel",
+  "difficulty": "Medium",
+  "background": "An athletic apparel brand sells through its own website, retail stores, and wholesale partners. Revenue has grown, but gross margins have declined for four consecutive quarters. The CFO wants to identify the root cause.",
+  "candidate_prompt": "What would you analyze to determine why margins are falling, and what should the company do?",
   "good_answer_includes": [
-    "Breaks profit into revenue and cost components",
-    "Reviews food, labor, rent, and utility costs",
-    "Analyzes traffic, average check size, and menu mix",
-    "Considers regional or store-level performance differences"
+    "Analyzes revenue and margin by channel",
+    "Reviews product mix and discounting",
+    "Examines manufacturing, freight, and inventory costs",
+    "Considers wholesale versus direct-to-consumer economics"
   ],
   "great_answer_includes": [
-    "Identifies menu items with poor margin contribution",
-    "Quantifies labor productivity by location",
-    "Evaluates pricing opportunities without hurting traffic",
-    "Recommends menu engineering and operational improvements"
+    "Identifies channel mix shifts that reduce average margin",
+    "Quantifies markdown and inventory clearance impact",
+    "Evaluates product-level margin performance",
+    "Recommends assortment, pricing, and channel strategy changes"
   ],
-  "interviewer_notes": "Strong candidates should use a simple profitability framework but apply it at the store and menu-item level.",
+  "interviewer_notes": "Strong candidates should examine both channel mix and product mix rather than assuming all revenue growth is equally valuable.",
   "approved": true,
-  "publish_date": "2026-07-02"
+  "publish_date": "2026-07-03"
 }
