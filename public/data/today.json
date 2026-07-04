@@ -1,24 +1,24 @@
 {
-  "id": "profitability-apparel-001",
-  "title": "Athletic Apparel Brand Margin Compression",
+  "id": "profitability-cybersecurity-001",
+  "title": "Cybersecurity Consulting Firm Margin Decline",
   "case_type": "Profitability",
-  "industry": "Apparel",
+  "industry": "Professional Services",
   "difficulty": "Medium",
-  "background": "An athletic apparel brand sells through its own website, retail stores, and wholesale partners. Revenue has grown, but gross margins have declined for four consecutive quarters. The CFO wants to identify the root cause.",
-  "candidate_prompt": "What would you analyze to determine why margins are falling, and what should the company do?",
+  "background": "A cybersecurity consulting firm serves mid-market companies with risk assessments, implementation projects, and managed monitoring services. Revenue has increased, but profit margins have declined as the firm has hired aggressively.",
+  "candidate_prompt": "How would you evaluate the firm’s profitability and recommend improvements?",
   "good_answer_includes": [
-    "Analyzes revenue and margin by channel",
-    "Reviews product mix and discounting",
-    "Examines manufacturing, freight, and inventory costs",
-    "Considers wholesale versus direct-to-consumer economics"
+    "Analyzes revenue and margin by service line",
+    "Reviews consultant utilization and billing rates",
+    "Examines hiring, training, and overhead costs",
+    "Considers project pricing and scope creep"
   ],
   "great_answer_includes": [
-    "Identifies channel mix shifts that reduce average margin",
-    "Quantifies markdown and inventory clearance impact",
-    "Evaluates product-level margin performance",
-    "Recommends assortment, pricing, and channel strategy changes"
+    "Calculates utilization and margin by consultant level",
+    "Identifies low-margin custom projects or underpriced work",
+    "Evaluates recurring managed services versus project work",
+    "Recommends pricing discipline, staffing model changes, and scope controls"
   ],
-  "interviewer_notes": "Strong candidates should examine both channel mix and product mix rather than assuming all revenue growth is equally valuable.",
+  "interviewer_notes": "Strong candidates should understand the importance of utilization, billing rates, and project scope in professional services profitability.",
   "approved": true,
-  "publish_date": "2026-07-03"
+  "publish_date": "2026-07-04"
 }

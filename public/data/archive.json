@@ -142,5 +142,29 @@
     "interviewer_notes": "Strong candidates should examine both channel mix and product mix rather than assuming all revenue growth is equally valuable.",
     "approved": true,
     "publish_date": "2026-07-03"
+  },
+  {
+    "id": "profitability-cybersecurity-001",
+    "title": "Cybersecurity Consulting Firm Margin Decline",
+    "case_type": "Profitability",
+    "industry": "Professional Services",
+    "difficulty": "Medium",
+    "background": "A cybersecurity consulting firm serves mid-market companies with risk assessments, implementation projects, and managed monitoring services. Revenue has increased, but profit margins have declined as the firm has hired aggressively.",
+    "candidate_prompt": "How would you evaluate the firm’s profitability and recommend improvements?",
+    "good_answer_includes": [
+      "Analyzes revenue and margin by service line",
+      "Reviews consultant utilization and billing rates",
+      "Examines hiring, training, and overhead costs",
+      "Considers project pricing and scope creep"
+    ],
+    "great_answer_includes": [
+      "Calculates utilization and margin by consultant level",
+      "Identifies low-margin custom projects or underpriced work",
+      "Evaluates recurring managed services versus project work",
+      "Recommends pricing discipline, staffing model changes, and scope controls"
+    ],
+    "interviewer_notes": "Strong candidates should understand the importance of utilization, billing rates, and project scope in professional services profitability.",
+    "approved": true,
+    "publish_date": "2026-07-04"
   }
 ]
