@@ -166,5 +166,29 @@
     "interviewer_notes": "Strong candidates should understand the importance of utilization, billing rates, and project scope in professional services profitability.",
     "approved": true,
     "publish_date": "2026-07-04"
+  },
+  {
+    "id": "profitability-logistics-001",
+    "title": "Last-Mile Delivery Profit Problem",
+    "case_type": "Profitability",
+    "industry": "Logistics",
+    "difficulty": "Hard",
+    "background": "A last-mile delivery company serves retailers in 12 metro areas. Delivery volume has increased substantially, but the company is losing money in several markets. Leadership wants to identify why some cities are profitable while others are not.",
+    "candidate_prompt": "How would you analyze market-level profitability and recommend improvements?",
+    "good_answer_includes": [
+      "Compares revenue and cost by market",
+      "Analyzes delivery density, route efficiency, and driver costs",
+      "Reviews pricing by customer or contract",
+      "Considers order volume variability and service requirements"
+    ],
+    "great_answer_includes": [
+      "Calculates cost per delivery by market and route type",
+      "Identifies density thresholds required for profitability",
+      "Segments customers by margin contribution",
+      "Recommends market exits, pricing changes, or route optimization"
+    ],
+    "interviewer_notes": "Strong candidates should recognize the importance of density economics in delivery businesses.",
+    "approved": true,
+    "publish_date": "2026-07-05"
   }
 ]
