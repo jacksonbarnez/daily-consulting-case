@@ -190,5 +190,29 @@
     "interviewer_notes": "Strong candidates should recognize the importance of density economics in delivery businesses.",
     "approved": true,
     "publish_date": "2026-07-05"
+  },
+  {
+    "id": "profitability-education-001",
+    "title": "Private Tutoring Company Profit Decline",
+    "case_type": "Profitability",
+    "industry": "Education Services",
+    "difficulty": "Easy",
+    "background": "A private tutoring company serves middle school and high school students through online and in-person sessions. Revenue has increased, but profits are down because the company has hired more tutors and expanded marketing.",
+    "candidate_prompt": "How would you determine whether the company’s growth is profitable and what changes should be made?",
+    "good_answer_includes": [
+      "Analyzes revenue by student type and service format",
+      "Reviews tutor wages and utilization",
+      "Examines marketing costs and customer acquisition",
+      "Compares online versus in-person margins"
+    ],
+    "great_answer_includes": [
+      "Calculates tutor utilization and contribution margin per session",
+      "Segments customers by acquisition channel and retention",
+      "Evaluates pricing differences across subjects or formats",
+      "Recommends scheduling, pricing, and marketing efficiency improvements"
+    ],
+    "interviewer_notes": "Strong candidates should focus on unit economics by session, tutor utilization, and customer acquisition payback.",
+    "approved": true,
+    "publish_date": "2026-07-06"
   }
 ]
