@@ -214,5 +214,29 @@
     "interviewer_notes": "Strong candidates should focus on unit economics by session, tutor utilization, and customer acquisition payback.",
     "approved": true,
     "publish_date": "2026-07-06"
+  },
+  {
+    "id": "profitability-streaming-001",
+    "title": "Streaming Service Subscriber Growth Losses",
+    "case_type": "Profitability",
+    "industry": "Media",
+    "difficulty": "Medium",
+    "background": "A niche streaming service focused on documentaries has doubled its subscriber base in two years, but losses have widened. The company wants to understand whether the growth strategy is sustainable.",
+    "candidate_prompt": "How would you evaluate why the streaming service is losing more money despite subscriber growth?",
+    "good_answer_includes": [
+      "Analyzes subscription revenue and pricing",
+      "Reviews content production and licensing costs",
+      "Examines customer acquisition cost and churn",
+      "Considers subscriber engagement and retention"
+    ],
+    "great_answer_includes": [
+      "Calculates payback period on customer acquisition spend",
+      "Segments subscribers by tenure and profitability",
+      "Evaluates fixed content costs versus subscriber scale",
+      "Recommends pricing tiers, content focus, or marketing efficiency improvements"
+    ],
+    "interviewer_notes": "Strong candidates should distinguish between scalable fixed costs and variable acquisition or retention costs.",
+    "approved": true,
+    "publish_date": "2026-07-07"
   }
 ]

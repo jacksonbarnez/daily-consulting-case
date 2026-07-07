@@ -1,24 +1,24 @@
 {
-  "id": "profitability-education-001",
-  "title": "Private Tutoring Company Profit Decline",
+  "id": "profitability-streaming-001",
+  "title": "Streaming Service Subscriber Growth Losses",
   "case_type": "Profitability",
-  "industry": "Education Services",
-  "difficulty": "Easy",
-  "background": "A private tutoring company serves middle school and high school students through online and in-person sessions. Revenue has increased, but profits are down because the company has hired more tutors and expanded marketing.",
-  "candidate_prompt": "How would you determine whether the company’s growth is profitable and what changes should be made?",
+  "industry": "Media",
+  "difficulty": "Medium",
+  "background": "A niche streaming service focused on documentaries has doubled its subscriber base in two years, but losses have widened. The company wants to understand whether the growth strategy is sustainable.",
+  "candidate_prompt": "How would you evaluate why the streaming service is losing more money despite subscriber growth?",
   "good_answer_includes": [
-    "Analyzes revenue by student type and service format",
-    "Reviews tutor wages and utilization",
-    "Examines marketing costs and customer acquisition",
-    "Compares online versus in-person margins"
+    "Analyzes subscription revenue and pricing",
+    "Reviews content production and licensing costs",
+    "Examines customer acquisition cost and churn",
+    "Considers subscriber engagement and retention"
   ],
   "great_answer_includes": [
-    "Calculates tutor utilization and contribution margin per session",
-    "Segments customers by acquisition channel and retention",
-    "Evaluates pricing differences across subjects or formats",
-    "Recommends scheduling, pricing, and marketing efficiency improvements"
+    "Calculates payback period on customer acquisition spend",
+    "Segments subscribers by tenure and profitability",
+    "Evaluates fixed content costs versus subscriber scale",
+    "Recommends pricing tiers, content focus, or marketing efficiency improvements"
   ],
-  "interviewer_notes": "Strong candidates should focus on unit economics by session, tutor utilization, and customer acquisition payback.",
+  "interviewer_notes": "Strong candidates should distinguish between scalable fixed costs and variable acquisition or retention costs.",
   "approved": true,
-  "publish_date": "2026-07-06"
+  "publish_date": "2026-07-07"
 }

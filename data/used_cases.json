@@ -34,5 +34,9 @@
   {
     "case_id": "profitability-education-001",
     "used_on": "2026-07-06"
+  },
+  {
+    "case_id": "profitability-streaming-001",
+    "used_on": "2026-07-07"
   }
 ]
