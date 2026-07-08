@@ -238,5 +238,29 @@
     "interviewer_notes": "Strong candidates should distinguish between scalable fixed costs and variable acquisition or retention costs.",
     "approved": true,
     "publish_date": "2026-07-07"
+  },
+  {
+    "id": "profitability-manufacturing-001",
+    "title": "Industrial Pump Manufacturer Margin Decline",
+    "case_type": "Profitability",
+    "industry": "Manufacturing",
+    "difficulty": "Medium",
+    "background": "An industrial pump manufacturer sells to energy, mining, and municipal customers. Revenue has been stable, but profit margins have declined due to rising production costs and inconsistent demand across customer segments.",
+    "candidate_prompt": "How would you diagnose the margin decline and identify improvement opportunities?",
+    "good_answer_includes": [
+      "Analyzes revenue and margin by customer segment",
+      "Reviews raw material, labor, and overhead costs",
+      "Examines product mix and pricing",
+      "Considers production efficiency and capacity utilization"
+    ],
+    "great_answer_includes": [
+      "Identifies low-margin custom products or customer segments",
+      "Quantifies impact of raw material cost changes",
+      "Evaluates pricing pass-through ability by contract type",
+      "Recommends product standardization, pricing changes, or customer prioritization"
+    ],
+    "interviewer_notes": "Strong candidates should connect margin decline to product mix, input costs, pricing power, and manufacturing utilization.",
+    "approved": true,
+    "publish_date": "2026-07-08"
   }
 ]
