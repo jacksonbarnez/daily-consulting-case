@@ -262,5 +262,29 @@
     "interviewer_notes": "Strong candidates should connect margin decline to product mix, input costs, pricing power, and manufacturing utilization.",
     "approved": true,
     "publish_date": "2026-07-08"
+  },
+  {
+    "id": "manda-cybersecurity-003",
+    "title": "Cybersecurity Startup Acquisition",
+    "case_type": "M&A",
+    "industry": "Cybersecurity",
+    "difficulty": "Intermediate",
+    "background": "A technology company is considering acquiring a cybersecurity startup to expand its product suite.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies strategic rationale for the deal",
+      "Assesses market, financial, and operational attractiveness",
+      "Identifies synergies and integration risks",
+      "Recommends whether to proceed"
+    ],
+    "great_answer_includes": [
+      "Tests standalone value versus deal value",
+      "Quantifies revenue and cost synergy assumptions",
+      "Considers culture, systems, and execution risk",
+      "Defines diligence questions and deal breakers"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-09"
   }
 ]

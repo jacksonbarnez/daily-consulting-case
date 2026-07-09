@@ -1,24 +1,24 @@
 {
-  "id": "profitability-manufacturing-001",
-  "title": "Industrial Pump Manufacturer Margin Decline",
-  "case_type": "Profitability",
-  "industry": "Manufacturing",
-  "difficulty": "Medium",
-  "background": "An industrial pump manufacturer sells to energy, mining, and municipal customers. Revenue has been stable, but profit margins have declined due to rising production costs and inconsistent demand across customer segments.",
-  "candidate_prompt": "How would you diagnose the margin decline and identify improvement opportunities?",
+  "id": "manda-cybersecurity-003",
+  "title": "Cybersecurity Startup Acquisition",
+  "case_type": "M&A",
+  "industry": "Cybersecurity",
+  "difficulty": "Intermediate",
+  "background": "A technology company is considering acquiring a cybersecurity startup to expand its product suite.",
+  "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Analyzes revenue and margin by customer segment",
-    "Reviews raw material, labor, and overhead costs",
-    "Examines product mix and pricing",
-    "Considers production efficiency and capacity utilization"
+    "Clarifies strategic rationale for the deal",
+    "Assesses market, financial, and operational attractiveness",
+    "Identifies synergies and integration risks",
+    "Recommends whether to proceed"
   ],
   "great_answer_includes": [
-    "Identifies low-margin custom products or customer segments",
-    "Quantifies impact of raw material cost changes",
-    "Evaluates pricing pass-through ability by contract type",
-    "Recommends product standardization, pricing changes, or customer prioritization"
+    "Tests standalone value versus deal value",
+    "Quantifies revenue and cost synergy assumptions",
+    "Considers culture, systems, and execution risk",
+    "Defines diligence questions and deal breakers"
   ],
-  "interviewer_notes": "Strong candidates should connect margin decline to product mix, input costs, pricing power, and manufacturing utilization.",
+  "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-08"
+  "publish_date": "2026-07-09"
 }
