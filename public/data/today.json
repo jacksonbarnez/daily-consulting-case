@@ -1,24 +1,24 @@
 {
-  "id": "manda-cybersecurity-003",
-  "title": "Cybersecurity Startup Acquisition",
-  "case_type": "M&A",
-  "industry": "Cybersecurity",
+  "id": "ai-and-automation-technology-004",
+  "title": "Technology Ai and Automation Opportunity",
+  "case_type": "AI and Automation",
+  "industry": "Technology",
   "difficulty": "Intermediate",
-  "background": "A technology company is considering acquiring a cybersecurity startup to expand its product suite.",
+  "background": "A technology organization is facing a AI and automation opportunity and wants to identify the best path forward.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies strategic rationale for the deal",
-    "Assesses market, financial, and operational attractiveness",
-    "Identifies synergies and integration risks",
-    "Recommends whether to proceed"
+    "Identifies processes suitable for automation",
+    "Assesses data availability, risk, and human oversight needs",
+    "Estimates productivity or quality impact",
+    "Recommends use cases to pilot"
   ],
   "great_answer_includes": [
-    "Tests standalone value versus deal value",
-    "Quantifies revenue and cost synergy assumptions",
-    "Considers culture, systems, and execution risk",
-    "Defines diligence questions and deal breakers"
+    "Prioritizes use cases by value and feasibility",
+    "Considers model accuracy, bias, and governance",
+    "Defines human-in-the-loop controls",
+    "Plans measurement before scaling"
   ],
-  "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear ai and automation structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-09"
+  "publish_date": "2026-07-10"
 }
