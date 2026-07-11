@@ -1,24 +1,24 @@
 {
-  "id": "ai-and-automation-technology-004",
-  "title": "Technology Ai and Automation Opportunity",
-  "case_type": "AI and Automation",
-  "industry": "Technology",
-  "difficulty": "Intermediate",
-  "background": "A technology organization is facing a AI and automation opportunity and wants to identify the best path forward.",
+  "id": "erp-implementation-retail-001",
+  "title": "Retail ERP Rollout",
+  "case_type": "ERP Implementation",
+  "industry": "Retail",
+  "difficulty": "Beginner",
+  "background": "A retailer is preparing to replace several legacy finance and inventory systems with a new ERP.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies processes suitable for automation",
-    "Assesses data availability, risk, and human oversight needs",
-    "Estimates productivity or quality impact",
-    "Recommends use cases to pilot"
+    "Clarifies business processes and implementation goals",
+    "Assesses scope, data, integrations, and user impacts",
+    "Identifies risks in timeline, adoption, and testing",
+    "Recommends an implementation approach"
   ],
   "great_answer_includes": [
-    "Prioritizes use cases by value and feasibility",
-    "Considers model accuracy, bias, and governance",
-    "Defines human-in-the-loop controls",
-    "Plans measurement before scaling"
+    "Considers process standardization versus customization",
+    "Prioritizes data migration and change management",
+    "Defines governance and decision rights",
+    "Plans phased rollout and stabilization"
   ],
-  "interviewer_notes": "A strong candidate should use a clear ai and automation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear erp implementation structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-10"
+  "publish_date": "2026-07-11"
 }
