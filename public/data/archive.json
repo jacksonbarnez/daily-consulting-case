@@ -334,5 +334,29 @@
     "interviewer_notes": "A strong candidate should use a clear erp implementation structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-11"
+  },
+  {
+    "id": "market-entry-energy-004",
+    "title": "EV Charger Network Expansion",
+    "case_type": "Market Entry",
+    "industry": "Energy",
+    "difficulty": "Intermediate",
+    "background": "An energy company is deciding whether to build an EV charging network in midsized cities.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines target market and customer segments",
+      "Assesses market size, growth, and competitive intensity",
+      "Evaluates entry options, economics, and risks",
+      "Recommends whether and how to enter"
+    ],
+    "great_answer_includes": [
+      "Identifies regulatory, operational, and channel barriers",
+      "Compares build, partner, and acquisition routes",
+      "Uses a test-and-scale plan with clear milestones",
+      "Explains what would make the entry unattractive"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-12"
   }
 ]
