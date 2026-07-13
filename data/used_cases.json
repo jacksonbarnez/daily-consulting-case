@@ -58,5 +58,9 @@
   {
     "case_id": "market-entry-energy-004",
     "used_on": "2026-07-12"
+  },
+  {
+    "case_id": "pricing-consumer-products-001",
+    "used_on": "2026-07-13"
   }
 ]

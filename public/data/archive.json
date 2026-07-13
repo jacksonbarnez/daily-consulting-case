@@ -358,5 +358,29 @@
     "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-12"
+  },
+  {
+    "id": "pricing-consumer-products-001",
+    "title": "Meal Kit Subscription Pricing",
+    "case_type": "Pricing",
+    "industry": "Consumer Products",
+    "difficulty": "Beginner",
+    "background": "A meal kit company is considering changing its subscription pricing after rising food and shipping costs.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies objectives such as revenue, margin, or share",
+      "Assesses customer willingness to pay and alternatives",
+      "Considers cost structure and competitor pricing",
+      "Recommends a pricing model with risks"
+    ],
+    "great_answer_includes": [
+      "Segments pricing by customer or usage pattern",
+      "Estimates elasticity and demand response",
+      "Considers bundling, tiers, and discount governance",
+      "Suggests controlled tests before broad rollout"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-13"
   }
 ]
