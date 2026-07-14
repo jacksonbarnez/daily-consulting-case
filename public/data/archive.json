@@ -382,5 +382,29 @@
     "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-13"
+  },
+  {
+    "id": "digital-transformation-insurance-004",
+    "title": "Insurance Digital Claims",
+    "case_type": "Digital Transformation",
+    "industry": "Insurance",
+    "difficulty": "Intermediate",
+    "background": "An insurer wants to digitize its claims process to reduce cycle time and improve transparency.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies business goals for the transformation",
+      "Identifies processes, systems, and data needing change",
+      "Considers adoption, governance, and change management",
+      "Recommends a phased roadmap"
+    ],
+    "great_answer_includes": [
+      "Avoids technology-first thinking without business value",
+      "Identifies capability gaps and operating model changes",
+      "Considers integration and data quality risks",
+      "Defines measurable outcomes and milestones"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-14"
   }
 ]
