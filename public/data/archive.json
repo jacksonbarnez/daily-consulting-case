@@ -406,5 +406,29 @@
     "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-14"
+  },
+  {
+    "id": "operations-healthcare-002",
+    "title": "Hospital Discharge Bottleneck",
+    "case_type": "Operations",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A hospital has bed shortages because patient discharges are consistently delayed.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Maps the end-to-end process and bottlenecks",
+      "Identifies capacity, staffing, quality, and handoff issues",
+      "Uses metrics such as cycle time, throughput, and error rate",
+      "Recommends practical process improvements"
+    ],
+    "great_answer_includes": [
+      "Distinguishes root causes from symptoms",
+      "Quantifies impact of each bottleneck",
+      "Considers technology, incentives, and change management",
+      "Builds a phased implementation plan"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear operations structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-15"
   }
 ]

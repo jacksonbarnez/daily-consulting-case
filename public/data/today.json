@@ -1,24 +1,24 @@
 {
-  "id": "digital-transformation-insurance-004",
-  "title": "Insurance Digital Claims",
-  "case_type": "Digital Transformation",
-  "industry": "Insurance",
-  "difficulty": "Intermediate",
-  "background": "An insurer wants to digitize its claims process to reduce cycle time and improve transparency.",
+  "id": "operations-healthcare-002",
+  "title": "Hospital Discharge Bottleneck",
+  "case_type": "Operations",
+  "industry": "Healthcare",
+  "difficulty": "Beginner",
+  "background": "A hospital has bed shortages because patient discharges are consistently delayed.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies business goals for the transformation",
-    "Identifies processes, systems, and data needing change",
-    "Considers adoption, governance, and change management",
-    "Recommends a phased roadmap"
+    "Maps the end-to-end process and bottlenecks",
+    "Identifies capacity, staffing, quality, and handoff issues",
+    "Uses metrics such as cycle time, throughput, and error rate",
+    "Recommends practical process improvements"
   ],
   "great_answer_includes": [
-    "Avoids technology-first thinking without business value",
-    "Identifies capability gaps and operating model changes",
-    "Considers integration and data quality risks",
-    "Defines measurable outcomes and milestones"
+    "Distinguishes root causes from symptoms",
+    "Quantifies impact of each bottleneck",
+    "Considers technology, incentives, and change management",
+    "Builds a phased implementation plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear operations structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-14"
+  "publish_date": "2026-07-15"
 }
