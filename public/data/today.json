@@ -1,24 +1,24 @@
 {
-  "id": "digital-transformation-restaurants-003",
-  "title": "Restaurant Digital Ordering",
-  "case_type": "Digital Transformation",
-  "industry": "Restaurants",
-  "difficulty": "Intermediate",
-  "background": "A restaurant chain wants to improve digital ordering across mobile, web, and in-store kiosks.",
+  "id": "growth-strategy-media-001",
+  "title": "Streaming Platform Subscriber Growth",
+  "case_type": "Growth Strategy",
+  "industry": "Media",
+  "difficulty": "Beginner",
+  "background": "A streaming platform has slowed subscriber growth and wants to restart momentum without overspending on content.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies business goals for the transformation",
-    "Identifies processes, systems, and data needing change",
-    "Considers adoption, governance, and change management",
-    "Recommends a phased roadmap"
+    "Identifies growth levers across customers, products, and channels",
+    "Segments customers by needs and profitability",
+    "Assesses feasibility, investment, and expected impact",
+    "Recommends a prioritized growth roadmap"
   ],
   "great_answer_includes": [
-    "Avoids technology-first thinking without business value",
-    "Identifies capability gaps and operating model changes",
-    "Considers integration and data quality risks",
-    "Defines measurable outcomes and milestones"
+    "Balances acquisition, retention, and expansion opportunities",
+    "Identifies operational capabilities needed to scale",
+    "Considers competitive response and market saturation",
+    "Defines metrics to track growth quality"
   ],
-  "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-16"
+  "publish_date": "2026-07-17"
 }
