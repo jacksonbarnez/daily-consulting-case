@@ -478,5 +478,29 @@
     "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-17"
+  },
+  {
+    "id": "saas-strategy-technology-003",
+    "title": "Vertical SaaS Strategy",
+    "case_type": "SaaS Strategy",
+    "industry": "Technology",
+    "difficulty": "Intermediate",
+    "background": "A software company is considering whether to build a vertical SaaS product for a niche industry.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Breaks performance into acquisition, activation, retention, and expansion",
+      "Assesses pricing, packaging, and customer segments",
+      "Identifies product and sales levers",
+      "Recommends a SaaS growth plan"
+    ],
+    "great_answer_includes": [
+      "Uses metrics such as churn, CAC, LTV, and NRR",
+      "Segments customers by size, usage, and profitability",
+      "Balances growth with unit economics",
+      "Defines experiments and leading indicators"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-18"
   }
 ]
