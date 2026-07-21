@@ -90,5 +90,9 @@
   {
     "case_id": "customer-experience-travel-001",
     "used_on": "2026-07-20"
+  },
+  {
+    "case_id": "market-entry-saas-003",
+    "used_on": "2026-07-21"
   }
 ]
