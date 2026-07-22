@@ -1,24 +1,24 @@
 {
-  "id": "market-entry-saas-003",
-  "title": "B2B SaaS Entering Europe",
-  "case_type": "Market Entry",
-  "industry": "SaaS",
+  "id": "competitive-response-retail-004",
+  "title": "Grocery Delivery Price War",
+  "case_type": "Competitive Response",
+  "industry": "Retail",
   "difficulty": "Intermediate",
-  "background": "A B2B SaaS company is considering entering several European countries for the first time.",
+  "background": "A grocery delivery company is facing aggressive discounts from a larger competitor.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target market and customer segments",
-    "Assesses market size, growth, and competitive intensity",
-    "Evaluates entry options, economics, and risks",
-    "Recommends whether and how to enter"
+    "Identifies the competitor's offer and target customers",
+    "Assesses impact on price, volume, and retention",
+    "Evaluates response options beyond matching price",
+    "Recommends a focused response"
   ],
   "great_answer_includes": [
-    "Identifies regulatory, operational, and channel barriers",
-    "Compares build, partner, and acquisition routes",
-    "Uses a test-and-scale plan with clear milestones",
-    "Explains what would make the entry unattractive"
+    "Segments vulnerable customers and defensible strengths",
+    "Considers likely competitor reactions",
+    "Balances short-term defense with long-term positioning",
+    "Defines metrics to monitor response effectiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear competitive response structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-21"
+  "publish_date": "2026-07-22"
 }
