@@ -622,5 +622,29 @@
     "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-23"
+  },
+  {
+    "id": "go-to-market-healthcare-002",
+    "title": "Healthcare Analytics Sales Motion",
+    "case_type": "Go-to-Market",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A healthcare analytics company wants to sell into hospital systems but has a long sales cycle.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines target segments and buyer personas",
+      "Chooses channels, messaging, and sales motion",
+      "Considers pricing, enablement, and launch sequencing",
+      "Recommends a GTM plan"
+    ],
+    "great_answer_includes": [
+      "Aligns GTM motion with deal size and buying process",
+      "Identifies early adopter segments and proof points",
+      "Considers partner and direct channel tradeoffs",
+      "Defines pipeline, conversion, and retention metrics"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-24"
   }
 ]

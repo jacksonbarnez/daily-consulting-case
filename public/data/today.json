@@ -1,24 +1,24 @@
 {
-  "id": "market-sizing-real-estate-001",
-  "title": "Chicago Coworking Market Size",
-  "case_type": "Market Sizing",
-  "industry": "Real Estate",
+  "id": "go-to-market-healthcare-002",
+  "title": "Healthcare Analytics Sales Motion",
+  "case_type": "Go-to-Market",
+  "industry": "Healthcare",
   "difficulty": "Beginner",
-  "background": "A real estate investor wants to estimate the potential demand for coworking space in Chicago.",
+  "background": "A healthcare analytics company wants to sell into hospital systems but has a long sales cycle.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines the market clearly and avoids double counting",
-    "Uses a logical top-down or bottom-up structure",
-    "States assumptions transparently",
-    "Calculates a reasonable estimate"
+    "Defines target segments and buyer personas",
+    "Chooses channels, messaging, and sales motion",
+    "Considers pricing, enablement, and launch sequencing",
+    "Recommends a GTM plan"
   ],
   "great_answer_includes": [
-    "Validates assumptions with sanity checks",
-    "Segments the market where useful",
-    "Separates users, units, frequency, and price",
-    "Connects market size to business attractiveness"
+    "Aligns GTM motion with deal size and buying process",
+    "Identifies early adopter segments and proof points",
+    "Considers partner and direct channel tradeoffs",
+    "Defines pipeline, conversion, and retention metrics"
   ],
-  "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-23"
+  "publish_date": "2026-07-24"
 }
