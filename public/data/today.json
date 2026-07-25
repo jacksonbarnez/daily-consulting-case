@@ -1,24 +1,24 @@
 {
-  "id": "go-to-market-healthcare-002",
-  "title": "Healthcare Analytics Sales Motion",
-  "case_type": "Go-to-Market",
-  "industry": "Healthcare",
-  "difficulty": "Beginner",
-  "background": "A healthcare analytics company wants to sell into hospital systems but has a long sales cycle.",
+  "id": "cost-reduction-restaurants-003",
+  "title": "Restaurant Labor Cost Challenge",
+  "case_type": "Cost Reduction",
+  "industry": "Restaurants",
+  "difficulty": "Intermediate",
+  "background": "A restaurant group has rising labor costs and inconsistent staffing across locations.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target segments and buyer personas",
-    "Chooses channels, messaging, and sales motion",
-    "Considers pricing, enablement, and launch sequencing",
-    "Recommends a GTM plan"
+    "Breaks costs into major categories",
+    "Separates fixed and variable costs",
+    "Identifies savings opportunities with minimal customer impact",
+    "Prioritizes savings by size and feasibility"
   ],
   "great_answer_includes": [
-    "Aligns GTM motion with deal size and buying process",
-    "Identifies early adopter segments and proof points",
-    "Considers partner and direct channel tradeoffs",
-    "Defines pipeline, conversion, and retention metrics"
+    "Avoids cuts that harm revenue or service quality",
+    "Benchmarks costs against comparable organizations",
+    "Includes one-time versus recurring savings",
+    "Creates a realistic implementation and risk plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-24"
+  "publish_date": "2026-07-25"
 }
