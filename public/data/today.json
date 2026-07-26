@@ -1,24 +1,24 @@
 {
-  "id": "cost-reduction-restaurants-003",
-  "title": "Restaurant Labor Cost Challenge",
-  "case_type": "Cost Reduction",
-  "industry": "Restaurants",
-  "difficulty": "Intermediate",
-  "background": "A restaurant group has rising labor costs and inconsistent staffing across locations.",
+  "id": "cloud-migration-financial-services-001",
+  "title": "Bank Cloud Migration",
+  "case_type": "Cloud Migration",
+  "industry": "Financial Services",
+  "difficulty": "Beginner",
+  "background": "A bank is considering moving selected applications to the cloud while managing risk and compliance.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks costs into major categories",
-    "Separates fixed and variable costs",
-    "Identifies savings opportunities with minimal customer impact",
-    "Prioritizes savings by size and feasibility"
+    "Clarifies migration objectives and constraints",
+    "Assesses application readiness and dependencies",
+    "Considers cost, security, compliance, and downtime",
+    "Recommends a migration approach"
   ],
   "great_answer_includes": [
-    "Avoids cuts that harm revenue or service quality",
-    "Benchmarks costs against comparable organizations",
-    "Includes one-time versus recurring savings",
-    "Creates a realistic implementation and risk plan"
+    "Segments workloads by complexity and risk",
+    "Compares rehost, refactor, and replace options",
+    "Includes change management and operating model needs",
+    "Defines migration waves and success metrics"
   ],
-  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cloud migration structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-25"
+  "publish_date": "2026-07-26"
 }
