@@ -694,5 +694,29 @@
     "interviewer_notes": "A strong candidate should use a clear cloud migration structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-26"
+  },
+  {
+    "id": "supply-chain-energy-004",
+    "title": "Solar Panel Logistics Challenge",
+    "case_type": "Supply Chain",
+    "industry": "Energy",
+    "difficulty": "Intermediate",
+    "background": "A solar installer is missing project timelines because panels and parts arrive unpredictably.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Maps suppliers, inventory, transportation, and demand planning",
+      "Identifies root causes of delays, stockouts, or cost increases",
+      "Assesses service levels, lead times, and resilience",
+      "Recommends supply chain improvements"
+    ],
+    "great_answer_includes": [
+      "Quantifies tradeoffs between cost, speed, and reliability",
+      "Considers dual sourcing or inventory buffers",
+      "Segments items by criticality and demand variability",
+      "Builds a risk mitigation plan"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-27"
   }
 ]
