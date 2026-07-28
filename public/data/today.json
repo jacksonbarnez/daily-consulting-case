@@ -1,24 +1,24 @@
 {
-  "id": "supply-chain-energy-004",
-  "title": "Solar Panel Logistics Challenge",
-  "case_type": "Supply Chain",
-  "industry": "Energy",
+  "id": "platform-strategy-technology-003",
+  "title": "Developer Platform Growth",
+  "case_type": "Platform Strategy",
+  "industry": "Technology",
   "difficulty": "Intermediate",
-  "background": "A solar installer is missing project timelines because panels and parts arrive unpredictably.",
+  "background": "A developer platform wants to grow third-party adoption and build a stronger ecosystem.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Maps suppliers, inventory, transportation, and demand planning",
-    "Identifies root causes of delays, stockouts, or cost increases",
-    "Assesses service levels, lead times, and resilience",
-    "Recommends supply chain improvements"
+    "Identifies platform participants and value exchange",
+    "Assesses network effects, trust, and monetization",
+    "Evaluates supply and demand growth levers",
+    "Recommends a platform strategy"
   ],
   "great_answer_includes": [
-    "Quantifies tradeoffs between cost, speed, and reliability",
-    "Considers dual sourcing or inventory buffers",
-    "Segments items by criticality and demand variability",
-    "Builds a risk mitigation plan"
+    "Addresses chicken-and-egg adoption challenges",
+    "Considers governance, incentives, and quality control",
+    "Balances monetization with participant retention",
+    "Defines metrics for liquidity and engagement"
   ],
-  "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-27"
+  "publish_date": "2026-07-28"
 }
