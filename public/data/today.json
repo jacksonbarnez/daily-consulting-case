@@ -1,24 +1,24 @@
 {
-  "id": "platform-strategy-technology-003",
-  "title": "Developer Platform Growth",
-  "case_type": "Platform Strategy",
-  "industry": "Technology",
+  "id": "product-strategy-education-003",
+  "title": "EdTech Platform Prioritization",
+  "case_type": "Product Strategy",
+  "industry": "Education",
   "difficulty": "Intermediate",
-  "background": "A developer platform wants to grow third-party adoption and build a stronger ecosystem.",
+  "background": "An education platform has more requested features than engineering capacity for the next two quarters.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies platform participants and value exchange",
-    "Assesses network effects, trust, and monetization",
-    "Evaluates supply and demand growth levers",
-    "Recommends a platform strategy"
+    "Clarifies product objectives and target users",
+    "Prioritizes features based on value and feasibility",
+    "Considers competitive differentiation and user pain points",
+    "Recommends a roadmap"
   ],
   "great_answer_includes": [
-    "Addresses chicken-and-egg adoption challenges",
-    "Considers governance, incentives, and quality control",
-    "Balances monetization with participant retention",
-    "Defines metrics for liquidity and engagement"
+    "Uses customer evidence to support prioritization",
+    "Considers monetization, retention, and engagement impact",
+    "Addresses technical dependencies and tradeoffs",
+    "Defines product metrics and learning milestones"
   ],
-  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear product strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-07-28"
+  "publish_date": "2026-07-29"
 }
