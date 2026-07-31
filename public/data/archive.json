@@ -790,5 +790,29 @@
     "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-30"
+  },
+  {
+    "id": "technology-strategy-retail-001",
+    "title": "Retail Technology Roadmap",
+    "case_type": "Technology Strategy",
+    "industry": "Retail",
+    "difficulty": "Beginner",
+    "background": "A retailer has many disconnected systems and wants a technology roadmap for the next three years.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Assesses current systems against business goals",
+      "Identifies capability gaps and technical risks",
+      "Prioritizes technology investments by value and feasibility",
+      "Recommends a roadmap"
+    ],
+    "great_answer_includes": [
+      "Balances modernization with cost and disruption",
+      "Considers build, buy, and partner options",
+      "Addresses governance, security, and scalability",
+      "Links technology choices to business outcomes"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-07-31"
   }
 ]
