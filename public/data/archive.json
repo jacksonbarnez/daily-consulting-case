@@ -814,5 +814,29 @@
     "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-07-31"
+  },
+  {
+    "id": "it-modernization-public-sector-002",
+    "title": "City IT Modernization",
+    "case_type": "IT Modernization",
+    "industry": "Public Sector",
+    "difficulty": "Beginner",
+    "background": "A city government wants to modernize outdated IT systems across multiple departments.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Assesses legacy system pain points and business impact",
+      "Identifies modernization options and dependencies",
+      "Considers cost, risk, security, and user disruption",
+      "Recommends a phased modernization roadmap"
+    ],
+    "great_answer_includes": [
+      "Balances technical debt reduction with business priorities",
+      "Considers architecture, data, and vendor implications",
+      "Plans transition risks and parallel operations",
+      "Defines measurable modernization outcomes"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-01"
   }
 ]
