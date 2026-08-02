@@ -838,5 +838,29 @@
     "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-01"
+  },
+  {
+    "id": "customer-experience-healthcare-002",
+    "title": "Pharmacy Pickup Experience",
+    "case_type": "Customer Experience",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A pharmacy chain is receiving complaints about long pickup waits and confusing notifications.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Maps the customer journey and pain points",
+      "Identifies moments causing dissatisfaction or churn",
+      "Uses metrics such as NPS, wait time, and complaint rate",
+      "Recommends improvements"
+    ],
+    "great_answer_includes": [
+      "Segments experience issues by customer type or channel",
+      "Links experience improvements to revenue or retention",
+      "Considers employee incentives and operational constraints",
+      "Prioritizes fixes by impact and effort"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear customer experience structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-02"
   }
 ]

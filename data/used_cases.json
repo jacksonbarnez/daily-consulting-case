@@ -138,5 +138,9 @@
   {
     "case_id": "it-modernization-public-sector-002",
     "used_on": "2026-08-01"
+  },
+  {
+    "case_id": "customer-experience-healthcare-002",
+    "used_on": "2026-08-02"
   }
 ]

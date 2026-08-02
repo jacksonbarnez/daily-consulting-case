@@ -1,24 +1,24 @@
 {
-  "id": "it-modernization-public-sector-002",
-  "title": "City IT Modernization",
-  "case_type": "IT Modernization",
-  "industry": "Public Sector",
+  "id": "customer-experience-healthcare-002",
+  "title": "Pharmacy Pickup Experience",
+  "case_type": "Customer Experience",
+  "industry": "Healthcare",
   "difficulty": "Beginner",
-  "background": "A city government wants to modernize outdated IT systems across multiple departments.",
+  "background": "A pharmacy chain is receiving complaints about long pickup waits and confusing notifications.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Assesses legacy system pain points and business impact",
-    "Identifies modernization options and dependencies",
-    "Considers cost, risk, security, and user disruption",
-    "Recommends a phased modernization roadmap"
+    "Maps the customer journey and pain points",
+    "Identifies moments causing dissatisfaction or churn",
+    "Uses metrics such as NPS, wait time, and complaint rate",
+    "Recommends improvements"
   ],
   "great_answer_includes": [
-    "Balances technical debt reduction with business priorities",
-    "Considers architecture, data, and vendor implications",
-    "Plans transition risks and parallel operations",
-    "Defines measurable modernization outcomes"
+    "Segments experience issues by customer type or channel",
+    "Links experience improvements to revenue or retention",
+    "Considers employee incentives and operational constraints",
+    "Prioritizes fixes by impact and effort"
   ],
-  "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear customer experience structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-01"
+  "publish_date": "2026-08-02"
 }
