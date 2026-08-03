@@ -142,5 +142,9 @@
   {
     "case_id": "customer-experience-healthcare-002",
     "used_on": "2026-08-02"
+  },
+  {
+    "case_id": "operations-logistics-003",
+    "used_on": "2026-08-03"
   }
 ]
