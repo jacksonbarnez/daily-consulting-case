@@ -1,24 +1,24 @@
 {
-  "id": "cost-reduction-insurance-002",
-  "title": "Insurance Claims Cost Reduction",
-  "case_type": "Cost Reduction",
-  "industry": "Insurance",
+  "id": "market-entry-restaurants-002",
+  "title": "Restaurant Chain New City Entry",
+  "case_type": "Market Entry",
+  "industry": "Restaurants",
   "difficulty": "Beginner",
-  "background": "An insurance carrier wants to reduce claims handling costs without hurting customer satisfaction.",
+  "background": "A fast casual restaurant chain is evaluating whether to enter a new metropolitan market.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks costs into major categories",
-    "Separates fixed and variable costs",
-    "Identifies savings opportunities with minimal customer impact",
-    "Prioritizes savings by size and feasibility"
+    "Defines target market and customer segments",
+    "Assesses market size, growth, and competitive intensity",
+    "Evaluates entry options, economics, and risks",
+    "Recommends whether and how to enter"
   ],
   "great_answer_includes": [
-    "Avoids cuts that harm revenue or service quality",
-    "Benchmarks costs against comparable organizations",
-    "Includes one-time versus recurring savings",
-    "Creates a realistic implementation and risk plan"
+    "Identifies regulatory, operational, and channel barriers",
+    "Compares build, partner, and acquisition routes",
+    "Uses a test-and-scale plan with clear milestones",
+    "Explains what would make the entry unattractive"
   ],
-  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-04"
+  "publish_date": "2026-08-05"
 }
