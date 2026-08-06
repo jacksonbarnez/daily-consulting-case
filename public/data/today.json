@@ -1,24 +1,24 @@
 {
-  "id": "market-entry-restaurants-002",
-  "title": "Restaurant Chain New City Entry",
-  "case_type": "Market Entry",
-  "industry": "Restaurants",
-  "difficulty": "Beginner",
-  "background": "A fast casual restaurant chain is evaluating whether to enter a new metropolitan market.",
+  "id": "customer-experience-hospitality-004",
+  "title": "Hotel Guest Experience",
+  "case_type": "Customer Experience",
+  "industry": "Hospitality",
+  "difficulty": "Intermediate",
+  "background": "A hotel brand has strong occupancy but declining guest review scores.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target market and customer segments",
-    "Assesses market size, growth, and competitive intensity",
-    "Evaluates entry options, economics, and risks",
-    "Recommends whether and how to enter"
+    "Maps the customer journey and pain points",
+    "Identifies moments causing dissatisfaction or churn",
+    "Uses metrics such as NPS, wait time, and complaint rate",
+    "Recommends improvements"
   ],
   "great_answer_includes": [
-    "Identifies regulatory, operational, and channel barriers",
-    "Compares build, partner, and acquisition routes",
-    "Uses a test-and-scale plan with clear milestones",
-    "Explains what would make the entry unattractive"
+    "Segments experience issues by customer type or channel",
+    "Links experience improvements to revenue or retention",
+    "Considers employee incentives and operational constraints",
+    "Prioritizes fixes by impact and effort"
   ],
-  "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear customer experience structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-05"
+  "publish_date": "2026-08-06"
 }
