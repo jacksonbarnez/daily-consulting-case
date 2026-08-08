@@ -1,24 +1,24 @@
 {
-  "id": "cybersecurity-financial-services-002",
-  "title": "Fintech Security Investment",
-  "case_type": "Cybersecurity",
-  "industry": "Financial Services",
-  "difficulty": "Beginner",
-  "background": "A fintech company wants to prioritize cybersecurity investments before entering larger enterprise accounts.",
+  "id": "competitive-response-saas-003",
+  "title": "SaaS Feature Copycat",
+  "case_type": "Competitive Response",
+  "industry": "SaaS",
+  "difficulty": "Intermediate",
+  "background": "A SaaS company discovers that a major competitor copied one of its most popular features.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies key assets, threats, and vulnerabilities",
-    "Assesses current controls and incident readiness",
-    "Prioritizes risks by likelihood and impact",
-    "Recommends security investments"
+    "Identifies the competitor's offer and target customers",
+    "Assesses impact on price, volume, and retention",
+    "Evaluates response options beyond matching price",
+    "Recommends a focused response"
   ],
   "great_answer_includes": [
-    "Balances risk reduction with business operations",
-    "Considers employee behavior and third-party exposure",
-    "Defines governance, monitoring, and response capabilities",
-    "Prioritizes quick wins and longer-term resilience"
+    "Segments vulnerable customers and defensible strengths",
+    "Considers likely competitor reactions",
+    "Balances short-term defense with long-term positioning",
+    "Defines metrics to monitor response effectiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear competitive response structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-07"
+  "publish_date": "2026-08-08"
 }
