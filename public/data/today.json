@@ -1,24 +1,24 @@
 {
-  "id": "competitive-response-saas-003",
-  "title": "SaaS Feature Copycat",
-  "case_type": "Competitive Response",
-  "industry": "SaaS",
-  "difficulty": "Intermediate",
-  "background": "A SaaS company discovers that a major competitor copied one of its most popular features.",
+  "id": "cloud-migration-education-002",
+  "title": "University Cloud Move",
+  "case_type": "Cloud Migration",
+  "industry": "Education",
+  "difficulty": "Beginner",
+  "background": "A university wants to migrate aging on-premise systems to cloud platforms.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies the competitor's offer and target customers",
-    "Assesses impact on price, volume, and retention",
-    "Evaluates response options beyond matching price",
-    "Recommends a focused response"
+    "Clarifies migration objectives and constraints",
+    "Assesses application readiness and dependencies",
+    "Considers cost, security, compliance, and downtime",
+    "Recommends a migration approach"
   ],
   "great_answer_includes": [
-    "Segments vulnerable customers and defensible strengths",
-    "Considers likely competitor reactions",
-    "Balances short-term defense with long-term positioning",
-    "Defines metrics to monitor response effectiveness"
+    "Segments workloads by complexity and risk",
+    "Compares rehost, refactor, and replace options",
+    "Includes change management and operating model needs",
+    "Defines migration waves and success metrics"
   ],
-  "interviewer_notes": "A strong candidate should use a clear competitive response structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cloud migration structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-08"
+  "publish_date": "2026-08-09"
 }
