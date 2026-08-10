@@ -1,24 +1,24 @@
 {
-  "id": "cloud-migration-education-002",
-  "title": "University Cloud Move",
-  "case_type": "Cloud Migration",
-  "industry": "Education",
+  "id": "digital-transformation-manufacturing-001",
+  "title": "Manufacturer Digital Operations",
+  "case_type": "Digital Transformation",
+  "industry": "Manufacturing",
   "difficulty": "Beginner",
-  "background": "A university wants to migrate aging on-premise systems to cloud platforms.",
+  "background": "A manufacturer wants to digitize shop floor operations but has inconsistent processes across plants.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies migration objectives and constraints",
-    "Assesses application readiness and dependencies",
-    "Considers cost, security, compliance, and downtime",
-    "Recommends a migration approach"
+    "Clarifies business goals for the transformation",
+    "Identifies processes, systems, and data needing change",
+    "Considers adoption, governance, and change management",
+    "Recommends a phased roadmap"
   ],
   "great_answer_includes": [
-    "Segments workloads by complexity and risk",
-    "Compares rehost, refactor, and replace options",
-    "Includes change management and operating model needs",
-    "Defines migration waves and success metrics"
+    "Avoids technology-first thinking without business value",
+    "Identifies capability gaps and operating model changes",
+    "Considers integration and data quality risks",
+    "Defines measurable outcomes and milestones"
   ],
-  "interviewer_notes": "A strong candidate should use a clear cloud migration structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-09"
+  "publish_date": "2026-08-10"
 }
