@@ -1054,5 +1054,29 @@
     "interviewer_notes": "A strong candidate should use a clear digital transformation structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-10"
+  },
+  {
+    "id": "product-launch-technology-001",
+    "title": "AI Study Tool Launch",
+    "case_type": "Product Launch",
+    "industry": "Technology",
+    "difficulty": "Beginner",
+    "background": "An education technology company is preparing to launch an AI study assistant for college students.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines target customer and unmet need",
+      "Assesses market demand and competitive alternatives",
+      "Considers pricing, channel, and launch timing",
+      "Recommends a launch plan with success metrics"
+    ],
+    "great_answer_includes": [
+      "Identifies adoption barriers and early user segments",
+      "Designs pilot, feedback, and iteration approach",
+      "Balances brand, margin, and operational complexity",
+      "Specifies go/no-go criteria"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear product launch structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-11"
   }
 ]
