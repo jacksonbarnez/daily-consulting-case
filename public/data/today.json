@@ -1,24 +1,24 @@
 {
-  "id": "product-launch-technology-001",
-  "title": "AI Study Tool Launch",
-  "case_type": "Product Launch",
-  "industry": "Technology",
-  "difficulty": "Beginner",
-  "background": "An education technology company is preparing to launch an AI study assistant for college students.",
+  "id": "pricing-travel-003",
+  "title": "Theme Park Ticket Pricing",
+  "case_type": "Pricing",
+  "industry": "Travel",
+  "difficulty": "Intermediate",
+  "background": "A theme park is considering dynamic pricing to improve revenue and manage crowding.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target customer and unmet need",
-    "Assesses market demand and competitive alternatives",
-    "Considers pricing, channel, and launch timing",
-    "Recommends a launch plan with success metrics"
+    "Clarifies objectives such as revenue, margin, or share",
+    "Assesses customer willingness to pay and alternatives",
+    "Considers cost structure and competitor pricing",
+    "Recommends a pricing model with risks"
   ],
   "great_answer_includes": [
-    "Identifies adoption barriers and early user segments",
-    "Designs pilot, feedback, and iteration approach",
-    "Balances brand, margin, and operational complexity",
-    "Specifies go/no-go criteria"
+    "Segments pricing by customer or usage pattern",
+    "Estimates elasticity and demand response",
+    "Considers bundling, tiers, and discount governance",
+    "Suggests controlled tests before broad rollout"
   ],
-  "interviewer_notes": "A strong candidate should use a clear product launch structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-11"
+  "publish_date": "2026-08-12"
 }
