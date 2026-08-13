@@ -182,5 +182,9 @@
   {
     "case_id": "pricing-travel-003",
     "used_on": "2026-08-12"
+  },
+  {
+    "case_id": "revenue-growth-healthcare-004",
+    "used_on": "2026-08-13"
   }
 ]

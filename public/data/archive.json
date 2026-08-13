@@ -1102,5 +1102,29 @@
     "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-12"
+  },
+  {
+    "id": "revenue-growth-healthcare-004",
+    "title": "Dental Group Revenue Lift",
+    "case_type": "Revenue Growth",
+    "industry": "Healthcare",
+    "difficulty": "Intermediate",
+    "background": "A dental practice group wants to increase revenue per location while maintaining patient trust.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Breaks revenue into price, volume, mix, and retention",
+      "Identifies customer segments with growth potential",
+      "Considers channel, product, and sales improvements",
+      "Recommends initiatives with expected impact"
+    ],
+    "great_answer_includes": [
+      "Separates short-term lifts from sustainable growth",
+      "Examines unit economics and margin impact",
+      "Considers cross-sell, upsell, and repeat purchase behavior",
+      "Defines success metrics and experiments"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear revenue growth structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-13"
   }
 ]
