@@ -1,24 +1,24 @@
 {
-  "id": "turnaround-retail-002",
-  "title": "Retail Apparel Turnaround",
-  "case_type": "Turnaround",
-  "industry": "Retail",
-  "difficulty": "Beginner",
-  "background": "An apparel retailer has falling sales, excess inventory, and declining customer relevance.",
+  "id": "cost-reduction-public-sector-004",
+  "title": "School District Budget Gap",
+  "case_type": "Cost Reduction",
+  "industry": "Public Sector",
+  "difficulty": "Intermediate",
+  "background": "A school district faces a budget gap and wants to reduce costs while preserving classroom quality.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Diagnoses the root causes of underperformance",
-    "Separates revenue, cost, operational, and market issues",
-    "Identifies urgent cash and performance levers",
-    "Recommends a prioritized recovery plan"
+    "Breaks costs into major categories",
+    "Separates fixed and variable costs",
+    "Identifies savings opportunities with minimal customer impact",
+    "Prioritizes savings by size and feasibility"
   ],
   "great_answer_includes": [
-    "Distinguishes temporary issues from structural decline",
-    "Considers stakeholder constraints and execution capacity",
-    "Balances quick wins with longer-term repositioning",
-    "Defines milestones to judge recovery"
+    "Avoids cuts that harm revenue or service quality",
+    "Benchmarks costs against comparable organizations",
+    "Includes one-time versus recurring savings",
+    "Creates a realistic implementation and risk plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-14"
+  "publish_date": "2026-08-15"
 }
