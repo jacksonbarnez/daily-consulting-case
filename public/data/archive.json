@@ -1222,5 +1222,29 @@
     "interviewer_notes": "A strong candidate should use a clear operations structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-17"
+  },
+  {
+    "id": "technology-strategy-media-003",
+    "title": "Media Company Tech Stack",
+    "case_type": "Technology Strategy",
+    "industry": "Media",
+    "difficulty": "Intermediate",
+    "background": "A media company wants to simplify its technology stack after years of acquisitions.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Assesses current systems against business goals",
+      "Identifies capability gaps and technical risks",
+      "Prioritizes technology investments by value and feasibility",
+      "Recommends a roadmap"
+    ],
+    "great_answer_includes": [
+      "Balances modernization with cost and disruption",
+      "Considers build, buy, and partner options",
+      "Addresses governance, security, and scalability",
+      "Links technology choices to business outcomes"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-18"
   }
 ]
