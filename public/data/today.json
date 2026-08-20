@@ -1,24 +1,24 @@
 {
-  "id": "data-and-analytics-technology-004",
-  "title": "Technology Data and Analytics Roadmap",
-  "case_type": "Data and Analytics",
-  "industry": "Technology",
+  "id": "technology-strategy-logistics-004",
+  "title": "Logistics Platform Strategy",
+  "case_type": "Technology Strategy",
+  "industry": "Logistics",
   "difficulty": "Intermediate",
-  "background": "A technology organization is facing a data and analytics roadmap and wants to identify the best path forward.",
+  "background": "A logistics company wants to decide which technology capabilities to build internally versus buy.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies business questions analytics should answer",
-    "Assesses data sources, quality, and ownership",
-    "Identifies needed dashboards, models, or insights",
-    "Recommends an analytics roadmap"
+    "Assesses current systems against business goals",
+    "Identifies capability gaps and technical risks",
+    "Prioritizes technology investments by value and feasibility",
+    "Recommends a roadmap"
   ],
   "great_answer_includes": [
-    "Connects analytics to decisions and measurable outcomes",
-    "Addresses data governance and adoption barriers",
-    "Prioritizes use cases by value and feasibility",
-    "Defines operating model and accountability"
+    "Balances modernization with cost and disruption",
+    "Considers build, buy, and partner options",
+    "Addresses governance, security, and scalability",
+    "Links technology choices to business outcomes"
   ],
-  "interviewer_notes": "A strong candidate should use a clear data and analytics structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-19"
+  "publish_date": "2026-08-20"
 }
