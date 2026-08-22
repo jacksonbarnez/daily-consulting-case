@@ -1318,5 +1318,29 @@
     "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-21"
+  },
+  {
+    "id": "market-sizing-saas-004",
+    "title": "Cloud Backup Market Size",
+    "case_type": "Market Sizing",
+    "industry": "SaaS",
+    "difficulty": "Intermediate",
+    "background": "A software company wants to estimate the market for cloud backup services among small businesses.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines the market clearly and avoids double counting",
+      "Uses a logical top-down or bottom-up structure",
+      "States assumptions transparently",
+      "Calculates a reasonable estimate"
+    ],
+    "great_answer_includes": [
+      "Validates assumptions with sanity checks",
+      "Segments the market where useful",
+      "Separates users, units, frequency, and price",
+      "Connects market size to business attractiveness"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-22"
   }
 ]

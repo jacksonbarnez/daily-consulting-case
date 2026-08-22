@@ -1,24 +1,24 @@
 {
-  "id": "turnaround-healthcare-003",
-  "title": "Community Hospital Turnaround",
-  "case_type": "Turnaround",
-  "industry": "Healthcare",
+  "id": "market-sizing-saas-004",
+  "title": "Cloud Backup Market Size",
+  "case_type": "Market Sizing",
+  "industry": "SaaS",
   "difficulty": "Intermediate",
-  "background": "A community hospital is losing money and struggling with staffing shortages.",
+  "background": "A software company wants to estimate the market for cloud backup services among small businesses.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Diagnoses the root causes of underperformance",
-    "Separates revenue, cost, operational, and market issues",
-    "Identifies urgent cash and performance levers",
-    "Recommends a prioritized recovery plan"
+    "Defines the market clearly and avoids double counting",
+    "Uses a logical top-down or bottom-up structure",
+    "States assumptions transparently",
+    "Calculates a reasonable estimate"
   ],
   "great_answer_includes": [
-    "Distinguishes temporary issues from structural decline",
-    "Considers stakeholder constraints and execution capacity",
-    "Balances quick wins with longer-term repositioning",
-    "Defines milestones to judge recovery"
+    "Validates assumptions with sanity checks",
+    "Segments the market where useful",
+    "Separates users, units, frequency, and price",
+    "Connects market size to business attractiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-21"
+  "publish_date": "2026-08-22"
 }
