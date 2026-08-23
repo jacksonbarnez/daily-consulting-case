@@ -1,24 +1,24 @@
 {
-  "id": "market-sizing-saas-004",
-  "title": "Cloud Backup Market Size",
-  "case_type": "Market Sizing",
-  "industry": "SaaS",
+  "id": "supply-chain-restaurants-003",
+  "title": "Restaurant Ingredient Shortage",
+  "case_type": "Supply Chain",
+  "industry": "Restaurants",
   "difficulty": "Intermediate",
-  "background": "A software company wants to estimate the market for cloud backup services among small businesses.",
+  "background": "A restaurant chain is facing recurring shortages of a popular menu ingredient.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines the market clearly and avoids double counting",
-    "Uses a logical top-down or bottom-up structure",
-    "States assumptions transparently",
-    "Calculates a reasonable estimate"
+    "Maps suppliers, inventory, transportation, and demand planning",
+    "Identifies root causes of delays, stockouts, or cost increases",
+    "Assesses service levels, lead times, and resilience",
+    "Recommends supply chain improvements"
   ],
   "great_answer_includes": [
-    "Validates assumptions with sanity checks",
-    "Segments the market where useful",
-    "Separates users, units, frequency, and price",
-    "Connects market size to business attractiveness"
+    "Quantifies tradeoffs between cost, speed, and reliability",
+    "Considers dual sourcing or inventory buffers",
+    "Segments items by criticality and demand variability",
+    "Builds a risk mitigation plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-22"
+  "publish_date": "2026-08-23"
 }
