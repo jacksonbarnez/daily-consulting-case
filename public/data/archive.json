@@ -1366,5 +1366,29 @@
     "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-23"
+  },
+  {
+    "id": "growth-strategy-financial-services-003",
+    "title": "Regional Bank Youth Customer Growth",
+    "case_type": "Growth Strategy",
+    "industry": "Financial Services",
+    "difficulty": "Intermediate",
+    "background": "A regional bank wants to attract more customers under age 30 while protecting profitability.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Identifies growth levers across customers, products, and channels",
+      "Segments customers by needs and profitability",
+      "Assesses feasibility, investment, and expected impact",
+      "Recommends a prioritized growth roadmap"
+    ],
+    "great_answer_includes": [
+      "Balances acquisition, retention, and expansion opportunities",
+      "Identifies operational capabilities needed to scale",
+      "Considers competitive response and market saturation",
+      "Defines metrics to track growth quality"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-24"
   }
 ]

@@ -1,24 +1,24 @@
 {
-  "id": "supply-chain-restaurants-003",
-  "title": "Restaurant Ingredient Shortage",
-  "case_type": "Supply Chain",
-  "industry": "Restaurants",
+  "id": "growth-strategy-financial-services-003",
+  "title": "Regional Bank Youth Customer Growth",
+  "case_type": "Growth Strategy",
+  "industry": "Financial Services",
   "difficulty": "Intermediate",
-  "background": "A restaurant chain is facing recurring shortages of a popular menu ingredient.",
+  "background": "A regional bank wants to attract more customers under age 30 while protecting profitability.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Maps suppliers, inventory, transportation, and demand planning",
-    "Identifies root causes of delays, stockouts, or cost increases",
-    "Assesses service levels, lead times, and resilience",
-    "Recommends supply chain improvements"
+    "Identifies growth levers across customers, products, and channels",
+    "Segments customers by needs and profitability",
+    "Assesses feasibility, investment, and expected impact",
+    "Recommends a prioritized growth roadmap"
   ],
   "great_answer_includes": [
-    "Quantifies tradeoffs between cost, speed, and reliability",
-    "Considers dual sourcing or inventory buffers",
-    "Segments items by criticality and demand variability",
-    "Builds a risk mitigation plan"
+    "Balances acquisition, retention, and expansion opportunities",
+    "Identifies operational capabilities needed to scale",
+    "Considers competitive response and market saturation",
+    "Defines metrics to track growth quality"
   ],
-  "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-23"
+  "publish_date": "2026-08-24"
 }
