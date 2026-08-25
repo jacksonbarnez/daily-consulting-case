@@ -1390,5 +1390,29 @@
     "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-08-24"
+  },
+  {
+    "id": "market-sizing-insurance-002",
+    "title": "US Pet Insurance Market Size",
+    "case_type": "Market Sizing",
+    "industry": "Insurance",
+    "difficulty": "Beginner",
+    "background": "An insurer wants to estimate the addressable market for pet insurance in the United States.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines the market clearly and avoids double counting",
+      "Uses a logical top-down or bottom-up structure",
+      "States assumptions transparently",
+      "Calculates a reasonable estimate"
+    ],
+    "great_answer_includes": [
+      "Validates assumptions with sanity checks",
+      "Segments the market where useful",
+      "Separates users, units, frequency, and price",
+      "Connects market size to business attractiveness"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-08-25"
   }
 ]

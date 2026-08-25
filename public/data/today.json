@@ -1,24 +1,24 @@
 {
-  "id": "growth-strategy-financial-services-003",
-  "title": "Regional Bank Youth Customer Growth",
-  "case_type": "Growth Strategy",
-  "industry": "Financial Services",
-  "difficulty": "Intermediate",
-  "background": "A regional bank wants to attract more customers under age 30 while protecting profitability.",
+  "id": "market-sizing-insurance-002",
+  "title": "US Pet Insurance Market Size",
+  "case_type": "Market Sizing",
+  "industry": "Insurance",
+  "difficulty": "Beginner",
+  "background": "An insurer wants to estimate the addressable market for pet insurance in the United States.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies growth levers across customers, products, and channels",
-    "Segments customers by needs and profitability",
-    "Assesses feasibility, investment, and expected impact",
-    "Recommends a prioritized growth roadmap"
+    "Defines the market clearly and avoids double counting",
+    "Uses a logical top-down or bottom-up structure",
+    "States assumptions transparently",
+    "Calculates a reasonable estimate"
   ],
   "great_answer_includes": [
-    "Balances acquisition, retention, and expansion opportunities",
-    "Identifies operational capabilities needed to scale",
-    "Considers competitive response and market saturation",
-    "Defines metrics to track growth quality"
+    "Validates assumptions with sanity checks",
+    "Segments the market where useful",
+    "Separates users, units, frequency, and price",
+    "Connects market size to business attractiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-24"
+  "publish_date": "2026-08-25"
 }
