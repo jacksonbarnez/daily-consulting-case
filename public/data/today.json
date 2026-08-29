@@ -1,24 +1,24 @@
 {
-  "id": "data-and-analytics-media-003",
-  "title": "Sports Media Data Platform",
-  "case_type": "Data and Analytics",
-  "industry": "Media",
-  "difficulty": "Intermediate",
-  "background": "A sports media company wants to build a data platform to personalize fan content.",
+  "id": "profitability-healthcare-002",
+  "title": "Urgent Care Profit Drop",
+  "case_type": "Profitability",
+  "industry": "Healthcare",
+  "difficulty": "Beginner",
+  "background": "An urgent care group is seeing lower profits even though patient visits have increased year over year.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies business questions analytics should answer",
-    "Assesses data sources, quality, and ownership",
-    "Identifies needed dashboards, models, or insights",
-    "Recommends an analytics roadmap"
+    "Breaks profit into revenue and cost drivers",
+    "Tests price, volume, mix, and retention changes",
+    "Examines labor, supplier, occupancy, and operating costs",
+    "Prioritizes actions by financial impact"
   ],
   "great_answer_includes": [
-    "Connects analytics to decisions and measurable outcomes",
-    "Addresses data governance and adoption barriers",
-    "Prioritizes use cases by value and feasibility",
-    "Defines operating model and accountability"
+    "Separates market trends from company-specific issues",
+    "Segments performance by customer, location, and product",
+    "Quantifies the biggest drivers before recommending actions",
+    "Balances margin improvement with customer experience"
   ],
-  "interviewer_notes": "A strong candidate should use a clear data and analytics structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-28"
+  "publish_date": "2026-08-29"
 }
