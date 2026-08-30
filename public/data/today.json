@@ -1,24 +1,24 @@
 {
-  "id": "profitability-healthcare-002",
-  "title": "Urgent Care Profit Drop",
-  "case_type": "Profitability",
-  "industry": "Healthcare",
-  "difficulty": "Beginner",
-  "background": "An urgent care group is seeing lower profits even though patient visits have increased year over year.",
+  "id": "growth-strategy-consumer-products-004",
+  "title": "Pet Care Brand Expansion",
+  "case_type": "Growth Strategy",
+  "industry": "Consumer Products",
+  "difficulty": "Intermediate",
+  "background": "A pet care brand has strong retail distribution and wants to identify its next major growth opportunity.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks profit into revenue and cost drivers",
-    "Tests price, volume, mix, and retention changes",
-    "Examines labor, supplier, occupancy, and operating costs",
-    "Prioritizes actions by financial impact"
+    "Identifies growth levers across customers, products, and channels",
+    "Segments customers by needs and profitability",
+    "Assesses feasibility, investment, and expected impact",
+    "Recommends a prioritized growth roadmap"
   ],
   "great_answer_includes": [
-    "Separates market trends from company-specific issues",
-    "Segments performance by customer, location, and product",
-    "Quantifies the biggest drivers before recommending actions",
-    "Balances margin improvement with customer experience"
+    "Balances acquisition, retention, and expansion opportunities",
+    "Identifies operational capabilities needed to scale",
+    "Considers competitive response and market saturation",
+    "Defines metrics to track growth quality"
   ],
-  "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-29"
+  "publish_date": "2026-08-30"
 }
