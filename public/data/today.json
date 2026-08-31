@@ -1,24 +1,24 @@
 {
-  "id": "growth-strategy-consumer-products-004",
-  "title": "Pet Care Brand Expansion",
-  "case_type": "Growth Strategy",
-  "industry": "Consumer Products",
-  "difficulty": "Intermediate",
-  "background": "A pet care brand has strong retail distribution and wants to identify its next major growth opportunity.",
+  "id": "revenue-growth-restaurants-001",
+  "title": "Coffee Chain Same-Store Sales Growth",
+  "case_type": "Revenue Growth",
+  "industry": "Restaurants",
+  "difficulty": "Beginner",
+  "background": "A coffee chain has flat same-store sales and wants to increase revenue without opening new stores.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies growth levers across customers, products, and channels",
-    "Segments customers by needs and profitability",
-    "Assesses feasibility, investment, and expected impact",
-    "Recommends a prioritized growth roadmap"
+    "Breaks revenue into price, volume, mix, and retention",
+    "Identifies customer segments with growth potential",
+    "Considers channel, product, and sales improvements",
+    "Recommends initiatives with expected impact"
   ],
   "great_answer_includes": [
-    "Balances acquisition, retention, and expansion opportunities",
-    "Identifies operational capabilities needed to scale",
-    "Considers competitive response and market saturation",
-    "Defines metrics to track growth quality"
+    "Separates short-term lifts from sustainable growth",
+    "Examines unit economics and margin impact",
+    "Considers cross-sell, upsell, and repeat purchase behavior",
+    "Defines success metrics and experiments"
   ],
-  "interviewer_notes": "A strong candidate should use a clear growth strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear revenue growth structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-30"
+  "publish_date": "2026-08-31"
 }
