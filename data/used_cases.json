@@ -258,5 +258,9 @@
   {
     "case_id": "revenue-growth-restaurants-001",
     "used_on": "2026-08-31"
+  },
+  {
+    "case_id": "customer-experience-financial-services-003",
+    "used_on": "2026-09-01"
   }
 ]

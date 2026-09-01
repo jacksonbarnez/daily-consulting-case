@@ -1,24 +1,24 @@
 {
-  "id": "revenue-growth-restaurants-001",
-  "title": "Coffee Chain Same-Store Sales Growth",
-  "case_type": "Revenue Growth",
-  "industry": "Restaurants",
-  "difficulty": "Beginner",
-  "background": "A coffee chain has flat same-store sales and wants to increase revenue without opening new stores.",
+  "id": "customer-experience-financial-services-003",
+  "title": "Bank Call Center Friction",
+  "case_type": "Customer Experience",
+  "industry": "Financial Services",
+  "difficulty": "Intermediate",
+  "background": "A bank is seeing longer call center wait times and rising customer complaints.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks revenue into price, volume, mix, and retention",
-    "Identifies customer segments with growth potential",
-    "Considers channel, product, and sales improvements",
-    "Recommends initiatives with expected impact"
+    "Maps the customer journey and pain points",
+    "Identifies moments causing dissatisfaction or churn",
+    "Uses metrics such as NPS, wait time, and complaint rate",
+    "Recommends improvements"
   ],
   "great_answer_includes": [
-    "Separates short-term lifts from sustainable growth",
-    "Examines unit economics and margin impact",
-    "Considers cross-sell, upsell, and repeat purchase behavior",
-    "Defines success metrics and experiments"
+    "Segments experience issues by customer type or channel",
+    "Links experience improvements to revenue or retention",
+    "Considers employee incentives and operational constraints",
+    "Prioritizes fixes by impact and effort"
   ],
-  "interviewer_notes": "A strong candidate should use a clear revenue growth structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear customer experience structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-08-31"
+  "publish_date": "2026-09-01"
 }
