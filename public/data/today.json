@@ -1,24 +1,24 @@
 {
-  "id": "customer-experience-financial-services-003",
-  "title": "Bank Call Center Friction",
-  "case_type": "Customer Experience",
-  "industry": "Financial Services",
-  "difficulty": "Intermediate",
-  "background": "A bank is seeing longer call center wait times and rising customer complaints.",
+  "id": "product-strategy-travel-001",
+  "title": "Ride-Sharing Loyalty Feature",
+  "case_type": "Product Strategy",
+  "industry": "Travel",
+  "difficulty": "Beginner",
+  "background": "A ride-sharing company is deciding whether to add a loyalty program to improve retention.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Maps the customer journey and pain points",
-    "Identifies moments causing dissatisfaction or churn",
-    "Uses metrics such as NPS, wait time, and complaint rate",
-    "Recommends improvements"
+    "Clarifies product objectives and target users",
+    "Prioritizes features based on value and feasibility",
+    "Considers competitive differentiation and user pain points",
+    "Recommends a roadmap"
   ],
   "great_answer_includes": [
-    "Segments experience issues by customer type or channel",
-    "Links experience improvements to revenue or retention",
-    "Considers employee incentives and operational constraints",
-    "Prioritizes fixes by impact and effort"
+    "Uses customer evidence to support prioritization",
+    "Considers monetization, retention, and engagement impact",
+    "Addresses technical dependencies and tradeoffs",
+    "Defines product metrics and learning milestones"
   ],
-  "interviewer_notes": "A strong candidate should use a clear customer experience structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear product strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-01"
+  "publish_date": "2026-09-02"
 }

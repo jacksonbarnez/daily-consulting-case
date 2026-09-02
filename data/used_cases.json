@@ -262,5 +262,9 @@
   {
     "case_id": "customer-experience-financial-services-003",
     "used_on": "2026-09-01"
+  },
+  {
+    "case_id": "product-strategy-travel-001",
+    "used_on": "2026-09-02"
   }
 ]
