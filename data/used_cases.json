@@ -266,5 +266,9 @@
   {
     "case_id": "product-strategy-travel-001",
     "used_on": "2026-09-02"
+  },
+  {
+    "case_id": "saas-strategy-saas-001",
+    "used_on": "2026-09-03"
   }
 ]
