@@ -1,24 +1,24 @@
 {
-  "id": "saas-strategy-saas-001",
-  "title": "SaaS Churn Reduction",
-  "case_type": "SaaS Strategy",
-  "industry": "SaaS",
+  "id": "cost-reduction-manufacturing-001",
+  "title": "Manufacturer Overhead Reduction",
+  "case_type": "Cost Reduction",
+  "industry": "Manufacturing",
   "difficulty": "Beginner",
-  "background": "A SaaS company has strong new sales but rising customer churn.",
+  "background": "A manufacturing company needs to reduce overhead costs after demand softened in its core product line.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks performance into acquisition, activation, retention, and expansion",
-    "Assesses pricing, packaging, and customer segments",
-    "Identifies product and sales levers",
-    "Recommends a SaaS growth plan"
+    "Breaks costs into major categories",
+    "Separates fixed and variable costs",
+    "Identifies savings opportunities with minimal customer impact",
+    "Prioritizes savings by size and feasibility"
   ],
   "great_answer_includes": [
-    "Uses metrics such as churn, CAC, LTV, and NRR",
-    "Segments customers by size, usage, and profitability",
-    "Balances growth with unit economics",
-    "Defines experiments and leading indicators"
+    "Avoids cuts that harm revenue or service quality",
+    "Benchmarks costs against comparable organizations",
+    "Includes one-time versus recurring savings",
+    "Creates a realistic implementation and risk plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-03"
+  "publish_date": "2026-09-04"
 }

@@ -270,5 +270,9 @@
   {
     "case_id": "saas-strategy-saas-001",
     "used_on": "2026-09-03"
+  },
+  {
+    "case_id": "cost-reduction-manufacturing-001",
+    "used_on": "2026-09-04"
   }
 ]
