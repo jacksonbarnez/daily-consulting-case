@@ -1,24 +1,24 @@
 {
-  "id": "cost-reduction-manufacturing-001",
-  "title": "Manufacturer Overhead Reduction",
-  "case_type": "Cost Reduction",
-  "industry": "Manufacturing",
-  "difficulty": "Beginner",
-  "background": "A manufacturing company needs to reduce overhead costs after demand softened in its core product line.",
+  "id": "it-modernization-technology-003",
+  "title": "Technology It Modernization Roadmap",
+  "case_type": "IT Modernization",
+  "industry": "Technology",
+  "difficulty": "Intermediate",
+  "background": "A technology organization is facing a IT modernization roadmap and wants to identify the best path forward.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks costs into major categories",
-    "Separates fixed and variable costs",
-    "Identifies savings opportunities with minimal customer impact",
-    "Prioritizes savings by size and feasibility"
+    "Assesses legacy system pain points and business impact",
+    "Identifies modernization options and dependencies",
+    "Considers cost, risk, security, and user disruption",
+    "Recommends a phased modernization roadmap"
   ],
   "great_answer_includes": [
-    "Avoids cuts that harm revenue or service quality",
-    "Benchmarks costs against comparable organizations",
-    "Includes one-time versus recurring savings",
-    "Creates a realistic implementation and risk plan"
+    "Balances technical debt reduction with business priorities",
+    "Considers architecture, data, and vendor implications",
+    "Plans transition risks and parallel operations",
+    "Defines measurable modernization outcomes"
   ],
-  "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-04"
+  "publish_date": "2026-09-05"
 }

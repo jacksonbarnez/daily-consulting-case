@@ -1654,5 +1654,29 @@
     "interviewer_notes": "A strong candidate should use a clear cost reduction structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-04"
+  },
+  {
+    "id": "it-modernization-technology-003",
+    "title": "Technology It Modernization Roadmap",
+    "case_type": "IT Modernization",
+    "industry": "Technology",
+    "difficulty": "Intermediate",
+    "background": "A technology organization is facing a IT modernization roadmap and wants to identify the best path forward.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Assesses legacy system pain points and business impact",
+      "Identifies modernization options and dependencies",
+      "Considers cost, risk, security, and user disruption",
+      "Recommends a phased modernization roadmap"
+    ],
+    "great_answer_includes": [
+      "Balances technical debt reduction with business priorities",
+      "Considers architecture, data, and vendor implications",
+      "Plans transition risks and parallel operations",
+      "Defines measurable modernization outcomes"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-05"
   }
 ]
