@@ -1678,5 +1678,29 @@
     "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-05"
+  },
+  {
+    "id": "market-entry-healthcare-001",
+    "title": "Telehealth Expansion into Canada",
+    "case_type": "Market Entry",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A US telehealth company is considering launching in Canada after seeing strong domestic growth.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines target market and customer segments",
+      "Assesses market size, growth, and competitive intensity",
+      "Evaluates entry options, economics, and risks",
+      "Recommends whether and how to enter"
+    ],
+    "great_answer_includes": [
+      "Identifies regulatory, operational, and channel barriers",
+      "Compares build, partner, and acquisition routes",
+      "Uses a test-and-scale plan with clear milestones",
+      "Explains what would make the entry unattractive"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-06"
   }
 ]
