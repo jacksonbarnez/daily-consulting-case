@@ -282,5 +282,9 @@
   {
     "case_id": "market-entry-healthcare-001",
     "used_on": "2026-09-06"
+  },
+  {
+    "case_id": "product-launch-consumer-products-002",
+    "used_on": "2026-09-07"
   }
 ]

@@ -1702,5 +1702,29 @@
     "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-06"
+  },
+  {
+    "id": "product-launch-consumer-products-002",
+    "title": "Premium Snack Product Launch",
+    "case_type": "Product Launch",
+    "industry": "Consumer Products",
+    "difficulty": "Beginner",
+    "background": "A snack brand is considering launching a premium product line in grocery stores.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Defines target customer and unmet need",
+      "Assesses market demand and competitive alternatives",
+      "Considers pricing, channel, and launch timing",
+      "Recommends a launch plan with success metrics"
+    ],
+    "great_answer_includes": [
+      "Identifies adoption barriers and early user segments",
+      "Designs pilot, feedback, and iteration approach",
+      "Balances brand, margin, and operational complexity",
+      "Specifies go/no-go criteria"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear product launch structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-07"
   }
 ]

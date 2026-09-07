@@ -1,24 +1,24 @@
 {
-  "id": "market-entry-healthcare-001",
-  "title": "Telehealth Expansion into Canada",
-  "case_type": "Market Entry",
-  "industry": "Healthcare",
+  "id": "product-launch-consumer-products-002",
+  "title": "Premium Snack Product Launch",
+  "case_type": "Product Launch",
+  "industry": "Consumer Products",
   "difficulty": "Beginner",
-  "background": "A US telehealth company is considering launching in Canada after seeing strong domestic growth.",
+  "background": "A snack brand is considering launching a premium product line in grocery stores.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target market and customer segments",
-    "Assesses market size, growth, and competitive intensity",
-    "Evaluates entry options, economics, and risks",
-    "Recommends whether and how to enter"
+    "Defines target customer and unmet need",
+    "Assesses market demand and competitive alternatives",
+    "Considers pricing, channel, and launch timing",
+    "Recommends a launch plan with success metrics"
   ],
   "great_answer_includes": [
-    "Identifies regulatory, operational, and channel barriers",
-    "Compares build, partner, and acquisition routes",
-    "Uses a test-and-scale plan with clear milestones",
-    "Explains what would make the entry unattractive"
+    "Identifies adoption barriers and early user segments",
+    "Designs pilot, feedback, and iteration approach",
+    "Balances brand, margin, and operational complexity",
+    "Specifies go/no-go criteria"
   ],
-  "interviewer_notes": "A strong candidate should use a clear market entry structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear product launch structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-06"
+  "publish_date": "2026-09-07"
 }
