@@ -290,5 +290,9 @@
   {
     "case_id": "profitability-retail-001",
     "used_on": "2026-09-08"
+  },
+  {
+    "case_id": "turnaround-media-001",
+    "used_on": "2026-09-09"
   }
 ]

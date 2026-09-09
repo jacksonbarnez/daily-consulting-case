@@ -1,24 +1,24 @@
 {
-  "id": "profitability-retail-001",
-  "title": "Grocery Chain Margin Decline",
-  "case_type": "Profitability",
-  "industry": "Retail",
+  "id": "turnaround-media-001",
+  "title": "Movie Theater Turnaround",
+  "case_type": "Turnaround",
+  "industry": "Media",
   "difficulty": "Beginner",
-  "background": "A regional grocery chain has seen profit margins decline despite stable traffic across its stores.",
+  "background": "A movie theater chain has declining attendance and needs a turnaround plan.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks profit into revenue and cost drivers",
-    "Tests price, volume, mix, and retention changes",
-    "Examines labor, supplier, occupancy, and operating costs",
-    "Prioritizes actions by financial impact"
+    "Diagnoses the root causes of underperformance",
+    "Separates revenue, cost, operational, and market issues",
+    "Identifies urgent cash and performance levers",
+    "Recommends a prioritized recovery plan"
   ],
   "great_answer_includes": [
-    "Separates market trends from company-specific issues",
-    "Segments performance by customer, location, and product",
-    "Quantifies the biggest drivers before recommending actions",
-    "Balances margin improvement with customer experience"
+    "Distinguishes temporary issues from structural decline",
+    "Considers stakeholder constraints and execution capacity",
+    "Balances quick wins with longer-term repositioning",
+    "Defines milestones to judge recovery"
   ],
-  "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-08"
+  "publish_date": "2026-09-09"
 }

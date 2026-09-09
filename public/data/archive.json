@@ -1750,5 +1750,29 @@
     "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-08"
+  },
+  {
+    "id": "turnaround-media-001",
+    "title": "Movie Theater Turnaround",
+    "case_type": "Turnaround",
+    "industry": "Media",
+    "difficulty": "Beginner",
+    "background": "A movie theater chain has declining attendance and needs a turnaround plan.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Diagnoses the root causes of underperformance",
+      "Separates revenue, cost, operational, and market issues",
+      "Identifies urgent cash and performance levers",
+      "Recommends a prioritized recovery plan"
+    ],
+    "great_answer_includes": [
+      "Distinguishes temporary issues from structural decline",
+      "Considers stakeholder constraints and execution capacity",
+      "Balances quick wins with longer-term repositioning",
+      "Defines milestones to judge recovery"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-09"
   }
 ]
