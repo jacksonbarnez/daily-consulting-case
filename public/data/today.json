@@ -1,24 +1,24 @@
 {
-  "id": "turnaround-media-001",
-  "title": "Movie Theater Turnaround",
-  "case_type": "Turnaround",
-  "industry": "Media",
+  "id": "platform-strategy-marketplace-001",
+  "title": "Marketplace Trust Strategy",
+  "case_type": "Platform Strategy",
+  "industry": "Marketplace",
   "difficulty": "Beginner",
-  "background": "A movie theater chain has declining attendance and needs a turnaround plan.",
+  "background": "An online marketplace is losing users because buyers and sellers are concerned about trust and quality.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Diagnoses the root causes of underperformance",
-    "Separates revenue, cost, operational, and market issues",
-    "Identifies urgent cash and performance levers",
-    "Recommends a prioritized recovery plan"
+    "Identifies platform participants and value exchange",
+    "Assesses network effects, trust, and monetization",
+    "Evaluates supply and demand growth levers",
+    "Recommends a platform strategy"
   ],
   "great_answer_includes": [
-    "Distinguishes temporary issues from structural decline",
-    "Considers stakeholder constraints and execution capacity",
-    "Balances quick wins with longer-term repositioning",
-    "Defines milestones to judge recovery"
+    "Addresses chicken-and-egg adoption challenges",
+    "Considers governance, incentives, and quality control",
+    "Balances monetization with participant retention",
+    "Defines metrics for liquidity and engagement"
   ],
-  "interviewer_notes": "A strong candidate should use a clear turnaround structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-09"
+  "publish_date": "2026-09-10"
 }

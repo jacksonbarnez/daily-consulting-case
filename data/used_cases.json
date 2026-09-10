@@ -294,5 +294,9 @@
   {
     "case_id": "turnaround-media-001",
     "used_on": "2026-09-09"
+  },
+  {
+    "case_id": "platform-strategy-marketplace-001",
+    "used_on": "2026-09-10"
   }
 ]
