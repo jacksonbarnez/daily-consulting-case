@@ -1,24 +1,24 @@
 {
-  "id": "platform-strategy-marketplace-001",
-  "title": "Marketplace Trust Strategy",
-  "case_type": "Platform Strategy",
-  "industry": "Marketplace",
+  "id": "due-diligence-saas-002",
+  "title": "B2B Software Diligence",
+  "case_type": "Due Diligence",
+  "industry": "SaaS",
   "difficulty": "Beginner",
-  "background": "An online marketplace is losing users because buyers and sellers are concerned about trust and quality.",
+  "background": "An investor is conducting diligence on a B2B software company with strong reported growth.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies platform participants and value exchange",
-    "Assesses network effects, trust, and monetization",
-    "Evaluates supply and demand growth levers",
-    "Recommends a platform strategy"
+    "Assesses market attractiveness and competitive position",
+    "Reviews revenue quality, costs, and margins",
+    "Identifies operational, customer, and technology risks",
+    "Recommends key diligence areas"
   ],
   "great_answer_includes": [
-    "Addresses chicken-and-egg adoption challenges",
-    "Considers governance, incentives, and quality control",
-    "Balances monetization with participant retention",
-    "Defines metrics for liquidity and engagement"
+    "Tests management assumptions for reasonableness",
+    "Looks for concentration, churn, and recurring revenue risks",
+    "Separates confirmed facts from hypotheses",
+    "Identifies deal breakers and valuation implications"
   ],
-  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear due diligence structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-10"
+  "publish_date": "2026-09-11"
 }
