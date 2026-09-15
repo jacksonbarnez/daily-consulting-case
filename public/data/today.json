@@ -1,24 +1,24 @@
 {
-  "id": "ai-and-automation-insurance-001",
-  "title": "Claims Automation Opportunity",
-  "case_type": "AI and Automation",
-  "industry": "Insurance",
-  "difficulty": "Beginner",
-  "background": "An insurer wants to use automation to reduce manual work in claims processing.",
+  "id": "go-to-market-consumer-products-003",
+  "title": "Sustainable Apparel Launch Plan",
+  "case_type": "Go-to-Market",
+  "industry": "Consumer Products",
+  "difficulty": "Intermediate",
+  "background": "A sustainable apparel brand is preparing its first national launch.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies processes suitable for automation",
-    "Assesses data availability, risk, and human oversight needs",
-    "Estimates productivity or quality impact",
-    "Recommends use cases to pilot"
+    "Defines target segments and buyer personas",
+    "Chooses channels, messaging, and sales motion",
+    "Considers pricing, enablement, and launch sequencing",
+    "Recommends a GTM plan"
   ],
   "great_answer_includes": [
-    "Prioritizes use cases by value and feasibility",
-    "Considers model accuracy, bias, and governance",
-    "Defines human-in-the-loop controls",
-    "Plans measurement before scaling"
+    "Aligns GTM motion with deal size and buying process",
+    "Identifies early adopter segments and proof points",
+    "Considers partner and direct channel tradeoffs",
+    "Defines pipeline, conversion, and retention metrics"
   ],
-  "interviewer_notes": "A strong candidate should use a clear ai and automation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-14"
+  "publish_date": "2026-09-15"
 }
