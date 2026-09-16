@@ -1,24 +1,24 @@
 {
-  "id": "go-to-market-consumer-products-003",
-  "title": "Sustainable Apparel Launch Plan",
-  "case_type": "Go-to-Market",
-  "industry": "Consumer Products",
-  "difficulty": "Intermediate",
-  "background": "A sustainable apparel brand is preparing its first national launch.",
+  "id": "technology-strategy-healthcare-002",
+  "title": "Hospital IT Strategy",
+  "case_type": "Technology Strategy",
+  "industry": "Healthcare",
+  "difficulty": "Beginner",
+  "background": "A hospital system needs to modernize IT while supporting clinical operations and compliance.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target segments and buyer personas",
-    "Chooses channels, messaging, and sales motion",
-    "Considers pricing, enablement, and launch sequencing",
-    "Recommends a GTM plan"
+    "Assesses current systems against business goals",
+    "Identifies capability gaps and technical risks",
+    "Prioritizes technology investments by value and feasibility",
+    "Recommends a roadmap"
   ],
   "great_answer_includes": [
-    "Aligns GTM motion with deal size and buying process",
-    "Identifies early adopter segments and proof points",
-    "Considers partner and direct channel tradeoffs",
-    "Defines pipeline, conversion, and retention metrics"
+    "Balances modernization with cost and disruption",
+    "Considers build, buy, and partner options",
+    "Addresses governance, security, and scalability",
+    "Links technology choices to business outcomes"
   ],
-  "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-15"
+  "publish_date": "2026-09-16"
 }
