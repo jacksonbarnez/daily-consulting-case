@@ -1,24 +1,24 @@
 {
-  "id": "technology-strategy-healthcare-002",
-  "title": "Hospital IT Strategy",
-  "case_type": "Technology Strategy",
-  "industry": "Healthcare",
-  "difficulty": "Beginner",
-  "background": "A hospital system needs to modernize IT while supporting clinical operations and compliance.",
+  "id": "saas-strategy-retail-004",
+  "title": "Retail Saas Strategy Decision",
+  "case_type": "SaaS Strategy",
+  "industry": "Retail",
+  "difficulty": "Intermediate",
+  "background": "A retail organization is facing a SaaS strategy decision and wants to identify the best path forward.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Assesses current systems against business goals",
-    "Identifies capability gaps and technical risks",
-    "Prioritizes technology investments by value and feasibility",
-    "Recommends a roadmap"
+    "Breaks performance into acquisition, activation, retention, and expansion",
+    "Assesses pricing, packaging, and customer segments",
+    "Identifies product and sales levers",
+    "Recommends a SaaS growth plan"
   ],
   "great_answer_includes": [
-    "Balances modernization with cost and disruption",
-    "Considers build, buy, and partner options",
-    "Addresses governance, security, and scalability",
-    "Links technology choices to business outcomes"
+    "Uses metrics such as churn, CAC, LTV, and NRR",
+    "Segments customers by size, usage, and profitability",
+    "Balances growth with unit economics",
+    "Defines experiments and leading indicators"
   ],
-  "interviewer_notes": "A strong candidate should use a clear technology strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-16"
+  "publish_date": "2026-09-17"
 }
