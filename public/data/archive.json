@@ -1966,5 +1966,29 @@
     "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-17"
+  },
+  {
+    "id": "cybersecurity-education-003",
+    "title": "University Phishing Reduction",
+    "case_type": "Cybersecurity",
+    "industry": "Education",
+    "difficulty": "Intermediate",
+    "background": "A university is seeing a rise in successful phishing attempts against students and staff.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Identifies key assets, threats, and vulnerabilities",
+      "Assesses current controls and incident readiness",
+      "Prioritizes risks by likelihood and impact",
+      "Recommends security investments"
+    ],
+    "great_answer_includes": [
+      "Balances risk reduction with business operations",
+      "Considers employee behavior and third-party exposure",
+      "Defines governance, monitoring, and response capabilities",
+      "Prioritizes quick wins and longer-term resilience"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-18"
   }
 ]

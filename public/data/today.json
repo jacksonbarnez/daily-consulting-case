@@ -1,24 +1,24 @@
 {
-  "id": "saas-strategy-retail-004",
-  "title": "Retail Saas Strategy Decision",
-  "case_type": "SaaS Strategy",
-  "industry": "Retail",
+  "id": "cybersecurity-education-003",
+  "title": "University Phishing Reduction",
+  "case_type": "Cybersecurity",
+  "industry": "Education",
   "difficulty": "Intermediate",
-  "background": "A retail organization is facing a SaaS strategy decision and wants to identify the best path forward.",
+  "background": "A university is seeing a rise in successful phishing attempts against students and staff.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks performance into acquisition, activation, retention, and expansion",
-    "Assesses pricing, packaging, and customer segments",
-    "Identifies product and sales levers",
-    "Recommends a SaaS growth plan"
+    "Identifies key assets, threats, and vulnerabilities",
+    "Assesses current controls and incident readiness",
+    "Prioritizes risks by likelihood and impact",
+    "Recommends security investments"
   ],
   "great_answer_includes": [
-    "Uses metrics such as churn, CAC, LTV, and NRR",
-    "Segments customers by size, usage, and profitability",
-    "Balances growth with unit economics",
-    "Defines experiments and leading indicators"
+    "Balances risk reduction with business operations",
+    "Considers employee behavior and third-party exposure",
+    "Defines governance, monitoring, and response capabilities",
+    "Prioritizes quick wins and longer-term resilience"
   ],
-  "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-17"
+  "publish_date": "2026-09-18"
 }
