@@ -1990,5 +1990,29 @@
     "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-09-18"
+  },
+  {
+    "id": "erp-implementation-manufacturing-002",
+    "title": "Manufacturer ERP Stabilization",
+    "case_type": "ERP Implementation",
+    "industry": "Manufacturing",
+    "difficulty": "Beginner",
+    "background": "A manufacturer recently launched a new ERP and is experiencing reporting issues and process delays.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies business processes and implementation goals",
+      "Assesses scope, data, integrations, and user impacts",
+      "Identifies risks in timeline, adoption, and testing",
+      "Recommends an implementation approach"
+    ],
+    "great_answer_includes": [
+      "Considers process standardization versus customization",
+      "Prioritizes data migration and change management",
+      "Defines governance and decision rights",
+      "Plans phased rollout and stabilization"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear erp implementation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-09-19"
   }
 ]
