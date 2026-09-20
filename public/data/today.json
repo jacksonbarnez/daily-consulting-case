@@ -1,24 +1,24 @@
 {
-  "id": "erp-implementation-manufacturing-002",
-  "title": "Manufacturer ERP Stabilization",
-  "case_type": "ERP Implementation",
-  "industry": "Manufacturing",
+  "id": "manda-financial-services-002",
+  "title": "Regional Bank Merger Evaluation",
+  "case_type": "M&A",
+  "industry": "Financial Services",
   "difficulty": "Beginner",
-  "background": "A manufacturer recently launched a new ERP and is experiencing reporting issues and process delays.",
+  "background": "A regional bank is evaluating a potential merger with a smaller competitor.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies business processes and implementation goals",
-    "Assesses scope, data, integrations, and user impacts",
-    "Identifies risks in timeline, adoption, and testing",
-    "Recommends an implementation approach"
+    "Clarifies strategic rationale for the deal",
+    "Assesses market, financial, and operational attractiveness",
+    "Identifies synergies and integration risks",
+    "Recommends whether to proceed"
   ],
   "great_answer_includes": [
-    "Considers process standardization versus customization",
-    "Prioritizes data migration and change management",
-    "Defines governance and decision rights",
-    "Plans phased rollout and stabilization"
+    "Tests standalone value versus deal value",
+    "Quantifies revenue and cost synergy assumptions",
+    "Considers culture, systems, and execution risk",
+    "Defines diligence questions and deal breakers"
   ],
-  "interviewer_notes": "A strong candidate should use a clear erp implementation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-19"
+  "publish_date": "2026-09-20"
 }

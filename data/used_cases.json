@@ -334,5 +334,9 @@
   {
     "case_id": "erp-implementation-manufacturing-002",
     "used_on": "2026-09-19"
+  },
+  {
+    "case_id": "manda-financial-services-002",
+    "used_on": "2026-09-20"
   }
 ]
