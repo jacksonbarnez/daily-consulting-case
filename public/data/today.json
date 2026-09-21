@@ -1,24 +1,24 @@
 {
-  "id": "manda-financial-services-002",
-  "title": "Regional Bank Merger Evaluation",
-  "case_type": "M&A",
-  "industry": "Financial Services",
+  "id": "pricing-saas-002",
+  "title": "Cloud Storage Price Redesign",
+  "case_type": "Pricing",
+  "industry": "SaaS",
   "difficulty": "Beginner",
-  "background": "A regional bank is evaluating a potential merger with a smaller competitor.",
+  "background": "A cloud storage provider wants to redesign pricing because customers say the current tiers are confusing.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies strategic rationale for the deal",
-    "Assesses market, financial, and operational attractiveness",
-    "Identifies synergies and integration risks",
-    "Recommends whether to proceed"
+    "Clarifies objectives such as revenue, margin, or share",
+    "Assesses customer willingness to pay and alternatives",
+    "Considers cost structure and competitor pricing",
+    "Recommends a pricing model with risks"
   ],
   "great_answer_includes": [
-    "Tests standalone value versus deal value",
-    "Quantifies revenue and cost synergy assumptions",
-    "Considers culture, systems, and execution risk",
-    "Defines diligence questions and deal breakers"
+    "Segments pricing by customer or usage pattern",
+    "Estimates elasticity and demand response",
+    "Considers bundling, tiers, and discount governance",
+    "Suggests controlled tests before broad rollout"
   ],
-  "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-20"
+  "publish_date": "2026-09-21"
 }
