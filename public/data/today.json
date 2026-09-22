@@ -1,24 +1,24 @@
 {
-  "id": "pricing-saas-002",
-  "title": "Cloud Storage Price Redesign",
-  "case_type": "Pricing",
-  "industry": "SaaS",
+  "id": "operations-travel-001",
+  "title": "Airport Baggage Delay Reduction",
+  "case_type": "Operations",
+  "industry": "Travel",
   "difficulty": "Beginner",
-  "background": "A cloud storage provider wants to redesign pricing because customers say the current tiers are confusing.",
+  "background": "An airport operator is receiving complaints about baggage delays during peak arrival windows.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies objectives such as revenue, margin, or share",
-    "Assesses customer willingness to pay and alternatives",
-    "Considers cost structure and competitor pricing",
-    "Recommends a pricing model with risks"
+    "Maps the end-to-end process and bottlenecks",
+    "Identifies capacity, staffing, quality, and handoff issues",
+    "Uses metrics such as cycle time, throughput, and error rate",
+    "Recommends practical process improvements"
   ],
   "great_answer_includes": [
-    "Segments pricing by customer or usage pattern",
-    "Estimates elasticity and demand response",
-    "Considers bundling, tiers, and discount governance",
-    "Suggests controlled tests before broad rollout"
+    "Distinguishes root causes from symptoms",
+    "Quantifies impact of each bottleneck",
+    "Considers technology, incentives, and change management",
+    "Builds a phased implementation plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear operations structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-21"
+  "publish_date": "2026-09-22"
 }
