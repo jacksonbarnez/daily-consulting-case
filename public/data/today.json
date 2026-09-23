@@ -1,24 +1,24 @@
 {
-  "id": "operations-travel-001",
-  "title": "Airport Baggage Delay Reduction",
-  "case_type": "Operations",
-  "industry": "Travel",
-  "difficulty": "Beginner",
-  "background": "An airport operator is receiving complaints about baggage delays during peak arrival windows.",
+  "id": "profitability-hospitality-004",
+  "title": "Hotel Portfolio Profit Recovery",
+  "case_type": "Profitability",
+  "industry": "Hospitality",
+  "difficulty": "Intermediate",
+  "background": "A hotel operator has returned to pre-pandemic occupancy levels but profits remain below expectations.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Maps the end-to-end process and bottlenecks",
-    "Identifies capacity, staffing, quality, and handoff issues",
-    "Uses metrics such as cycle time, throughput, and error rate",
-    "Recommends practical process improvements"
+    "Breaks profit into revenue and cost drivers",
+    "Tests price, volume, mix, and retention changes",
+    "Examines labor, supplier, occupancy, and operating costs",
+    "Prioritizes actions by financial impact"
   ],
   "great_answer_includes": [
-    "Distinguishes root causes from symptoms",
-    "Quantifies impact of each bottleneck",
-    "Considers technology, incentives, and change management",
-    "Builds a phased implementation plan"
+    "Separates market trends from company-specific issues",
+    "Segments performance by customer, location, and product",
+    "Quantifies the biggest drivers before recommending actions",
+    "Balances margin improvement with customer experience"
   ],
-  "interviewer_notes": "A strong candidate should use a clear operations structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-22"
+  "publish_date": "2026-09-23"
 }
