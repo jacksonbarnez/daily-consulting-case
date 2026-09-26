@@ -1,24 +1,24 @@
 {
-  "id": "ai-and-automation-telecommunications-002",
-  "title": "Call Center AI Assistant",
-  "case_type": "AI and Automation",
-  "industry": "Telecommunications",
-  "difficulty": "Beginner",
-  "background": "A telecommunications company is considering an AI assistant for call center agents.",
+  "id": "pricing-healthcare-004",
+  "title": "Specialty Pharmacy Pricing",
+  "case_type": "Pricing",
+  "industry": "Healthcare",
+  "difficulty": "Intermediate",
+  "background": "A specialty pharmacy is evaluating pricing and service fees for a new medication management offering.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies processes suitable for automation",
-    "Assesses data availability, risk, and human oversight needs",
-    "Estimates productivity or quality impact",
-    "Recommends use cases to pilot"
+    "Clarifies objectives such as revenue, margin, or share",
+    "Assesses customer willingness to pay and alternatives",
+    "Considers cost structure and competitor pricing",
+    "Recommends a pricing model with risks"
   ],
   "great_answer_includes": [
-    "Prioritizes use cases by value and feasibility",
-    "Considers model accuracy, bias, and governance",
-    "Defines human-in-the-loop controls",
-    "Plans measurement before scaling"
+    "Segments pricing by customer or usage pattern",
+    "Estimates elasticity and demand response",
+    "Considers bundling, tiers, and discount governance",
+    "Suggests controlled tests before broad rollout"
   ],
-  "interviewer_notes": "A strong candidate should use a clear ai and automation structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-25"
+  "publish_date": "2026-09-26"
 }
