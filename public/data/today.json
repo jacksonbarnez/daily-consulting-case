@@ -1,24 +1,24 @@
 {
-  "id": "pricing-healthcare-004",
-  "title": "Specialty Pharmacy Pricing",
-  "case_type": "Pricing",
-  "industry": "Healthcare",
+  "id": "market-sizing-education-003",
+  "title": "College Tutoring Demand Estimate",
+  "case_type": "Market Sizing",
+  "industry": "Education",
   "difficulty": "Intermediate",
-  "background": "A specialty pharmacy is evaluating pricing and service fees for a new medication management offering.",
+  "background": "An education company wants to estimate demand for paid tutoring among US college students.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies objectives such as revenue, margin, or share",
-    "Assesses customer willingness to pay and alternatives",
-    "Considers cost structure and competitor pricing",
-    "Recommends a pricing model with risks"
+    "Defines the market clearly and avoids double counting",
+    "Uses a logical top-down or bottom-up structure",
+    "States assumptions transparently",
+    "Calculates a reasonable estimate"
   ],
   "great_answer_includes": [
-    "Segments pricing by customer or usage pattern",
-    "Estimates elasticity and demand response",
-    "Considers bundling, tiers, and discount governance",
-    "Suggests controlled tests before broad rollout"
+    "Validates assumptions with sanity checks",
+    "Segments the market where useful",
+    "Separates users, units, frequency, and price",
+    "Connects market size to business attractiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear pricing structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear market sizing structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-26"
+  "publish_date": "2026-09-27"
 }
