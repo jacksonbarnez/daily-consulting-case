@@ -374,5 +374,9 @@
   {
     "case_id": "product-strategy-cybersecurity-002",
     "used_on": "2026-09-29"
+  },
+  {
+    "case_id": "product-launch-financial-services-003",
+    "used_on": "2026-09-30"
   }
 ]

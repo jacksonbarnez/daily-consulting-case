@@ -1,24 +1,24 @@
 {
-  "id": "product-strategy-cybersecurity-002",
-  "title": "Cybersecurity Product Roadmap",
-  "case_type": "Product Strategy",
-  "industry": "Cybersecurity",
-  "difficulty": "Beginner",
-  "background": "A cybersecurity software company must prioritize its next set of product features.",
+  "id": "product-launch-financial-services-003",
+  "title": "Banking App Feature Launch",
+  "case_type": "Product Launch",
+  "industry": "Financial Services",
+  "difficulty": "Intermediate",
+  "background": "A bank is evaluating whether to launch a budgeting feature inside its mobile app.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Clarifies product objectives and target users",
-    "Prioritizes features based on value and feasibility",
-    "Considers competitive differentiation and user pain points",
-    "Recommends a roadmap"
+    "Defines target customer and unmet need",
+    "Assesses market demand and competitive alternatives",
+    "Considers pricing, channel, and launch timing",
+    "Recommends a launch plan with success metrics"
   ],
   "great_answer_includes": [
-    "Uses customer evidence to support prioritization",
-    "Considers monetization, retention, and engagement impact",
-    "Addresses technical dependencies and tradeoffs",
-    "Defines product metrics and learning milestones"
+    "Identifies adoption barriers and early user segments",
+    "Designs pilot, feedback, and iteration approach",
+    "Balances brand, margin, and operational complexity",
+    "Specifies go/no-go criteria"
   ],
-  "interviewer_notes": "A strong candidate should use a clear product strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear product launch structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-09-29"
+  "publish_date": "2026-09-30"
 }
