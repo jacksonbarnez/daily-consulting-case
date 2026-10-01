@@ -378,5 +378,9 @@
   {
     "case_id": "product-launch-financial-services-003",
     "used_on": "2026-09-30"
+  },
+  {
+    "case_id": "saas-strategy-saas-002",
+    "used_on": "2026-10-01"
   }
 ]
