@@ -2302,5 +2302,29 @@
     "interviewer_notes": "A strong candidate should use a clear saas strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-01"
+  },
+  {
+    "id": "due-diligence-consumer-products-003",
+    "title": "Specialty Food Brand Diligence",
+    "case_type": "Due Diligence",
+    "industry": "Consumer Products",
+    "difficulty": "Intermediate",
+    "background": "A consumer products company is evaluating whether to acquire a specialty food brand.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Assesses market attractiveness and competitive position",
+      "Reviews revenue quality, costs, and margins",
+      "Identifies operational, customer, and technology risks",
+      "Recommends key diligence areas"
+    ],
+    "great_answer_includes": [
+      "Tests management assumptions for reasonableness",
+      "Looks for concentration, churn, and recurring revenue risks",
+      "Separates confirmed facts from hypotheses",
+      "Identifies deal breakers and valuation implications"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear due diligence structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-02"
   }
 ]
