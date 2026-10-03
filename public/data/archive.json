@@ -2326,5 +2326,29 @@
     "interviewer_notes": "A strong candidate should use a clear due diligence structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-02"
+  },
+  {
+    "id": "platform-strategy-media-002",
+    "title": "Creator Platform Monetization",
+    "case_type": "Platform Strategy",
+    "industry": "Media",
+    "difficulty": "Beginner",
+    "background": "A creator platform has strong engagement but limited monetization.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Identifies platform participants and value exchange",
+      "Assesses network effects, trust, and monetization",
+      "Evaluates supply and demand growth levers",
+      "Recommends a platform strategy"
+    ],
+    "great_answer_includes": [
+      "Addresses chicken-and-egg adoption challenges",
+      "Considers governance, incentives, and quality control",
+      "Balances monetization with participant retention",
+      "Defines metrics for liquidity and engagement"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-03"
   }
 ]

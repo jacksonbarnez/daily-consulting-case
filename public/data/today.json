@@ -1,24 +1,24 @@
 {
-  "id": "due-diligence-consumer-products-003",
-  "title": "Specialty Food Brand Diligence",
-  "case_type": "Due Diligence",
-  "industry": "Consumer Products",
-  "difficulty": "Intermediate",
-  "background": "A consumer products company is evaluating whether to acquire a specialty food brand.",
+  "id": "platform-strategy-media-002",
+  "title": "Creator Platform Monetization",
+  "case_type": "Platform Strategy",
+  "industry": "Media",
+  "difficulty": "Beginner",
+  "background": "A creator platform has strong engagement but limited monetization.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Assesses market attractiveness and competitive position",
-    "Reviews revenue quality, costs, and margins",
-    "Identifies operational, customer, and technology risks",
-    "Recommends key diligence areas"
+    "Identifies platform participants and value exchange",
+    "Assesses network effects, trust, and monetization",
+    "Evaluates supply and demand growth levers",
+    "Recommends a platform strategy"
   ],
   "great_answer_includes": [
-    "Tests management assumptions for reasonableness",
-    "Looks for concentration, churn, and recurring revenue risks",
-    "Separates confirmed facts from hypotheses",
-    "Identifies deal breakers and valuation implications"
+    "Addresses chicken-and-egg adoption challenges",
+    "Considers governance, incentives, and quality control",
+    "Balances monetization with participant retention",
+    "Defines metrics for liquidity and engagement"
   ],
-  "interviewer_notes": "A strong candidate should use a clear due diligence structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-02"
+  "publish_date": "2026-10-03"
 }
