@@ -390,5 +390,9 @@
   {
     "case_id": "platform-strategy-media-002",
     "used_on": "2026-10-03"
+  },
+  {
+    "case_id": "supply-chain-healthcare-002",
+    "used_on": "2026-10-04"
   }
 ]

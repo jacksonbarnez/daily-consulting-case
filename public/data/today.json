@@ -1,24 +1,24 @@
 {
-  "id": "platform-strategy-media-002",
-  "title": "Creator Platform Monetization",
-  "case_type": "Platform Strategy",
-  "industry": "Media",
+  "id": "supply-chain-healthcare-002",
+  "title": "Medical Device Supplier Risk",
+  "case_type": "Supply Chain",
+  "industry": "Healthcare",
   "difficulty": "Beginner",
-  "background": "A creator platform has strong engagement but limited monetization.",
+  "background": "A medical device company depends on one supplier for a critical component and is seeing longer lead times.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Identifies platform participants and value exchange",
-    "Assesses network effects, trust, and monetization",
-    "Evaluates supply and demand growth levers",
-    "Recommends a platform strategy"
+    "Maps suppliers, inventory, transportation, and demand planning",
+    "Identifies root causes of delays, stockouts, or cost increases",
+    "Assesses service levels, lead times, and resilience",
+    "Recommends supply chain improvements"
   ],
   "great_answer_includes": [
-    "Addresses chicken-and-egg adoption challenges",
-    "Considers governance, incentives, and quality control",
-    "Balances monetization with participant retention",
-    "Defines metrics for liquidity and engagement"
+    "Quantifies tradeoffs between cost, speed, and reliability",
+    "Considers dual sourcing or inventory buffers",
+    "Segments items by criticality and demand variability",
+    "Builds a risk mitigation plan"
   ],
-  "interviewer_notes": "A strong candidate should use a clear platform strategy structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-03"
+  "publish_date": "2026-10-04"
 }
