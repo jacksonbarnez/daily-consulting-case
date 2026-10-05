@@ -2374,5 +2374,29 @@
     "interviewer_notes": "A strong candidate should use a clear supply chain structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-04"
+  },
+  {
+    "id": "revenue-growth-education-003",
+    "title": "Online Course Revenue Growth",
+    "case_type": "Revenue Growth",
+    "industry": "Education",
+    "difficulty": "Intermediate",
+    "background": "An online course provider has high website traffic but low paid enrollment conversion.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Breaks revenue into price, volume, mix, and retention",
+      "Identifies customer segments with growth potential",
+      "Considers channel, product, and sales improvements",
+      "Recommends initiatives with expected impact"
+    ],
+    "great_answer_includes": [
+      "Separates short-term lifts from sustainable growth",
+      "Examines unit economics and margin impact",
+      "Considers cross-sell, upsell, and repeat purchase behavior",
+      "Defines success metrics and experiments"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear revenue growth structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-05"
   }
 ]
