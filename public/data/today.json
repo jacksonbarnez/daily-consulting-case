@@ -1,24 +1,24 @@
 {
-  "id": "revenue-growth-education-003",
-  "title": "Online Course Revenue Growth",
-  "case_type": "Revenue Growth",
-  "industry": "Education",
-  "difficulty": "Intermediate",
-  "background": "An online course provider has high website traffic but low paid enrollment conversion.",
+  "id": "due-diligence-consumer-services-001",
+  "title": "Fitness Franchise Diligence",
+  "case_type": "Due Diligence",
+  "industry": "Consumer Services",
+  "difficulty": "Beginner",
+  "background": "A private equity firm is evaluating an investment in a fitness franchise operator.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks revenue into price, volume, mix, and retention",
-    "Identifies customer segments with growth potential",
-    "Considers channel, product, and sales improvements",
-    "Recommends initiatives with expected impact"
+    "Assesses market attractiveness and competitive position",
+    "Reviews revenue quality, costs, and margins",
+    "Identifies operational, customer, and technology risks",
+    "Recommends key diligence areas"
   ],
   "great_answer_includes": [
-    "Separates short-term lifts from sustainable growth",
-    "Examines unit economics and margin impact",
-    "Considers cross-sell, upsell, and repeat purchase behavior",
-    "Defines success metrics and experiments"
+    "Tests management assumptions for reasonableness",
+    "Looks for concentration, churn, and recurring revenue risks",
+    "Separates confirmed facts from hypotheses",
+    "Identifies deal breakers and valuation implications"
   ],
-  "interviewer_notes": "A strong candidate should use a clear revenue growth structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear due diligence structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-05"
+  "publish_date": "2026-10-06"
 }
