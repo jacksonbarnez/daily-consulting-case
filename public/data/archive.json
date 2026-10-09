@@ -2470,5 +2470,29 @@
     "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-08"
+  },
+  {
+    "id": "competitive-response-travel-002",
+    "title": "Airline Low-Cost Entrant",
+    "case_type": "Competitive Response",
+    "industry": "Travel",
+    "difficulty": "Beginner",
+    "background": "A regional airline faces a new low-cost entrant on several of its most profitable routes.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Identifies the competitor's offer and target customers",
+      "Assesses impact on price, volume, and retention",
+      "Evaluates response options beyond matching price",
+      "Recommends a focused response"
+    ],
+    "great_answer_includes": [
+      "Segments vulnerable customers and defensible strengths",
+      "Considers likely competitor reactions",
+      "Balances short-term defense with long-term positioning",
+      "Defines metrics to monitor response effectiveness"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear competitive response structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-09"
   }
 ]

@@ -1,24 +1,24 @@
 {
-  "id": "go-to-market-restaurants-004",
-  "title": "Restaurant Delivery Service GTM",
-  "case_type": "Go-to-Market",
-  "industry": "Restaurants",
-  "difficulty": "Intermediate",
-  "background": "A restaurant technology company is launching a delivery management tool for independent restaurants.",
+  "id": "competitive-response-travel-002",
+  "title": "Airline Low-Cost Entrant",
+  "case_type": "Competitive Response",
+  "industry": "Travel",
+  "difficulty": "Beginner",
+  "background": "A regional airline faces a new low-cost entrant on several of its most profitable routes.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Defines target segments and buyer personas",
-    "Chooses channels, messaging, and sales motion",
-    "Considers pricing, enablement, and launch sequencing",
-    "Recommends a GTM plan"
+    "Identifies the competitor's offer and target customers",
+    "Assesses impact on price, volume, and retention",
+    "Evaluates response options beyond matching price",
+    "Recommends a focused response"
   ],
   "great_answer_includes": [
-    "Aligns GTM motion with deal size and buying process",
-    "Identifies early adopter segments and proof points",
-    "Considers partner and direct channel tradeoffs",
-    "Defines pipeline, conversion, and retention metrics"
+    "Segments vulnerable customers and defensible strengths",
+    "Considers likely competitor reactions",
+    "Balances short-term defense with long-term positioning",
+    "Defines metrics to monitor response effectiveness"
   ],
-  "interviewer_notes": "A strong candidate should use a clear go-to-market structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear competitive response structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-08"
+  "publish_date": "2026-10-09"
 }
