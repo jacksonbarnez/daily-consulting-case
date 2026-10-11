@@ -1,24 +1,24 @@
 {
-  "id": "profitability-saas-003",
-  "title": "SaaS Margin Compression",
-  "case_type": "Profitability",
-  "industry": "SaaS",
-  "difficulty": "Intermediate",
-  "background": "A B2B SaaS provider is growing revenue but its margins have compressed over the last three quarters.",
+  "id": "it-modernization-financial-services-001",
+  "title": "Legacy Mainframe Modernization",
+  "case_type": "IT Modernization",
+  "industry": "Financial Services",
+  "difficulty": "Beginner",
+  "background": "A financial services company wants to modernize a legacy mainframe that supports critical operations.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Breaks profit into revenue and cost drivers",
-    "Tests price, volume, mix, and retention changes",
-    "Examines labor, supplier, occupancy, and operating costs",
-    "Prioritizes actions by financial impact"
+    "Assesses legacy system pain points and business impact",
+    "Identifies modernization options and dependencies",
+    "Considers cost, risk, security, and user disruption",
+    "Recommends a phased modernization roadmap"
   ],
   "great_answer_includes": [
-    "Separates market trends from company-specific issues",
-    "Segments performance by customer, location, and product",
-    "Quantifies the biggest drivers before recommending actions",
-    "Balances margin improvement with customer experience"
+    "Balances technical debt reduction with business priorities",
+    "Considers architecture, data, and vendor implications",
+    "Plans transition risks and parallel operations",
+    "Defines measurable modernization outcomes"
   ],
-  "interviewer_notes": "A strong candidate should use a clear profitability structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-10"
+  "publish_date": "2026-10-11"
 }
