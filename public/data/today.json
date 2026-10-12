@@ -1,24 +1,24 @@
 {
-  "id": "it-modernization-financial-services-001",
-  "title": "Legacy Mainframe Modernization",
-  "case_type": "IT Modernization",
-  "industry": "Financial Services",
+  "id": "cybersecurity-healthcare-001",
+  "title": "Hospital Ransomware Readiness",
+  "case_type": "Cybersecurity",
+  "industry": "Healthcare",
   "difficulty": "Beginner",
-  "background": "A financial services company wants to modernize a legacy mainframe that supports critical operations.",
+  "background": "A hospital system is concerned about ransomware risk after several peer institutions were attacked.",
   "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
   "good_answer_includes": [
-    "Assesses legacy system pain points and business impact",
-    "Identifies modernization options and dependencies",
-    "Considers cost, risk, security, and user disruption",
-    "Recommends a phased modernization roadmap"
+    "Identifies key assets, threats, and vulnerabilities",
+    "Assesses current controls and incident readiness",
+    "Prioritizes risks by likelihood and impact",
+    "Recommends security investments"
   ],
   "great_answer_includes": [
-    "Balances technical debt reduction with business priorities",
-    "Considers architecture, data, and vendor implications",
-    "Plans transition risks and parallel operations",
-    "Defines measurable modernization outcomes"
+    "Balances risk reduction with business operations",
+    "Considers employee behavior and third-party exposure",
+    "Defines governance, monitoring, and response capabilities",
+    "Prioritizes quick wins and longer-term resilience"
   ],
-  "interviewer_notes": "A strong candidate should use a clear it modernization structure, isolate the most important drivers, and connect the recommendation to business impact.",
+  "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
   "approved": true,
-  "publish_date": "2026-10-11"
+  "publish_date": "2026-10-12"
 }

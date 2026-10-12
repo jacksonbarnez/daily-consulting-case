@@ -422,5 +422,9 @@
   {
     "case_id": "it-modernization-financial-services-001",
     "used_on": "2026-10-11"
+  },
+  {
+    "case_id": "cybersecurity-healthcare-001",
+    "used_on": "2026-10-12"
   }
 ]
