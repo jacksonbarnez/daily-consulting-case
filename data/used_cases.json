@@ -426,5 +426,9 @@
   {
     "case_id": "cybersecurity-healthcare-001",
     "used_on": "2026-10-12"
+  },
+  {
+    "case_id": "data-and-analytics-retail-001",
+    "used_on": "2026-10-13"
   }
 ]

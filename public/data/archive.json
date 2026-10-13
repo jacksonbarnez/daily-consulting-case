@@ -2566,5 +2566,29 @@
     "interviewer_notes": "A strong candidate should use a clear cybersecurity structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-12"
+  },
+  {
+    "id": "data-and-analytics-retail-001",
+    "title": "Retail Analytics Capability",
+    "case_type": "Data and Analytics",
+    "industry": "Retail",
+    "difficulty": "Beginner",
+    "background": "A retailer wants to improve decision-making by building stronger analytics capabilities.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies business questions analytics should answer",
+      "Assesses data sources, quality, and ownership",
+      "Identifies needed dashboards, models, or insights",
+      "Recommends an analytics roadmap"
+    ],
+    "great_answer_includes": [
+      "Connects analytics to decisions and measurable outcomes",
+      "Addresses data governance and adoption barriers",
+      "Prioritizes use cases by value and feasibility",
+      "Defines operating model and accountability"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear data and analytics structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-13"
   }
 ]
