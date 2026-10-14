@@ -430,5 +430,9 @@
   {
     "case_id": "data-and-analytics-retail-001",
     "used_on": "2026-10-13"
+  },
+  {
+    "case_id": "cloud-migration-healthcare-003",
+    "used_on": "2026-10-14"
   }
 ]
