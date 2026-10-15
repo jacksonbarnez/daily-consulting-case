@@ -2614,5 +2614,29 @@
     "interviewer_notes": "A strong candidate should use a clear cloud migration structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-14"
+  },
+  {
+    "id": "data-and-analytics-healthcare-002",
+    "title": "Hospital Readmissions Analytics",
+    "case_type": "Data and Analytics",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A hospital wants to use analytics to reduce avoidable patient readmissions.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies business questions analytics should answer",
+      "Assesses data sources, quality, and ownership",
+      "Identifies needed dashboards, models, or insights",
+      "Recommends an analytics roadmap"
+    ],
+    "great_answer_includes": [
+      "Connects analytics to decisions and measurable outcomes",
+      "Addresses data governance and adoption barriers",
+      "Prioritizes use cases by value and feasibility",
+      "Defines operating model and accountability"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear data and analytics structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-15"
   }
 ]
