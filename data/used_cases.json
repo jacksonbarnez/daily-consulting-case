@@ -438,5 +438,9 @@
   {
     "case_id": "data-and-analytics-healthcare-002",
     "used_on": "2026-10-15"
+  },
+  {
+    "case_id": "manda-healthcare-001",
+    "used_on": "2026-10-16"
   }
 ]

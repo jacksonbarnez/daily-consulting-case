@@ -2638,5 +2638,29 @@
     "interviewer_notes": "A strong candidate should use a clear data and analytics structure, isolate the most important drivers, and connect the recommendation to business impact.",
     "approved": true,
     "publish_date": "2026-10-15"
+  },
+  {
+    "id": "manda-healthcare-001",
+    "title": "Dental Practice Acquisition",
+    "case_type": "M&A",
+    "industry": "Healthcare",
+    "difficulty": "Beginner",
+    "background": "A dental services organization is considering acquiring a group of independent practices.",
+    "candidate_prompt": "How would you evaluate the situation and recommend what the organization should do next?",
+    "good_answer_includes": [
+      "Clarifies strategic rationale for the deal",
+      "Assesses market, financial, and operational attractiveness",
+      "Identifies synergies and integration risks",
+      "Recommends whether to proceed"
+    ],
+    "great_answer_includes": [
+      "Tests standalone value versus deal value",
+      "Quantifies revenue and cost synergy assumptions",
+      "Considers culture, systems, and execution risk",
+      "Defines diligence questions and deal breakers"
+    ],
+    "interviewer_notes": "A strong candidate should use a clear m&a structure, isolate the most important drivers, and connect the recommendation to business impact.",
+    "approved": true,
+    "publish_date": "2026-10-16"
   }
 ]
